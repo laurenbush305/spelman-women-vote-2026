@@ -2,6 +2,15 @@
 
 A lightweight, mobile-first, static site for NAASC chapter resources. Plain HTML/CSS/JS. No build step, API key, database, tracking script, or fragile external data endpoint required.
 
+## Live site
+
+- **Website:** https://spelman-women-vote-2026.onrender.com
+- **Hosting:** Render static site (service `spelman-women-vote-2026`), connected to GitHub `main`, auto-deploy enabled.
+- **Hosting dashboard:** https://dashboard.render.com/static/srv-dbb932gm7kps73ekc830
+- **Source:** https://github.com/laurenbush305/spelman-women-vote-2026
+- **First successful deployment:** October 19, 2026. Render reported `live` status.
+- **QA:** JavaScript syntax, required local files, hash links and unique IDs validated. Manual mobile-browser testing still recommended.
+
 ## Deploy
 
 - **Vercel:** Create a new project and import these files or connect a GitHub repository containing this folder. Set Framework Preset to **Other**; no build command required; output directory is the project root.
@@ -29,4 +38,4 @@ The decorative S icon is *not* the official NAASC seal. If replacing with offici
 
 ## Deployment status (October 19, 2026)
 
-The five source files have been committed to `laurenbush305/spelman-women-vote-2026` on `main`. Automated Vercel import was attempted but blocked by HTTP 403 project-creation permissions. GitHub Pages is a fallback requiring a one-time source setting in the repository. Neither host has been confirmed live. Verify the deployed URL and mobile experience before sharing broadly.
+The five source files have been committed to `laurenbush305/spelman-women-vote-2026` on `main`. Automated Vercel import was blocked by HTTP 403 permissions, so the project was instead published on Render. Render confirmed that the deployment is live, with automatic GitHub main-branch deployments enabled. Manual mobile browser and external-link QA is recommended before broad circulation.
