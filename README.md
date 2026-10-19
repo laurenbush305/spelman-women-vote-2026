@@ -5,7 +5,7 @@ A lightweight, mobile-first, static site for NAASC chapter resources. Plain HTML
 ## Deploy
 
 - **Vercel:** Create a new project and import these files or connect a GitHub repository containing this folder. Set Framework Preset to **Other**; no build command required; output directory is the project root.
-- **GitHub Pages:** Push to a standalone repository, then enable Pages with **Deploy from a branch** (`main` / root).
+- **GitHub Pages:** The source now lives at https://github.com/laurenbush305/spelman-women-vote-2026. In **Settings → Pages → Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, then click **Save**. The site is not live until GitHub confirms the Pages deployment.
 - **Other static hosts:** Upload the files to any host that supports an `index.html` home page.
 
 ## Source-of-truth decisions
@@ -26,3 +26,7 @@ Edit `RESOURCES` in `app.js` to add/remove tools. Edit `STATES` if needed. Updat
 Includes skip link, visible keyboard focus, labeled controls, live results count, reduced-motion support, mobile navigation with expanded state, accessible external-link labels, and a clipboard fallback. No personal data is collected.
 
 The decorative S icon is *not* the official NAASC seal. If replacing with official NAASC artwork, obtain the approved asset/permission and follow NAASC's digital brand guide.
+
+## Deployment status (October 19, 2026)
+
+The five source files have been committed to `laurenbush305/spelman-women-vote-2026` on `main`. Automated Vercel import was attempted but blocked by HTTP 403 project-creation permissions. GitHub Pages is a fallback requiring a one-time source setting in the repository. Neither host has been confirmed live. Verify the deployed URL and mobile experience before sharing broadly.
