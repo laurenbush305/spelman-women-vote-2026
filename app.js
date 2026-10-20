@@ -125,6 +125,55 @@
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); } });
   document.addEventListener('click', event => { if (!event.target.closest('.site-header') && menu.getAttribute('aria-expanded') === 'true') setMenu(false); });
   matchMedia('(min-width: 801px)').addEventListener('change', () => setMenu(false));
+
+  // Keep the hub short: one major work area open at a time.
+  const collapsibleSpecs = [
+    ['resources', '.section-header', 'Voter resources', 'Search state-by-state and national voter tools'],
+    ['georgia-dates', '.calendar-heading', 'Georgia dates', 'Key 2026 Georgia election dates and official sources'],
+    ['toolkit', '.section-header', 'Chapter toolkit', 'Current-week actions, approved copy and graphics'],
+    ['report', '.section-header', 'Report impact', 'Use the correct individual, chapter or event route']
+  ];
+  const collapsibles = new Map();
+  function setSectionExpanded(id, expanded, scroll = false) {
+    const entry = collapsibles.get(id); if (!entry) return;
+    if (expanded) {
+      collapsibles.forEach((other, otherId) => {
+        if (otherId !== id) {
+          other.section.classList.add('is-collapsed');
+          other.button.setAttribute('aria-expanded', 'false');
+          other.body.hidden = true;
+          other.button.querySelector('.section-toggle-state').textContent = 'Open';
+        }
+      });
+    }
+    entry.section.classList.toggle('is-collapsed', !expanded);
+    entry.body.hidden = !expanded;
+    entry.button.setAttribute('aria-expanded', String(expanded));
+    entry.button.querySelector('.section-toggle-state').textContent = expanded ? 'Close' : 'Open';
+    if (expanded && scroll) entry.section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  collapsibleSpecs.forEach(([id, headerSelector, label, hint]) => {
+    const section = $(id); if (!section) return;
+    const container = section.querySelector('.wrap') || section;
+    const header = container.querySelector(headerSelector); if (!header) return;
+    const body = make('div', 'section-collapsible-body'); body.id = id + '-body';
+    while (header.nextSibling) body.append(header.nextSibling);
+    const button = make('button', 'section-toggle'); button.type = 'button';
+    button.setAttribute('aria-expanded', 'false'); button.setAttribute('aria-controls', body.id);
+    button.innerHTML = '<span><strong>' + label + '</strong><small>' + hint + '</small></span><span class="section-toggle-state">Open</span>';
+    container.append(button, body);
+    section.classList.add('collapsible-section', 'is-collapsed'); body.hidden = true;
+    collapsibles.set(id, { section, button, body });
+    button.addEventListener('click', () => setSectionExpanded(id, button.getAttribute('aria-expanded') !== 'true'));
+  });
+  function openHashSection(hash, scroll = false) {
+    const id = String(hash || '').replace('#','');
+    if (collapsibles.has(id)) setSectionExpanded(id, true, scroll);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', () => openHashSection(link.getAttribute('href'))));
+  window.addEventListener('hashchange', () => openHashSection(location.hash));
+  openHashSection(location.hash);
+
   let today = workflow.dateKey(), chosenWeek = workflow.currentWeek(toolkit.weeks, today).number, manualWeek = false;
   function highlightedText(text) {
     const fragment = document.createDocumentFragment();
@@ -203,8 +252,7 @@
     $('hero-primary').href = phase === 'reporting' ? '#report' : '#resources';
     $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find a voter resource ↓';
     $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Get this week’s materials ↓';
-    $('poster-action').textContent = phase === 'reporting' ? 'Reflect. Thank. Report.' : 'Know. Share. Show up.';
-    $('poster-date').textContent = phase === 'reporting' ? '2026' : '11.03';
+    // Campaign artwork is the approved static NAASC graphic; do not rewrite it dynamically.
     $('calendar-title').textContent = phase === 'reporting' ? 'Georgia · 2026 election archive' : 'Georgia, at a glance';
     const gaToday = workflow.dateKey(new Date(), 'America/New_York');
     // Campus-only event is shown in its published 2026 window, then automatically retired.
