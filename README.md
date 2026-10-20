@@ -56,6 +56,10 @@ CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" pnpm 
 
 Review layout screenshots, keyboard behavior and content in addition to automated scores. Emulated viewports are not physical-device or assistive-technology user testing.
 
+## Operational publishing workflow
+
+Before updating the live chapter hub, use [Content and operations runbook](CONTENT-AND-OPERATIONS-RUNBOOK.md): reconcile partner emails and meeting notes against the private NAASC dashboard, assign one next handoff, protect partner-only data, pass source/approval gates and independently verify the actual Render release. **A GitHub push alone does not mean the site is live.**
+
 ## Content maintenance
 
 - `public/data/states.js`: 50 states + DC, official election links, EAC provenance, source-review date, automated-check limitations and additional verified links. Each selected state gets eight task routes. Where a topic URL is unavailable, the card explicitly opens the authority's website. No inferred voting rules or deadlines.
