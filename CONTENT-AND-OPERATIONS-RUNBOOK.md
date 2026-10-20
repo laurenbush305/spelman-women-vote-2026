@@ -28,6 +28,10 @@ For every meaningful email reply, meeting note or change:
 
 The **Next Actions** sheet is the simple current work queue; **All Partnerships** is the detail layer. The private spreadsheet cannot automatically update this public repository.
 
+## Locked visual identity
+
+The approved public visual reference is the user's October 20, 2026 Spelman Women Vote banner showing the NAASC seal and the `EDUCATE · ENGAGE · EMPOWER` campaign artwork on the official royal-blue background (`#124489`). A self-hosted, proportionate copy is stored at `public/assets/brand/spelman-women-vote-2026.webp`; the uploaded preview measures 320 × 180 pixels. Do not invent monograms, redraw typography, alter the seal, replace the banner with synthetic graphics, stretch the raster beyond what remains readable, or change the homepage visual treatment while doing content-only maintenance. For a larger hero, first obtain a higher-resolution approved original. Compare the phone layout against this source before any visual release. Official reference: https://www.naasc.org/gotv.
+
 ## Publish gates
 
 - [ ] Public facts are supported by an email from an authorized organizer, a public provider resource, or an official election authority.
