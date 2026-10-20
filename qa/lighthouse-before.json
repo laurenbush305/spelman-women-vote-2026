@@ -1,0 +1,56 @@
+{
+  "note": "Selected metrics from a real mobile Lighthouse run; full local report retained in the task work directory. Lab data, not field Core Web Vitals.",
+  "url": "https://spelman-women-vote-2026.onrender.com/",
+  "fetchTime": "2026-10-20T01:02:51.352Z",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "categories": {
+    "performance": {
+      "score": 0.88
+    },
+    "accessibility": {
+      "score": 0.96
+    },
+    "best-practices": {
+      "score": 1
+    },
+    "seo": {
+      "score": 1
+    },
+    "agentic-browsing": {
+      "score": 0.97
+    }
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "score": 0.52,
+      "numericValue": 2911.9024999999997,
+      "numericUnit": "millisecond",
+      "displayValue": "2.9\u00a0s"
+    },
+    "largest-contentful-paint": {
+      "score": 0.8,
+      "numericValue": 2911.9024999999997,
+      "numericUnit": "millisecond",
+      "displayValue": "2.9\u00a0s"
+    },
+    "cumulative-layout-shift": {
+      "score": 0.93,
+      "numericValue": 0.08715699565492022,
+      "numericUnit": "unitless",
+      "displayValue": "0.087"
+    },
+    "total-blocking-time": {
+      "score": 1,
+      "numericValue": 0,
+      "numericUnit": "millisecond",
+      "displayValue": "0\u00a0ms"
+    },
+    "speed-index": {
+      "score": 0.95,
+      "numericValue": 2911.9024999999997,
+      "numericUnit": "millisecond",
+      "displayValue": "2.9\u00a0s"
+    }
+  }
+}

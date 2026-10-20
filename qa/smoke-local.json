@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "checks": 253,
+  "errors": [],
+  "failures": [],
+  "thirdPartyRequests": [],
+  "axe": [
+    {
+      "width": 320,
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "violations": 0
+    },
+    {
+      "width": 768,
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "violations": 0
+    }
+  ],
+  "testedAt": "2026-10-20T01:19:40.860Z"
+}

@@ -1,0 +1,56 @@
+{
+  "note": "Selected metrics from a real mobile Lighthouse run; full local report retained in the task work directory. Lab data, not field Core Web Vitals.",
+  "url": "http://127.0.0.1:4173/",
+  "fetchTime": "2026-10-20T01:15:32.588Z",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "categories": {
+    "performance": {
+      "score": 0.96
+    },
+    "accessibility": {
+      "score": 1
+    },
+    "best-practices": {
+      "score": 1
+    },
+    "seo": {
+      "score": 1
+    },
+    "agentic-browsing": {
+      "score": 1
+    }
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "score": 0.97,
+      "numericValue": 1388.3354999999997,
+      "numericUnit": "millisecond",
+      "displayValue": "1.4\u00a0s"
+    },
+    "largest-contentful-paint": {
+      "score": 0.92,
+      "numericValue": 2368.3354999999997,
+      "numericUnit": "millisecond",
+      "displayValue": "2.4\u00a0s"
+    },
+    "cumulative-layout-shift": {
+      "score": 1,
+      "numericValue": 0,
+      "numericUnit": "unitless",
+      "displayValue": "0"
+    },
+    "total-blocking-time": {
+      "score": 1,
+      "numericValue": 30,
+      "numericUnit": "millisecond",
+      "displayValue": "30\u00a0ms"
+    },
+    "speed-index": {
+      "score": 0.87,
+      "numericValue": 3572.3120419204333,
+      "numericUnit": "millisecond",
+      "displayValue": "3.6\u00a0s"
+    }
+  }
+}

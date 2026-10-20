@@ -1,0 +1,18 @@
+{
+  "name": "spelman-women-vote-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plain static chapter hub. Dependencies are used only for QA.",
+  "scripts": {
+    "build": "sh scripts/build.sh",
+    "test:unit": "node --test tests/workflow.test.cjs",
+    "test:smoke": "node tests/smoke.cjs",
+    "test": "npm run test:unit && npm run test:smoke",
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1 --directory public"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "lighthouse": "13.5.0",
+    "playwright": "1.62.1"
+  }
+}

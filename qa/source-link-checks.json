@@ -1,0 +1,1722 @@
+{
+  "http://sos.alabama.gov/alabama-votes": {
+    "status": 200,
+    "final": "https://www.sos.alabama.gov/alabama-votes",
+    "title": "Alabama Votes | Alabama Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://app.sos.nh.gov/clerkinformation": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://app.sos.nh.gov/viphome": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://apps.dcboe.org/vrs": {
+    "status": 200,
+    "final": "https://apps.dcboe.org/vrs",
+    "title": "Check your Voter Registration Status | DC Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://apps.nd.gov/dot/dlts/dlos/addressWelcome.htm": {
+    "status": 200,
+    "final": "https://apps.nd.gov/dot/dlts/dlos/addressWelcome.htm",
+    "title": "Drivers License Online Services - Address/Email/Emergency Contact Change",
+    "checked": "2026-10-19"
+  },
+  "https://apps.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking": {
+    "status": 200,
+    "final": "https://apps.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking",
+    "title": "West Virginia Secretary of State - Elections - Absentee Ballot Tracking",
+    "checked": "2026-10-19"
+  },
+  "https://apps.sos.wv.gov/Elections/voter/amiregisteredtovote": {
+    "status": 200,
+    "final": "https://apps.sos.wv.gov/Elections/voter/amiregisteredtovote",
+    "title": "West Virginia Secretary of State - Elections - Am I Registered To Vote",
+    "checked": "2026-10-19"
+  },
+  "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/index.pl": {
+    "status": "unconfirmed",
+    "reason": "URLError",
+    "checked": "2026-10-19"
+  },
+  "https://azsos.gov/county-election-info": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://azsos.gov/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://ballottrax.coloradosos.gov/voter/": {
+    "status": 200,
+    "final": "https://ballottrax.coloradosos.gov/voter/",
+    "title": "BallotTrax",
+    "checked": "2026-10-19"
+  },
+  "https://dcboe.org/": {
+    "status": 200,
+    "final": "https://dcboe.org/",
+    "title": "2026 General Election | District of Columbia Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://dcboe.org/voters/find-out-where-to-vote/vote-center-locator-tool": {
+    "status": 200,
+    "final": "https://dcboe.org/voters/find-out-where-to-vote/vote-center-locator-tool",
+    "title": "Vote Center Locator Tool | District of Columbia Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://dcboe.org/voters/register-to-vote/register-update-voter-registration": {
+    "status": 200,
+    "final": "https://dcboe.org/voters/register-to-vote/register-update-voter-registration",
+    "title": "Register/Update Voter Registration | District of Columbia Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/": {
+    "status": 200,
+    "final": "https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/",
+    "title": "Vote-by-Mail Ballot Information and Status Lookup - Division of Elections - Florida Department of State",
+    "checked": "2026-10-19"
+  },
+  "https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/voter-precinct-lookup/": {
+    "status": 200,
+    "final": "https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/voter-precinct-lookup/",
+    "title": "Voter Precinct Lookup - Division of Elections - Florida Department of State",
+    "checked": "2026-10-19"
+  },
+  "https://dos.myflorida.com/elections/contacts/supervisor-of-elections/": {
+    "status": 200,
+    "final": "https://dos.fl.gov/elections/contacts/supervisor-of-elections/",
+    "title": "Contact Your County Supervisor of Elections - Division of Elections - Florida Department of State",
+    "checked": "2026-10-19"
+  },
+  "https://dos.myflorida.com/elections/for-voters/": {
+    "status": 200,
+    "final": "https://dos.fl.gov/elections/for-voters/",
+    "title": "For Voters - Division of Elections - Florida Department of State",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/drive/folders/1tgsMBSS35WhBrxZ95u8IwD92EoxlEbcN": {
+    "status": 200,
+    "final": "https://drive.google.com/drive/folders/1tgsMBSS35WhBrxZ95u8IwD92EoxlEbcN",
+    "title": "Toolkit Assets - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1-TI6sTSX83l1K6YSp3Q9EGLbrFK9Rar8/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1-TI6sTSX83l1K6YSp3Q9EGLbrFK9Rar8/view?usp=drive_link",
+    "title": "Last Call to Register.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/13NyDYvpEYR4xave1_ff-m5mwrbEE_Rl7/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/13NyDYvpEYR4xave1_ff-m5mwrbEE_Rl7/view?usp=drive_link",
+    "title": "Don&#39;t Wait to Register.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/13f3fTxz8UOswHKb9mhkY7NHe89Auewze/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/13f3fTxz8UOswHKb9mhkY7NHe89Auewze/view?usp=drive_link",
+    "title": "Register to Vote.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/17Kd99kuYMnzEEsEJ4UfbwcNo5j0dXWMB/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/17Kd99kuYMnzEEsEJ4UfbwcNo5j0dXWMB/view?usp=drive_link",
+    "title": "Election Day.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/17nthwiYYJx6KNSwwTVSgbqZk8Ouf96Aa/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/17nthwiYYJx6KNSwwTVSgbqZk8Ouf96Aa/view?usp=drive_link",
+    "title": "Vote to Change the World.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/18RSBtENDBTFaBhj751qti9N5IUy4mqax/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/18RSBtENDBTFaBhj751qti9N5IUy4mqax/view?usp=drive_link",
+    "title": "Early Voting.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1BKnqGwLdQWWNbXe7E7WntOlKed5iA08Z/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1BKnqGwLdQWWNbXe7E7WntOlKed5iA08Z/view?usp=drive_link",
+    "title": "Votecoming.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1F-hRqsIE8kP6d5bCC0hHXfOIeHtlf1Fu/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1F-hRqsIE8kP6d5bCC0hHXfOIeHtlf1Fu/view?usp=drive_link",
+    "title": "Votecoming is Here.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1Lpcp9bzDPXGyKPIJ8XZwnZ7bURcXOf7a/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1Lpcp9bzDPXGyKPIJ8XZwnZ7bURcXOf7a/view?usp=drive_link",
+    "title": "Today We Vote.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1N9-IzNNt32fbNYOb-mVtEc5zHKJeQDzm/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1N9-IzNNt32fbNYOb-mVtEc5zHKJeQDzm/view?usp=drive_link",
+    "title": "Final Countdown.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1T-T4Ph_KpIduWVBN4QFiZsoE3PmK_cqF/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1T-T4Ph_KpIduWVBN4QFiZsoE3PmK_cqF/view?usp=drive_link",
+    "title": "SWV Thank You.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1TZhPcanaGitMg3O9eVTYnjnn9PMbepbf/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1TZhPcanaGitMg3O9eVTYnjnn9PMbepbf/view?usp=drive_link",
+    "title": "Last Chance to Vote Early.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1WCwkdBIkB5XH0JY-smYtkFUjeNzW--jd/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1WCwkdBIkB5XH0JY-smYtkFUjeNzW--jd/view?usp=drive_link",
+    "title": "Ready for Votecoming.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1Y5oa_7N5dNuwtysDJ2eFT8qSWWm66njH/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1Y5oa_7N5dNuwtysDJ2eFT8qSWWm66njH/view?usp=drive_link",
+    "title": "SWV 2026.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1g8rPzSOXTUWmFVJzZEyWvopaasIaWvmr/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1g8rPzSOXTUWmFVJzZEyWvopaasIaWvmr/view?usp=drive_link",
+    "title": "Still Time to Vote.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1nZI_QlRr3d5HRGF3uKUoKKVFodzWAGO2/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1nZI_QlRr3d5HRGF3uKUoKKVFodzWAGO2/view?usp=drive_link",
+    "title": "Early Voting 2.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1q-rhZUwLyfJaClWzHS3wY1opTEFTXFLk/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1q-rhZUwLyfJaClWzHS3wY1opTEFTXFLk/view?usp=drive_link",
+    "title": "Advance Voting Last Day.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1qmsd0iB4SlhJqDegKm5x2H2aysvgXNsu/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1qmsd0iB4SlhJqDegKm5x2H2aysvgXNsu/view?usp=drive_link",
+    "title": "Gear up to GOTV.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1ucqi1WitPU4pNW0DjBJbD76UVbOU7rtY/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1ucqi1WitPU4pNW0DjBJbD76UVbOU7rtY/view?usp=drive_link",
+    "title": "Chapter Mobilization.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://drive.google.com/file/d/1zZznJfDYdiiqi07EyzNIUQ7jJMvUPC6y/view?usp=drive_link": {
+    "status": 200,
+    "final": "https://drive.google.com/file/d/1zZznJfDYdiiqi07EyzNIUQ7jJMvUPC6y/view?usp=drive_link",
+    "title": "Join the movement-Chapters.png - Google Drive",
+    "checked": "2026-10-19"
+  },
+  "https://elect.ky.gov/About-Us/Pages/County-Clerks.aspx": {
+    "status": 200,
+    "final": "https://elect.ky.gov/About-Us/Pages/County-Clerks.aspx",
+    "title": "County Clerks - State Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://elect.ky.gov/Pages/default.aspx": {
+    "status": 200,
+    "final": "https://elect.ky.gov/Pages/default.aspx",
+    "title": "Welcome to the State Board of Elections - State Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://elections.delaware.gov/index.shtml": {
+    "status": 200,
+    "final": "https://elections.delaware.gov/index.shtml",
+    "title": "Request Rejected",
+    "checked": "2026-10-19"
+  },
+  "https://elections.delaware.gov/locations.shtml": {
+    "status": 200,
+    "final": "https://elections.delaware.gov/locations.shtml",
+    "title": "Request Rejected",
+    "checked": "2026-10-19"
+  },
+  "https://elections.delaware.gov/voter/absentee/index.shtml": {
+    "status": 200,
+    "final": "https://elections.delaware.gov/voter/absentee/index.shtml",
+    "title": "Request Rejected",
+    "checked": "2026-10-19"
+  },
+  "https://elections.hawaii.gov/": {
+    "status": 200,
+    "final": "https://elections.hawaii.gov/",
+    "title": "Office of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://elections.hawaii.gov/resources/county-election-divisions/": {
+    "status": 200,
+    "final": "https://elections.hawaii.gov/resources/county-election-divisions/",
+    "title": "Office of Elections &#124; County Elections Divisions",
+    "checked": "2026-10-19"
+  },
+  "https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/": {
+    "status": 200,
+    "final": "https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/",
+    "title": "Office of Elections &#124; Voter Service Centers and Ballot Drop Boxes",
+    "checked": "2026-10-19"
+  },
+  "https://elections.hawaii.gov/voting/absentee-voting/": {
+    "status": 200,
+    "final": "https://elections.hawaii.gov/voting/absentee-voting/",
+    "title": "Office of Elections &#124; Absentee Voting",
+    "checked": "2026-10-19"
+  },
+  "https://elections.maryland.gov/": {
+    "status": 200,
+    "final": "https://elections.maryland.gov/",
+    "title": "Maryland State Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://elections.maryland.gov/about/county_boards.html": {
+    "status": 200,
+    "final": "https://elections.maryland.gov/about/county_boards.html",
+    "title": "Local Boards of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://elections.maryland.gov/voter_registration/index.html": {
+    "status": 200,
+    "final": "https://elections.maryland.gov/voter_registration/index.html",
+    "title": "Voter Registration Introduction",
+    "checked": "2026-10-19"
+  },
+  "https://elections.ny.gov/register-vote#VoteRegForm": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://elections.ny.gov/request-ballot": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://elections.ri.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://elections.ri.gov/canvassers/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx": {
+    "status": 200,
+    "final": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/wizard/ovr",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ViewPollingLocation.aspx": {
+    "status": 200,
+    "final": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter/where-do-I-vote",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx": {
+    "status": 200,
+    "final": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter-search/ovr-voter-search?returnUrl=VoterServices%2Fvoter%2Fvoter-profile",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://elections.wi.gov/clerks/directory": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://elections.wi.gov/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://gis.elections.delaware.gov/apps/5bc1fa9352464944be601441655e36a0/explore": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://hawaii.ballottrax.net/voter/": {
+    "status": 200,
+    "final": "https://hawaii.ballottrax.net/voter/",
+    "title": "BallotTrax",
+    "checked": "2026-10-19"
+  },
+  "https://idahovotes.gov/#": {
+    "status": 200,
+    "final": "https://voteidaho.gov/",
+    "title": "Home Page | VoteIdaho.Gov",
+    "checked": "2026-10-19"
+  },
+  "https://indianavoters.in.gov/": {
+    "status": 200,
+    "final": "https://indianavoters.in.gov/",
+    "title": "Indiana Voters",
+    "checked": "2026-10-19"
+  },
+  "https://indianavoters.in.gov/CountyContact/Index": {
+    "status": 200,
+    "final": "https://indianavoters.in.gov/CountyContact/Index",
+    "title": "Indiana Voters | Election Administrators",
+    "checked": "2026-10-19"
+  },
+  "https://ivote.de.gov/VoterView": {
+    "status": 200,
+    "final": "https://ivote.de.gov/VoterView",
+    "title": "Delaware Department of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://ivote.de.gov/VoterView/registrant/newregistrant": {
+    "status": 200,
+    "final": "https://ivote.de.gov/VoterView/registrant/newregistrant",
+    "title": "Delaware Department of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://ivote.de.gov/voterview": {
+    "status": 200,
+    "final": "https://ivote.de.gov/voterview",
+    "title": "Delaware Department of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://mnvotes.sos.mn.gov/VoterRegistration/index": {
+    "status": 200,
+    "final": "https://mnvotes.sos.mn.gov/OVRBlackOut/Index",
+    "title": "Register to Vote or Update Your Registration - MNVotes",
+    "checked": "2026-10-19"
+  },
+  "https://mnvotes.sos.mn.gov/abstatus/index": {
+    "status": 200,
+    "final": "https://mnvotes.sos.mn.gov/abstatus/index",
+    "title": "Absentee and Mail Ballot Tracker - MNVotes",
+    "checked": "2026-10-19"
+  },
+  "https://mnvotes.sos.mn.gov/voterstatuscheck/index": {
+    "status": 200,
+    "final": "https://mnvotes.sos.mn.gov/voterstatuscheck/index",
+    "title": "Find Your Minnesota Voter Registration - MNVotes",
+    "checked": "2026-10-19"
+  },
+  "https://mvic.sos.state.mi.us/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://mvic.sos.state.mi.us/RegisterVoter/Index": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://mvic.sos.state.mi.us/Voter/Index": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://mvic.sos.state.mi.us/Voter/Index/#yourclerk": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://mvp.sos.ga.gov/s/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://mvp.vermont.gov/": {
+    "status": 200,
+    "final": "https://vote.vermont.gov/",
+    "title": "Voter Information System",
+    "checked": "2026-10-19"
+  },
+  "https://my.arizona.vote/AbsenteeTracker.aspx": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://my.arizona.vote/WhereToVote.aspx?s=address": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://my.arizona.vote/WhereToVote.aspx?s=individual": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VOSearch.aspx": {
+    "status": 200,
+    "final": "https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VOSearch.aspx",
+    "title": "My Election Day",
+    "checked": "2026-10-19"
+  },
+  "https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VoterRegistrationCheck.aspx": {
+    "status": 200,
+    "final": "https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VoterRegistrationCheck.aspx",
+    "title": "My Election Day",
+    "checked": "2026-10-19"
+  },
+  "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx": {
+    "status": 200,
+    "final": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx",
+    "title": "Voter Information Search",
+    "checked": "2026-10-19"
+  },
+  "https://myinfo.alabamavotes.gov/voterview": {
+    "status": 200,
+    "final": "https://myinfo.alabamavotes.gov/voterview",
+    "title": "ALABAMA Secretary of State | VoterView",
+    "checked": "2026-10-19"
+  },
+  "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration": {
+    "status": 200,
+    "final": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
+    "title": "Iowa Online Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://myvote.wi.gov/en-us/Find-My-Polling-Place": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://myvote.wi.gov/en-us/My-Voter-Info": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://myvote.wi.gov/en-us/Register-To-Vote": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://myvote.wi.gov/en-us/Vote-Absentee-Guide": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://myvoteinfo.voteks.org/voterview/": {
+    "status": 200,
+    "final": "https://myvoteinfo.voteks.org/voterview/",
+    "title": "Kansas Secretary of State | VoterView",
+    "checked": "2026-10-19"
+  },
+  "https://myvoterinformation.alaska.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://myvoterportal.alaska.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://northcarolina.ballottrax.net/voter/": {
+    "status": 200,
+    "final": "https://northcarolina.ballottrax.net/voter/",
+    "title": "BallotTrax",
+    "checked": "2026-10-19"
+  },
+  "https://oklahoma.gov/elections/about-us/county-election-boards/county-election-board-directory.html": {
+    "status": 200,
+    "final": "https://oklahoma.gov/elections/about-us/county-election-boards/county-election-board-directory.html",
+    "title": "County Election Board Directory",
+    "checked": "2026-10-19"
+  },
+  "https://oklahoma.gov/elections/voters/absentee-voting.html": {
+    "status": 200,
+    "final": "https://oklahoma.gov/elections/voters/absentee-voting.html",
+    "title": "Absentee Voting",
+    "checked": "2026-10-19"
+  },
+  "https://okvoterportal.okelections.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://olvr.hawaii.gov/": {
+    "status": 200,
+    "final": "https://olvr.hawaii.gov/",
+    "title": "State of Hawaii : Office of Elections Online Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://olvr.ohiosos.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://olvr.votewa.gov/olvr2024/landing.aspx": {
+    "status": 200,
+    "final": "https://olvr.votewa.gov/olvr2024/landing.aspx",
+    "title": "Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://ova.elections.il.gov/?Name=Em5DYCKC4wXCKQSXTgsQ9knm%2b5Ip27VC&T=637339537991817098": {
+    "status": 200,
+    "final": "https://ova.elections.il.gov/RegistrationClosed.aspx",
+    "title": "Illinois Online Voter Registration Application: Registration is Closed",
+    "checked": "2026-10-19"
+  },
+  "https://ova.elections.il.gov/PollingPlaceLookup.aspx": {
+    "status": 200,
+    "final": "https://ova.elections.il.gov/PollingPlaceLookup.aspx",
+    "title": "Illinois Online Voter Registration Application: Polling Place Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://ova.elections.il.gov/RegistrationLookup.aspx": {
+    "status": 200,
+    "final": "https://ova.elections.il.gov/RegistrationLookup.aspx",
+    "title": "Illinois Online Voter Registration Application: Registration Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://ovr.govote.tn.gov/": {
+    "status": 200,
+    "final": "https://ovr.govote.tn.gov/",
+    "title": ":: Tennessee Election Division ::",
+    "checked": "2026-10-19"
+  },
+  "https://ovr.sos.wv.gov/Register/Landing#Qualifications": {
+    "status": 200,
+    "final": "https://ovr.sos.wv.gov/Register/Landing#Qualifications",
+    "title": "West Virginia Secretary of State - Register to Vote Online",
+    "checked": "2026-10-19"
+  },
+  "https://pollfinder.sos.mn.gov/": {
+    "status": 200,
+    "final": "https://pollfinder.sos.mn.gov/",
+    "title": "Minnesota Voting Information Portal",
+    "checked": "2026-10-19"
+  },
+  "https://portal.ct.gov/SOTS/Common-Elements/V5-Template---Redesign/Elections--Voting--Home-Page": {
+    "status": 200,
+    "final": "https://portal.ct.gov/SOTS/Common-Elements/V5-Template---Redesign/Elections--Voting--Home-Page",
+    "title": "Elections &amp; Voting - Home Page",
+    "checked": "2026-10-19"
+  },
+  "https://portal.ct.gov/SOTS/Election-Services/Find-Your-Town-Clerk-Registrar-and-Elected-Officials/Find-Your-Town-Clerk-Registrar-of-Voters-and-Elected-Officials": {
+    "status": 200,
+    "final": "https://portal.ct.gov/SOTS/Election-Services/Find-Your-Town-Clerk-Registrar-and-Elected-Officials/Find-Your-Town-Clerk-Registrar-of-Voters-and-Elected-Officials",
+    "title": "Find Your Town Clerk Registrar of Voters and Elected Officials",
+    "checked": "2026-10-19"
+  },
+  "https://portal1.sos.nm.gov/OVR/(S(nel0i5cslfc0p1i1q3pa4lle))/WebPages/InstructionsStep1.aspx": {
+    "status": 200,
+    "final": "https://portal1.sos.nm.gov/OVR/(S(ykpgoayu0plp5w214tartr55))/WebPages/InstructionsStep1.aspx",
+    "title": "Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://portal1.sos.nm.gov/OVR/(S(p52brw1scruryz42klrpyyjq))/WebPages/InstructionsStep1.aspx": {
+    "status": 200,
+    "final": "https://portal1.sos.nm.gov/OVR/(S(w3zfdvlqimxbyk1vcbcgw4va))/WebPages/InstructionsStep1.aspx",
+    "title": "Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://portaldir.ct.gov/sots/LookUp.aspx": {
+    "status": 200,
+    "final": "https://portaldir.ct.gov/sots/LookUp.aspx",
+    "title": "Request Rejected",
+    "checked": "2026-10-19"
+  },
+  "https://prodvoterportal.mt.gov/WhereToVote.aspx": {
+    "status": 200,
+    "final": "https://voterportal.mt.gov/WhereToVote.aspx",
+    "title": "Voter Portal",
+    "checked": "2026-10-19"
+  },
+  "https://registertovote.ca.gov/": {
+    "status": 200,
+    "final": "https://registertovote.ca.gov/",
+    "title": "Online Voter Registration | California Secretary of State :: California Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://registertovote.sos.maine.gov/": {
+    "status": "unconfirmed",
+    "reason": "URLError",
+    "checked": "2026-10-19"
+  },
+  "https://registertovoteflorida.gov/home": {
+    "status": 404,
+    "checked": "2026-10-19"
+  },
+  "https://registration.elections.myflorida.com/CheckVoterStatus": {
+    "status": 200,
+    "final": "https://registration.dos.fl.gov/CheckVoterStatus",
+    "title": "State of Florida Voter Lookup | Search",
+    "checked": "2026-10-19"
+  },
+  "https://s1.sos.mo.gov/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://s1.sos.mo.gov/elections/voterregistration/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://scvotes.gov/contact/county-voter-registration-election-offices/": {
+    "status": 200,
+    "final": "https://scvotes.gov/contact/county-voter-registration-election-offices/",
+    "title": "County Voter Registration &amp; Election Offices - SC Votes - South Carolina Election Commission",
+    "checked": "2026-10-19"
+  },
+  "https://scvotes.gov/voters/absentee-voting/": {
+    "status": 200,
+    "final": "https://scvotes.gov/voters/absentee-voting/",
+    "title": "Absentee Voting - SC Votes - South Carolina Election Commission",
+    "checked": "2026-10-19"
+  },
+  "https://scvotes.gov/voters/register-to-vote/": {
+    "status": 200,
+    "final": "https://scvotes.gov/voters/register-to-vote/",
+    "title": "Register to Vote - SC Votes - South Carolina Election Commission",
+    "checked": "2026-10-19"
+  },
+  "https://scvotes.gov/voters/update-your-voter-registration-information/": {
+    "status": 200,
+    "final": "https://scvotes.gov/voters/update-your-voter-registration-information/",
+    "title": "Update Your Voter Registration Information - SC Votes - South Carolina Election Commission",
+    "checked": "2026-10-19"
+  },
+  "https://sdsos.gov/elections-voting/": {
+    "status": 200,
+    "final": "https://sdsos.gov/elections-voting/",
+    "title": "Elections & Voting: South Dakota Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx": {
+    "status": 200,
+    "final": "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx",
+    "title": "Voting: South Dakota Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx": {
+    "status": 200,
+    "final": "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx",
+    "title": "Voting: South Dakota Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sdsos.gov/elections-voting/voting/registration-changes.aspx": {
+    "status": 200,
+    "final": "https://sdsos.gov/elections-voting/voting/registration-changes.aspx",
+    "title": "Voting: South Dakota Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?lang=eng&source=SOS": {
+    "status": 200,
+    "final": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?lang=eng&source=SOS",
+    "title": "Oregon Secretary of State Captcha/Support ID",
+    "checked": "2026-10-19"
+  },
+  "https://servicearizona.com/VoterRegistration/selectLanguage": {
+    "status": 200,
+    "final": "https://servicearizona.com/VoterRegistration/selectLanguage",
+    "title": "Arizona Voter Registration - ServiceArizona - ADOT & MVD Services",
+    "checked": "2026-10-19"
+  },
+  "https://sos.ga.gov/county-elections-offices": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.ga.gov/how-to-guide/how-guide-registering-vote": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.ga.gov/index.php/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.iowa.gov/elections/absenteeballotstatus/absentee/search": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.iowa.gov/elections/auditors/auditorslist.html": {
+    "status": 200,
+    "final": "https://sos.iowa.gov/auditors",
+    "title": "County Auditor List | Iowa Secretary of State - Paul D. Pate",
+    "checked": "2026-10-19"
+  },
+  "https://sos.iowa.gov/elections/voterinformation/index.html": {
+    "status": 404,
+    "checked": "2026-10-19"
+  },
+  "https://sos.iowa.gov/elections/voterreg/pollingplace/search.aspx": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.iowa.gov/elections/voterreg/regtovote/search.aspx": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.ks.gov/elections/elections.html": {
+    "status": 200,
+    "final": "https://sos.ks.gov/elections/elections.html",
+    "title": "Kansas Secretary of State | Elections | Elections Home",
+    "checked": "2026-10-19"
+  },
+  "https://sos.ks.gov/elections/voter-information.html": {
+    "status": 200,
+    "final": "https://sos.ks.gov/elections/voter-information.html",
+    "title": "Kansas Secretary of State | Elections | Voter Information",
+    "checked": "2026-10-19"
+  },
+  "https://sos.nebraska.gov/elections/early-voting": {
+    "status": 200,
+    "final": "https://sos.nebraska.gov/elections/early-voting",
+    "title": "Early Voting | Nebraska Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.nebraska.gov/elections/election-officials-contact-information": {
+    "status": 200,
+    "final": "https://sos.nebraska.gov/election-officials-contact-information",
+    "title": "Election Officials Contact Information | Nebraska Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.nebraska.gov/elections/general-voter-information": {
+    "status": 200,
+    "final": "https://sos.nebraska.gov/elections/general-voter-information",
+    "title": "General Voter Information | Nebraska Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.oregon.gov/elections/Pages/registration.aspx": {
+    "status": 200,
+    "final": "https://sos.oregon.gov/elections/Pages/registration.aspx",
+    "title": "Oregon Secretary of State : Oregon Online Voter Registration : State of Oregon",
+    "checked": "2026-10-19"
+  },
+  "https://sos.oregon.gov/elections/Pages/voteinor.aspx": {
+    "status": 200,
+    "final": "https://sos.oregon.gov/elections/Pages/voteinor.aspx",
+    "title": "Oregon Secretary of State : Voting in Oregon : State of Oregon",
+    "checked": "2026-10-19"
+  },
+  "https://sos.oregon.gov/elections/pages/countyofficials.aspx": {
+    "status": 200,
+    "final": "https://sos.oregon.gov/elections/pages/county-officials.aspx",
+    "title": "Oregon Secretary of State : County Elections Officials : State of Oregon",
+    "checked": "2026-10-19"
+  },
+  "https://sos.oregon.gov/voting-elections/Pages/default.aspx": {
+    "status": 200,
+    "final": "https://sos.oregon.gov/elections/pages/default.aspx",
+    "title": "Oregon Secretary of State : Voting &amp; Elections : State of Oregon",
+    "checked": "2026-10-19"
+  },
+  "https://sos.tn.gov/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.tn.gov/elections/services/absentee-voting": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.tn.gov/elections/services/download-the-govotetn-app": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sos.vermont.gov/elections/": {
+    "status": 200,
+    "final": "https://sos.vermont.gov/elections",
+    "title": "Elections Division | Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.vermont.gov/elections/town-clerks/": {
+    "status": 200,
+    "final": "https://sos.vermont.gov/elections/town-clerks",
+    "title": "Town Clerks &amp; Election Workers | Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.vermont.gov/elections/voters/early-absentee-voting/": {
+    "status": 200,
+    "final": "https://sos.vermont.gov/elections/voters/early-absentee-voting",
+    "title": "Early &amp; Absentee Voting | Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.vermont.gov/elections/voters/registration/": {
+    "status": 200,
+    "final": "https://sos.vermont.gov/elections/voters/registration",
+    "title": "Voter Registration | Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wv.gov/absentee-voting-information": {
+    "status": 200,
+    "final": "https://sos.wv.gov/absentee-voting-information",
+    "title": "Absentee Voting Information | WV Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wv.gov/elections": {
+    "status": 200,
+    "final": "https://sos.wv.gov/elections",
+    "title": "Elections | WV Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wv.gov/elections/Pages/CountyClerkDirectory.aspx": {
+    "status": 200,
+    "final": "https://sos.wv.gov/west-virginia-county-clerk-directory",
+    "title": "West Virginia County Clerk Directory | WV Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wyo.gov/Elections/Default.aspx": {
+    "status": 200,
+    "final": "https://sos.wyo.gov/Elections/Default.aspx",
+    "title": "Wyoming Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wyo.gov/Elections/Docs/WYCountyClerks.pdf": {
+    "status": 200,
+    "final": "https://sos.wyo.gov/Elections/Docs/WYCountyClerks.pdf",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx": {
+    "status": 200,
+    "final": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
+    "title": "Wyoming Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx": {
+    "status": 200,
+    "final": "https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx",
+    "title": "Wyoming Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://sosmt.gov/elections/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sosmt.gov/elections/absentee/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://sosmt.gov/wp-admin/admin-ajax.php?juwpfisadmin=false&action=wpfd&task=file.download&wpfd_category_id=23&wpfd_file_id=57492&token=396efffc86fba262c7b589671481d694&preview=1": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://teamrv-mvp.sos.texas.gov/MVP/mvp.do": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://tnmap.tn.gov/voterlookup/": {
+    "status": 200,
+    "final": "https://tnmap.tn.gov/voterlookup/",
+    "title": "TN Voter Registration Information Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://tnsos.org/elections/election_commissions.php": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://txapps.texas.gov/tolapp/sos/SOSACManager": {
+    "status": 200,
+    "final": "https://txapps.texas.gov/tolapp/sos/SOSACManager",
+    "title": "Welcome | Official Texas Voter Registration Name &amp; Address Change | Texas.gov",
+    "checked": "2026-10-19"
+  },
+  "https://vip.sdsos.gov/CountyAuditors.aspx": {
+    "status": 200,
+    "final": "https://vip.sdsos.gov/CountyAuditors.aspx",
+    "title": "South Dakota Secretary of State, Monae L. Johnson",
+    "checked": "2026-10-19"
+  },
+  "https://vip.sdsos.gov/viplogin.aspx": {
+    "status": 200,
+    "final": "https://vip.sdsos.gov/viplogin.aspx",
+    "title": "Voter Registration Name Search",
+    "checked": "2026-10-19"
+  },
+  "https://vip.sos.nd.gov/AbsenteeTracker.aspx": {
+    "status": 200,
+    "final": "https://vip.sos.nd.gov/AbsenteeTracker.aspx",
+    "title": "Absentee/Mail Ballot Search",
+    "checked": "2026-10-19"
+  },
+  "https://vip.sos.nd.gov/WhereToVote.aspx": {
+    "status": 200,
+    "final": "https://vip.sos.nd.gov/WhereToVote.aspx",
+    "title": "Polling Place Search",
+    "checked": "2026-10-19"
+  },
+  "https://vip.sos.nd.gov/WhereToVote.aspx?tab=AddressandVotingTimes&ptlPKID=7&ptlhPKID=50": {
+    "status": 200,
+    "final": "https://vip.sos.nd.gov/WhereToVote.aspx?tab=AddressandVotingTimes&ptlPKID=7&ptlhPKID=50",
+    "title": "Polling Place Search",
+    "checked": "2026-10-19"
+  },
+  "https://vote.elections.virginia.gov/VoterInformation": {
+    "status": 200,
+    "final": "https://vote.elections.virginia.gov/VoterInformation",
+    "title": "Virginia Voter Information \u2013 Citizen Portal",
+    "checked": "2026-10-19"
+  },
+  "https://vote.elections.virginia.gov/VoterInformation/Lookup/polling": {
+    "status": 200,
+    "final": "https://vote.elections.virginia.gov/VoterInformation/Lookup/polling",
+    "title": "Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://vote.elections.virginia.gov/VoterInformation/Lookup/status": {
+    "status": 200,
+    "final": "https://vote.elections.virginia.gov/VoterInformation/Lookup/status",
+    "title": "Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://vote.elections.virginia.gov/VoterInformation/PublicContactLookup": {
+    "status": 200,
+    "final": "https://vote.elections.virginia.gov/VoterInformation/PublicContactLookup",
+    "title": "Local Contact Information",
+    "checked": "2026-10-19"
+  },
+  "https://vote.sos.ri.gov/Home/PollingPlaces?ActiveFlag=2": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=0": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vote.utah.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vote.utah.gov/contact-your-county-election-officials/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vote.utah.gov/learn-about-voting-by-mail-and-absentee-voting/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vote.utah.gov/register-to-vote-or-update-your-voter-registration/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://votedc.ballottrax.net/voter/": {
+    "status": 200,
+    "final": "https://votedc.ballottrax.net/voter/",
+    "title": "BallotTrax",
+    "checked": "2026-10-19"
+  },
+  "https://voteidaho.gov/casting-your-ballot/#absentee-voting": {
+    "status": 200,
+    "final": "https://voteidaho.gov/casting-your-ballot/#absentee-voting",
+    "title": "Casting Your Ballot | VoteIdaho.Gov",
+    "checked": "2026-10-19"
+  },
+  "https://voteidaho.gov/county-clerks/": {
+    "status": 200,
+    "final": "https://voteidaho.gov/county-clerk/",
+    "title": "Find Your County Clerk | VoteIdaho.Gov",
+    "checked": "2026-10-19"
+  },
+  "https://votemt.gov/": {
+    "status": 200,
+    "final": "https://votemt.gov/",
+    "title": "Vote Montana &#8211; Are you vote ready?",
+    "checked": "2026-10-19"
+  },
+  "https://votemt.gov/update/": {
+    "status": 200,
+    "final": "https://votemt.gov/update/",
+    "title": "Update Voter Registration &#8211; Vote Montana",
+    "checked": "2026-10-19"
+  },
+  "https://voter.svrs.nj.gov/polling-place-search": {
+    "status": 200,
+    "final": "https://voter.svrs.nj.gov/polling-place-search",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://voter.svrs.nj.gov/registration-check": {
+    "status": 200,
+    "final": "https://voter.svrs.nj.gov/registration-check",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://voter.votewa.gov/portal2023/login.aspx": {
+    "status": 200,
+    "final": "https://voter.votewa.gov/portal2023/login.aspx",
+    "title": "VoteWA Voter Portal",
+    "checked": "2026-10-19"
+  },
+  "https://voterlookup.elections.ny.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://voterlookup.ohiosos.gov/voterlookup.aspx": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://voteroutreach.sos.mo.gov/portal": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx?AspxAutoDetectCookieSupport=1": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://voterportal.sos.la.gov/": {
+    "status": 200,
+    "final": "https://voterportal.sos.la.gov/",
+    "title": "Voter Portal: Search",
+    "checked": "2026-10-19"
+  },
+  "https://voterportal.sos.la.gov/registrar": {
+    "status": 200,
+    "final": "https://voterportal.sos.la.gov/registrar",
+    "title": "Registrar of Voters: Registrar of Voters",
+    "checked": "2026-10-19"
+  },
+  "https://voterregistration.alaska.gov/": {
+    "status": 200,
+    "final": "https://voterregistration.alaska.gov/",
+    "title": "ALASKA - Online Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://voterregistration.ct.gov/OLVR/welcome.do": {
+    "status": "unconfirmed",
+    "reason": "ConnectionResetError",
+    "checked": "2026-10-19"
+  },
+  "https://voterservices.elections.maryland.gov/VoterSearch": {
+    "status": 200,
+    "final": "https://voterservices.elections.maryland.gov/VoterSearch",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://voterstatus.sos.ca.gov/": {
+    "status": 200,
+    "final": "https://voterstatus.sos.ca.gov/",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote": {
+    "status": 200,
+    "final": "https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote",
+    "title": "Voter Search",
+    "checked": "2026-10-19"
+  },
+  "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot": {
+    "status": 200,
+    "final": "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot",
+    "title": "Voter Search",
+    "checked": "2026-10-19"
+  },
+  "https://votesearch.utah.gov/voter-search/search/search-by-voter/voter-info": {
+    "status": 200,
+    "final": "https://votesearch.utah.gov/voter-search/search/search-by-voter/voter-info",
+    "title": "Voter Search",
+    "checked": "2026-10-19"
+  },
+  "https://vrems.scvotes.sc.gov/Voter/Login": {
+    "status": 200,
+    "final": "https://vrems.scvotes.sc.gov/Voter/Login",
+    "title": "MySCVotes Login",
+    "checked": "2026-10-19"
+  },
+  "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo": {
+    "status": 200,
+    "final": "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo",
+    "title": "MySCVotes Login",
+    "checked": "2026-10-19"
+  },
+  "https://vrsws.sos.ky.gov/VIC/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vrsws.sos.ky.gov/ovrweb/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://vt.ncsbe.gov/BOEInfo/": {
+    "status": 200,
+    "final": "https://vt.ncsbe.gov/BOEInfo/",
+    "title": "County BOE Information",
+    "checked": "2026-10-19"
+  },
+  "https://vt.ncsbe.gov/PPLkup/": {
+    "status": 200,
+    "final": "https://vt.ncsbe.gov/PPLkup/",
+    "title": "Election Day Polling Place Search",
+    "checked": "2026-10-19"
+  },
+  "https://vt.ncsbe.gov/RegLkup/": {
+    "status": 200,
+    "final": "https://vt.ncsbe.gov/RegLkup/",
+    "title": "Voter Search",
+    "checked": "2026-10-19"
+  },
+  "https://www.coloradosos.gov/voter/pages/pub/home.xhtml": {
+    "status": 200,
+    "final": "https://www.coloradosos.gov/voter/pages/pub/home.xhtml",
+    "title": "Go Vote Colorado - Colorado Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml": {
+    "status": 200,
+    "final": "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml",
+    "title": "Voter Registration - Verify Your Identification - Colorado Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.dcboe.org/voters/casting-your-vote/mail-ballot-request": {
+    "status": 200,
+    "final": "https://www.dcboe.org/voters/casting-your-vote/mail-ballot-request",
+    "title": "Mail Ballot Request | District of Columbia Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.alaska.gov/": {
+    "status": 200,
+    "final": "https://www.elections.alaska.gov/",
+    "title": "Homepage - Division of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.alaska.gov/Core/AKVoteEarly.php": {
+    "status": 405,
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.alaska.gov/Core/contactusandsitemap.php": {
+    "status": 405,
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.alaska.gov/election-polls/": {
+    "status": 200,
+    "final": "https://www.elections.alaska.gov/election-polls/",
+    "title": "Polling Place Locations - Division of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.il.gov/": {
+    "status": 200,
+    "final": "https://www.elections.il.gov/",
+    "title": "Home Page \u2022 Illinois State Board of Elections",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx?T=637854683538357993": {
+    "status": 200,
+    "final": "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx?T=637854683538357993",
+    "title": "Election Authorities",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.ny.gov/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.ny.gov/CountyBoards.html": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.virginia.gov/": {
+    "status": 200,
+    "final": "https://www.elections.virginia.gov/",
+    "title": "Virginia Dept. of Elections: Home",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.virginia.gov/casting-a-ballot/early-absentee/": {
+    "status": 200,
+    "final": "https://www.elections.virginia.gov/casting-a-ballot/early-absentee/",
+    "title": "Virginia Dept. of Elections: Absentee and Early Voting",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.virginia.gov/citizen-portal/": {
+    "status": 200,
+    "final": "https://www.elections.virginia.gov/citizen-portal/",
+    "title": "Virginia Dept. of Elections: Citizen Portal",
+    "checked": "2026-10-19"
+  },
+  "https://www.elections.virginia.gov/registration/how-to-register/": {
+    "status": 200,
+    "final": "https://www.elections.virginia.gov/registration/how-to-register/",
+    "title": "Virginia Dept. of Elections: How to Register",
+    "checked": "2026-10-19"
+  },
+  "https://www.in.gov/sos/elections/": {
+    "status": 200,
+    "final": "https://www.in.gov/sos/elections/",
+    "title": "Election Division: Home",
+    "checked": "2026-10-19"
+  },
+  "https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/#ABSENTEE_VOTING_BY_MAIL": {
+    "status": 200,
+    "final": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/#ABSENTEE_VOTING_BY_MAIL",
+    "title": "Voter Information: Absentee Voting",
+    "checked": "2026-10-19"
+  },
+  "https://www.kdor.ks.gov/Apps/VoterReg": {
+    "status": 200,
+    "final": "https://www.kdor.ks.gov/Apps/VoterReg",
+    "title": "Welcome - Kansas Online Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://www.kdor.ks.gov/apps/voterreg/home/index": {
+    "status": 200,
+    "final": "https://www.kdor.ks.gov/apps/voterreg/home/index",
+    "title": "Welcome - Kansas Online Voter Registration",
+    "checked": "2026-10-19"
+  },
+  "https://www.maine.gov/portal/government/edemocracy/voter_lookup.php": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.maine.gov/sos/cec/elec/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.maine.gov/sos/cec/elec/munic.html": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.maine.gov/sos/cec/elec/voter-info/absent.html": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.msegov.com/sos/voter_registration/amiregistered/Search": {
+    "status": 200,
+    "final": "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
+    "title": "Y'all Vote - Verify Registration Online",
+    "checked": "2026-10-19"
+  },
+  "https://www.msegov.com/sos/voter_registration/home/Search": {
+    "status": 200,
+    "final": "https://www.msegov.com/sos/voter_registration/home/Search",
+    "title": "Y'all Vote - Update Registration Online",
+    "checked": "2026-10-19"
+  },
+  "https://www.ncsbe.gov/": {
+    "status": 200,
+    "final": "https://www.ncsbe.gov/",
+    "title": "Home Page | NCSBE",
+    "checked": "2026-10-19"
+  },
+  "https://www.ncsbe.gov/registering/how-register": {
+    "status": 200,
+    "final": "https://www.ncsbe.gov/registering/how-register",
+    "title": "How to Register | NCSBE",
+    "checked": "2026-10-19"
+  },
+  "https://www.ncsbe.gov/registering/updating-registration": {
+    "status": 200,
+    "final": "https://www.ncsbe.gov/registering/updating-registration",
+    "title": "Updating Registration | NCSBE",
+    "checked": "2026-10-19"
+  },
+  "https://www.nebraska.gov/apps-sos-voter-registration/": {
+    "status": 200,
+    "final": "https://www.votercheck.necvr.ne.gov/voterview/registrant/newregistrant",
+    "title": "Nebraska Voter Information Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://www.nj.gov/state/elections/vote-by-mail.shtml": {
+    "status": 200,
+    "final": "https://www.nj.gov/state/elections/vote-by-mail.shtml",
+    "title": "NJ DOS - Division of Elections - Vote-By-Mail",
+    "checked": "2026-10-19"
+  },
+  "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml": {
+    "status": 200,
+    "final": "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml",
+    "title": "NJ DOS - Division of Elections - Track My Ballot",
+    "checked": "2026-10-19"
+  },
+  "https://www.nj.gov/state/elections/voter-registration.shtml": {
+    "status": 200,
+    "final": "https://www.nj.gov/state/elections/voter-registration.shtml",
+    "title": "NJ DOS - Division of Elections - Register to Vote!",
+    "checked": "2026-10-19"
+  },
+  "https://www.nvsos.gov/SOSVoterServices/start.aspx": {
+    "status": 200,
+    "final": "https://www.nvsos.gov/SOSVoterServices/start.aspx",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.nvsos.gov/sos/elections": {
+    "status": 200,
+    "final": "https://www.nvsos.gov/sos/elections",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.nvsos.gov/sos/elections/voters/county-clerk-contact-information": {
+    "status": 200,
+    "final": "https://www.nvsos.gov/sos/elections/voters/county-clerk-contact-information",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.nvsos.gov/votersearch/": {
+    "status": 200,
+    "final": "https://www.nvsos.gov/votersearch/",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.ohiosos.gov/directories/ballot-tracking": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.ohiosos.gov/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.ohiosos.gov/elections/elections-officials/county-boards-of-elections-directory/": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.ohiosos.gov/elections/frequently-asked-questions#absentee-voting": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.ok.gov/elections/": {
+    "status": 200,
+    "final": "https://oklahoma.gov/elections.html",
+    "title": "Oklahoma State Election Board (0270)",
+    "checked": "2026-10-19"
+  },
+  "https://www.oklahoma.gov/elections/voter-registration/register-to-vote.html": {
+    "status": 200,
+    "final": "https://www.oklahoma.gov/elections/voter-registration/register-to-vote.html",
+    "title": "Register to Vote",
+    "checked": "2026-10-19"
+  },
+  "https://www.pa.gov/agencies/vote/voter-registration/update-my-registration": {
+    "status": 200,
+    "final": "https://www.pa.gov/agencies/vote/voter-registration/update-my-registration",
+    "title": "Update My Registration | Voting &amp; Election Information | Commonwealth of Pennsylvania",
+    "checked": "2026-10-19"
+  },
+  "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx": {
+    "status": 200,
+    "final": "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx": {
+    "status": 200,
+    "final": "https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx": {
+    "status": 200,
+    "final": "https://www.pavoterservices.pa.gov/Pages/VoterRegistrationApplication.aspx",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.pavoterservices.pa.gov/pages/voterregistrationstatus.aspx": {
+    "status": "unconfirmed",
+    "reason": "URLError",
+    "checked": "2026-10-19"
+  },
+  "https://www.scvotes.gov/": {
+    "status": 200,
+    "final": "https://www.scvotes.gov/",
+    "title": "Home - SC Votes - South Carolina Election Commission",
+    "checked": "2026-10-19"
+  },
+  "https://www.sec.state.ma.us/OVR/": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sec.state.ma.us/WhereDoIVoteMA/TrackMyBallot": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://www.sec.state.ma.us/WhereDoIVoteMA/WhereDoIVote": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://www.sec.state.ma.us/divisions/elections/voter-resources/find-my-local-election-office.htm": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://www.sec.state.ma.us/ele/eleidx.htm": {
+    "status": 302,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.alabama.gov/alabama-votes/voter/register-to-vote": {
+    "status": 200,
+    "final": "https://www.sos.alabama.gov/alabama-votes/voter/register-to-vote",
+    "title": "Register to Vote / Update Your Information | Alabama Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.alabama.gov/index.php/city-county-lookup": {
+    "status": 200,
+    "final": "https://www.sos.alabama.gov/city-county-lookup",
+    "title": "County Official Lookup | Alabama Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.arkansas.gov/elections": {
+    "status": 200,
+    "final": "https://www.sos.arkansas.gov/elections",
+    "title": "Arkansas Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.arkansas.gov/elections/elected-officials/": {
+    "status": 200,
+    "final": "https://www.sos.arkansas.gov/elections/elected-officials/",
+    "title": "Arkansas Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.arkansas.gov/elections/voter-information": {
+    "status": 200,
+    "final": "https://www.sos.arkansas.gov/elections/voter-information",
+    "title": "Arkansas Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.arkansas.gov/elections/voter-information/absentee-voting": {
+    "status": 200,
+    "final": "https://www.sos.arkansas.gov/elections/voter-information/absentee-voting",
+    "title": "Arkansas Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ca.gov/elections/": {
+    "status": 200,
+    "final": "https://www.sos.ca.gov/elections/",
+    "title": "Elections and Voter Information :: California Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ca.gov/elections/ballot-status/wheres-my-ballot": {
+    "status": 200,
+    "final": "https://www.sos.ca.gov/elections/ballot-status/wheres-my-ballot",
+    "title": "Where's My Ballot? :: California Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ca.gov/elections/voting-resources/county-elections-offices": {
+    "status": 200,
+    "final": "https://www.sos.ca.gov/elections/voting-resources/county-elections-offices",
+    "title": "County Elections Offices :: California Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ks.gov/elections/county_election_officers.aspx": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.la.gov/elections-voting": {
+    "status": 200,
+    "final": "https://www.sos.la.gov/elections-voting",
+    "title": "Elections and Voting",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.la.gov/elections-voting/register-to-vote": {
+    "status": 200,
+    "final": "https://www.sos.la.gov/elections-voting/register-to-vote",
+    "title": "Register to Vote",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.la.gov/elections-voting/update-your-registration": {
+    "status": 200,
+    "final": "https://www.sos.la.gov/elections-voting/update-your-registration",
+    "title": "Update Your Registration",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.la.gov/elections-voting/ways-to-vote#vote-absentee": {
+    "status": 200,
+    "final": "https://www.sos.la.gov/elections-voting/ways-to-vote#vote-absentee",
+    "title": "Voting in Louisiana",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Locations": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.mo.gov/elections/goVoteMissouri/localelectionauthority": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.mo.gov/elections/goVoteMissouri/register": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.mo.gov/elections/govotemissouri/howtovote#Absentee": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ms.gov/elections-voting/voter-registration-information": {
+    "status": 200,
+    "final": "https://www.sos.ms.gov/elections-voting/voter-registration-information",
+    "title": "Voter Registration Information | MS SOS",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ms.gov/index.php/elections-voting/county-election-information": {
+    "status": 200,
+    "final": "https://www.sos.ms.gov/elections-voting/county-election-information",
+    "title": "County Election Information | MS SOS",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.ms.gov/yall-vote": {
+    "status": 200,
+    "final": "https://www.sos.ms.gov/yall-vote",
+    "title": "Yall Vote | MS SOS",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nd.gov/elections": {
+    "status": 200,
+    "final": "https://www.sos.nd.gov/elections",
+    "title": "Elections | Secretary of State | North Dakota",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nd.gov/elections/voter/current-officials/county-election-officials": {
+    "status": 200,
+    "final": "https://www.sos.nd.gov/elections/voter/current-officials/county-election-officials",
+    "title": "County Election Officials | Secretary of State | North Dakota",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nd.gov/elections/voter/voting-north-dakota": {
+    "status": 200,
+    "final": "https://www.sos.nd.gov/elections/voter/voting-north-dakota",
+    "title": "Voting in North Dakota | Secretary of State | North Dakota",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting": {
+    "status": 200,
+    "final": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+    "title": "Absentee Voting | Secretary of State | North Dakota",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nh.gov/elections": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nh.gov/elections/absentee-ballots": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nh.gov/elections/register-vote": {
+    "status": 403,
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nm.gov/trackmyballot": {
+    "status": 200,
+    "final": "https://app.enhancedvoting.com/login/Voter/Account/Login2?returnUrl=%2Flogin%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dcore.voter.frontend%26scope%3Dopenid%2520profile%2520offline_access%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fapp.enhancedvoting.com%252Fvoter%252Fapi%252Fauth%252Fcallback%26acr_values%3Dusertype%253AVoter%2520voterLoginMode%253Alight%2520shortName%253Anewmexico%26code_challenge%3D42Ve1IWWHx85PPZpOdP8fn_Oz4Zj1fvP1-fpfeGVwcs%26code_challenge_method%3DS256",
+    "title": "Ballot | Login",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/absentee-and-early-voting/": {
+    "status": 200,
+    "final": "https://www.sos.nm.gov/voting-and-elections/absentee-and-early-voting/",
+    "title": "Absentee and Early Voting | Maggie Toulouse Oliver - New Mexico Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.co.us/pubs/elections/": {
+    "status": 200,
+    "final": "https://www.sos.state.co.us/pubs/elections/",
+    "title": "Elections &amp; Voting",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.co.us/pubs/elections/Resources/CountyElectionOffices.html": {
+    "status": 200,
+    "final": "https://www.sos.state.co.us/pubs/elections/Resources/CountyElectionOffices.html",
+    "title": "County Election Offices",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.co.us/pubs/elections/VIP.html": {
+    "status": 200,
+    "final": "https://www.sos.state.co.us/pubs/elections/VIP.html",
+    "title": "Where do I drop off my ballot or vote in person?",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.co.us/voter/pages/pub/olvr/findVoterReg.xhtml": {
+    "status": 200,
+    "final": "https://www.sos.state.co.us/voter/pages/pub/olvr/findVoterReg.xhtml",
+    "title": "Find My Voter Registration - Colorado Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.mn.us/elections-voting/": {
+    "status": 200,
+    "final": "https://validate.perfdrive.com/?ssa=3d4e1728-3ce4-4ee9-86cd-92c894712c95&ssb=58325243590&ssc=https%3A%2F%2Fwww.sos.mn.gov%2Felections-voting%2F&ssi=d39b6efe-cxge-4d8e-8ced-fc4b94e0320c&ssk=botmanager_support@radware.com&ssm=20457147398959012102561921084212&ssn=598c5cbd0b1526428dc5f4af470150483cccba57ad54-9a3f-4778-94a692&sso=35d41f49-42284e9b38db4552dbfd318a303e8ccf501689d1379d5b10&ssp=09416448431792434662179246291020679&ssq=92977295817804448891058178447332002433874&ssr=MjQuOTkuNzMuMTE5&sst=Mozilla/5.0&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBiYTU3YWQ1NC05YTNmLTQ3NzgtOWY0OS00MjI4NGU5YjM4ZGIxLTE3OTI0NTgxNzgxMTYwLTAwNTczZWY3ZDMyYjQ2OTZlMGUxMCIsInJkIjoibW4uZ292IiwidXpteCI6IjdmYzAwMGQzZGJmOTY1LWM0NWMtNDI3MS04ZTZhLWNhZmZhZjNhNjc5YjEtMTc5MjQ1ODE3ODExNjAtMDBhNWI2MWNjNjU3OWJkZjQ2YzEwIn0=",
+    "title": "Radware Captcha Page",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.mn.us/elections-voting/find-county-election-office/": {
+    "status": 200,
+    "final": "https://validate.perfdrive.com/?ssa=76ba010d-9a39-46c9-aa7f-31ecc38357eb&ssb=58325243590&ssc=https%3A%2F%2Fwww.sos.mn.gov%2Felections-voting%2Ffind-county-election-office%2F&ssi=7f46188e-cxge-4582-90c7-efeae409f203&ssk=botmanager_support@radware.com&ssm=20457147398959012102561921084212&ssn=598c5cbdf89019355c9f266b54a250483ccc58a0a79f-ad5e-48cf-84a692&sso=35d416d0-3f1413ec423e4552dbfd6ef5323918abea5fad3b379d5b10&ssp=09416448431792434662179246291020679&ssq=92977295817804448891058178447332002433874&ssr=MjQuOTkuNzMuMTE5&sst=Mozilla/5.0&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA1OGEwYTc5Zi1hZDVlLTQ4Y2YtODZkMC0zZjE0MTNlYzQyM2UxLTE3OTI0NTgxNzgxMjMwLTAwNTVhZTFkYzNmNmY3ZGFjNTUxMCIsInJkIjoibW4uZ292IiwidXpteCI6IjdmYzAwMGZlMjdjODQyLWE5N2MtNDMyMy05ZTg4LThlOWI4MzMwMDQzZDEtMTc5MjQ1ODE3ODEyMzAtMDBhM2RhN2IyMTg5ZDU5MWRkZTEwIn0=",
+    "title": "Radware Captcha Page",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.mn.us/elections-voting/register-to-vote/": {
+    "status": 200,
+    "final": "https://validate.perfdrive.com/?ssa=4abe724e-bd1a-40ab-83bc-ebac570ad346&ssb=58325243590&ssc=https%3A%2F%2Fwww.sos.mn.gov%2Felections-voting%2Fregister-to-vote%2F&ssi=0e05f420-cxge-4fe3-a3e8-c999311c260f&ssk=botmanager_support@radware.com&ssm=20457147398959012102561921084212&ssn=598c5cbda3e7579c0406e7dcc8cb50483ccc8e0e670d-ce82-4638-b4a692&sso=35d419ec-367a075800bf4552dbfd27ddf63152565f811298379d5b10&ssp=09416448431792434662179246291020679&ssq=92977295817804448891058178447332002433874&ssr=MjQuOTkuNzMuMTE5&sst=Mozilla/5.0&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA4ZTBlNjcwZC1jZTgyLTQ2MzgtYjllYy0zNjdhMDc1ODAwYmYxLTE3OTI0NTgxNzgxMDEwLTAwNTEzNjQ5NjYyNzQxY2VlOWExMCIsInJkIjoibW4uZ292IiwidXpteCI6IjdmYzAwMDVhY2IxYzkxLTk2ZTYtNDUyYy04Yzk4LTExYjdlZWEyMDY4OTEtMTc5MjQ1ODE3ODEwMTAtMDBhYmZlZjU5YTk3YWJiYzAxODEwIn0=",
+    "title": "Radware Captcha Page",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.nm.us/": {
+    "status": 200,
+    "final": "https://www.sos.nm.gov/",
+    "title": "Maggie Toulouse Oliver - New Mexico Secretary of State | New Mexico Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.nm.us/voting-and-elections/voter-information-portal/county-clerk-information/": {
+    "status": 200,
+    "final": "https://www.sos.nm.gov/voting-and-elections/county-clerk-information/",
+    "title": "County Clerk Information | Maggie Toulouse Oliver - New Mexico Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.state.tx.us/elections/voter/votregduties.shtml": {
+    "status": 200,
+    "final": "https://www.sos.state.tx.us/elections/voter/votregduties.shtml",
+    "title": "County Voter Registration Officials",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.wa.gov/elections/": {
+    "status": 200,
+    "final": "https://www.sos.wa.gov/elections",
+    "title": "Elections | WA Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.sos.wa.gov/elections/auditors/": {
+    "status": 200,
+    "final": "https://www.sos.wa.gov/elections/voters/voter-registration/county-elections-offices",
+    "title": "County Elections Offices in Washington State | WA Secretary of State",
+    "checked": "2026-10-19"
+  },
+  "https://www.state.nj.us/state/elections/index.shtml": {
+    "status": 200,
+    "final": "https://www.nj.gov/state/elections/index.shtml",
+    "title": "",
+    "checked": "2026-10-19"
+  },
+  "https://www.state.nj.us/state/elections/vote-county-election-officials.shtml": {
+    "status": 200,
+    "final": "https://www.nj.gov/state/elections/vote-county-election-officials.shtml",
+    "title": "NJ DOS - Division of Elections - County Election Officials",
+    "checked": "2026-10-19"
+  },
+  "https://www.vote.pa.gov/Pages/default.aspx": {
+    "status": 200,
+    "final": "https://www.pa.gov/agencies/vote",
+    "title": "Voting &amp; Election Information | Voting &amp; Election Information | Commonwealth of Pennsylvania",
+    "checked": "2026-10-19"
+  },
+  "https://www.vote.pa.gov/Resources/Pages/Contact-Your-Election-Officials.aspx": {
+    "status": 200,
+    "final": "https://www.pa.gov/agencies/vote/contact-us/contact-your-election-officials",
+    "title": "Contact your Election Officials | Voting &amp; Election Information | Commonwealth of Pennsylvania",
+    "checked": "2026-10-19"
+  },
+  "https://www.votercheck.necvr.ne.gov/VoterView": {
+    "status": 200,
+    "final": "https://www.votercheck.necvr.ne.gov/VoterView",
+    "title": "Nebraska Voter Information Lookup",
+    "checked": "2026-10-19"
+  },
+  "https://www.voterview.ar-nova.org/voterview": {
+    "status": 200,
+    "final": "https://www.voterview.ar-nova.org/voterview",
+    "title": "Arkansas Secretary of State | VoterView",
+    "checked": "2026-10-19"
+  },
+  "https://www.votetexas.gov/": {
+    "status": 200,
+    "final": "https://www.votetexas.gov/",
+    "title": "Your Guide to Voting in Texas | VoteTexas.gov",
+    "checked": "2026-10-19"
+  },
+  "https://www.votetexas.gov/register-to-vote/index.html": {
+    "status": 200,
+    "final": "https://www.votetexas.gov/register-to-vote/index.html",
+    "title": "Register to Vote in Texas | VoteTexas.gov",
+    "checked": "2026-10-19"
+  },
+  "https://www.votetexas.gov/voting-by-mail/track-my-ballot.html": {
+    "status": 200,
+    "final": "https://www.votetexas.gov/voting-by-mail/track-my-ballot.html",
+    "title": "Track Your Mail-in Ballot in Texas | VoteTexas.gov",
+    "checked": "2026-10-19"
+  }
+}

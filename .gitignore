@@ -1,0 +1,7 @@
+node_modules/
+test-results/
+public/index.html
+public/styles.css
+public/app.js
+public/favicon.svg
+.DS_Store

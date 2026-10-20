@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://spelman-women-vote-2026.onrender.com/sitemap.xml

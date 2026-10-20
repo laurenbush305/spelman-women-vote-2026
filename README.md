@@ -1,41 +1,88 @@
-# Spelman Women Vote · 2026 Chapter Resource Hub
+# Spelman Women Vote 2026 · Chapter Resource Hub
 
-A lightweight, mobile-first, static site for NAASC chapter resources. Plain HTML/CSS/JS. No build step, API key, database, tracking script, or fragile external data endpoint required.
+Live: **https://spelman-women-vote-2026.onrender.com/**
 
-## Live site
+A plain HTML/CSS/JavaScript site for NAASC chapter leaders. No runtime packages, database, voter-record collection, third-party font requests or analytics service. Search and filters stay on the device.
 
-- **Website:** https://spelman-women-vote-2026.onrender.com
-- **Hosting:** Render static site (service `spelman-women-vote-2026`), connected to GitHub `main`, auto-deploy enabled.
-- **Hosting dashboard:** https://dashboard.render.com/static/srv-dbb932gm7kps73ekc830
-- **Source:** https://github.com/laurenbush305/spelman-women-vote-2026
-- **First successful deployment:** October 19, 2026. Render reported `live` status.
-- **QA:** JavaScript syntax, required local files, hash links and unique IDs validated. Manual mobile-browser testing still recommended.
+## Hosting and release
 
-## Deploy
+- Repository: https://github.com/laurenbush305/spelman-women-vote-2026
+- Existing Render static service: `srv-dbb932gm7kps73ekc830`
+- Dashboard: https://dashboard.render.com/static/srv-dbb932gm7kps73ekc830
+- Branch: `main`; automatic deploy on commit; publish directory: `public`.
+- Existing Render build command: `mkdir -p public && cp index.html styles.css app.js favicon.svg public/`.
 
-- **Vercel:** Create a new project and import these files or connect a GitHub repository containing this folder. Set Framework Preset to **Other**; no build command required; output directory is the project root.
-- **GitHub Pages:** The source now lives at https://github.com/laurenbush305/spelman-women-vote-2026. In **Settings → Pages → Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, then click **Save**. The site is not live until GitHub confirms the Pages deployment.
-- **Other static hosts:** Upload the files to any host that supports an `index.html` home page.
+The four original page files remain at the repository root. **Supporting data, fonts, social image, sitemap and robots file are versioned inside `public/`** so the existing build command includes them without changing the service. Do not delete or ignore all of `public/`. Only the four generated copies are ignored. `sh scripts/build.sh` mirrors the production build and checks required assets. Serve `public/`, not the repository root. Do not introduce another hosting pipeline.
 
-## Source-of-truth decisions
+## Local preview
 
-- 2026 campaign: https://www.naasc.org/gotv
-- 2026 chapter toolkit: https://docs.google.com/document/d/1uzZdXtZW6-VGRcDTm_c-iu8brSy98C6sugkfA1qkRqU/edit?usp=sharing
-- NAASC individual impact form: https://www.naasc.org/form-gotv-individual-impact-tracker
-- Chapter group reporting: use the private group-reporting link distributed by NAASC; request via gotv@naasc.org if missing.
-- Event submissions: https://form.jotform.com/262627910635056
-- State-specific dates: don't extrapolate Georgia's dates to other states. Users are referred to government election offices.
+```sh
+sh scripts/build.sh
+python3 -m http.server 4173 --bind 127.0.0.1 --directory public
+```
 
-## Content updates
+Open http://127.0.0.1:4173. Node is needed only for tests.
 
-Edit `RESOURCES` in `app.js` to add/remove tools. Edit `STATES` if needed. Update the dated toolkit-week cards in `index.html` for future election cycles. Do not publish 2024 caption materials as current 2026 graphics. All claims and links should be verified with the relevant source before publication.
+## Tests
 
-## Accessibility and privacy
+Use Node 22+ and install the pinned **development-only** packages with `pnpm install --frozen-lockfile`. Then:
 
-Includes skip link, visible keyboard focus, labeled controls, live results count, reduced-motion support, mobile navigation with expanded state, accessible external-link labels, and a clipboard fallback. No personal data is collected.
+```sh
+pnpm exec playwright install chromium
+pnpm run test:unit
+# With the static server running in a second terminal:
+pnpm run test:smoke
+```
 
-The decorative S icon is *not* the official NAASC seal. If replacing with official NAASC artwork, obtain the approved asset/permission and follow NAASC's digital brand guide.
+To use installed Chrome instead of downloading Chromium:
 
-## Deployment status (October 19, 2026)
+```sh
+CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" pnpm run test:smoke
+```
 
-The five source files have been committed to `laurenbush305/spelman-women-vote-2026` on `main`. Automated Vercel import was blocked by HTTP 403 permissions, so the project was instead published on Render. Render confirmed that the deployment is live, with automatic GitHub main-branch deployments enabled. Manual mobile browser and external-link QA is recommended before broad circulation.
+For deployed acceptance testing, set `SMOKE_URL=https://spelman-women-vote-2026.onrender.com/`. The smoke test exercises all states, filters, all approved copy text, mobile navigation, clipboard denial, internal anchors, keyboard focus, date boundaries, live midnight rollover, request/console failures and Axe at 320/390/768/1440 pixels. Results and screenshots go to ignored `test-results/` (override with `SMOKE_OUTPUT`). No forms are submitted. It tests clipboard writes in the isolated test browser.
+
+Measure mobile Lighthouse rather than assuming a score:
+
+```sh
+CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" pnpm exec lighthouse http://127.0.0.1:4173 --output=json --output-path=test-results/lighthouse.json --chrome-flags="--headless --no-sandbox"
+```
+
+Review layout screenshots, keyboard behavior and content in addition to automated scores. Emulated viewports are not physical-device or assistive-technology user testing.
+
+## Content maintenance
+
+- `public/data/states.js`: 50 states + DC, official election links, EAC provenance, source-review date, automated-check limitations and additional verified links. Each selected state gets eight task routes. Where a topic URL is unavailable, the card explicitly opens the authority's website. No inferred voting rules or deadlines.
+- `public/data/resources.js`: national nonpartisan resources. Keep national and state-specific scope separate.
+- `public/data/toolkit.js`: approved weeks 4–12, actions, exact captions/emails, real Drive assets and source document. Do not edit approved message text without an updated approved source. Preserve `[BRACKETS]` and conditional lines.
+- `public/data/workflow.js`: date functions shared with tests. Week selection follows the visitor's local calendar. Georgia deadline labels follow America/New_York. The open page refreshes date-dependent content every minute and on focus. November 4 changes the priority to reporting and thank-you materials; after November 13 the thank-you material remains explicitly archived.
+- `index.html`: curated Georgia calendar, stable reporting/help links and page metadata. Confirm any election-date change against official state sources and update its review date.
+- `styles.css`: existing editorial brand foundation plus accessibility and workflow refinements.
+- `public/assets/fonts/`: locally hosted DM Sans / DM Serif Display Latin fonts; SIL Open Font License notices included.
+- `scripts/social-card.html`: reproducible typographic social-preview source. Capture it at 1200×630 after fonts load to update `public/assets/social-card.png`. This is a site preview, not an approved campaign graphic or institutional logo.
+
+Review official election links frequently during the campaign, especially on deadline days. Check both destination status and meaning; HTTP 200 alone is not content verification. Some government portals block automated checks. Retain the federal source route and flag uncertainty; never treat a blocked request as proof that a page is broken. See `CONTENT-SOURCES.md` and `qa/source-link-checks.json`.
+
+## Reporting and privacy
+
+- Individual: https://www.naasc.org/form-gotv-individual-impact-tracker
+- Chapter URL/deadline: unconfirmed. Keep the clearly labeled request email to **gotv@naasc.org**; never substitute the individual tracker.
+- Events: https://form.jotform.com/262627910635056 — Chapter Event Submission Form; event listings do not establish campaign outcomes.
+- Toolkit help: Marketing & PR lead listed in the approved document, **sommer@pocketpr.net**.
+
+`EVALUATION-SPEC.md` defines website engagement separately from campaign impact. The browser emits optional `swv:interaction` events containing only an action and a fixed resource/week identifier. No listener stores or sends them in this release; there are no engagement totals to report. Enabling collection requires a deliberate privacy-reviewed implementation, matching notice and retention policy. Never forward query strings, clipboard content, voter details or identities to analytics.
+
+## Safe release checklist
+
+1. Check `git status` and pull/reconcile `main` before editing; preserve unrelated changes.
+2. Verify source content and links. Run build, unit, browser and accessibility checks.
+3. Commit descriptive changes and push to existing `main`.
+4. In Render, locate the deploy for that exact commit and wait for **live**.
+5. Run the smoke suite against the public URL; inspect newly added data/font/image requests. Run public Lighthouse and record actual results.
+6. Update `AUDIT-AND-LAUNCH-REPORT.md` with commit/deploy evidence. A documentation-only follow-up may use `[skip render]` as supported by Render; distinguish it from the deployed site commit.
+
+If a regression requires recovery, revert the affected change with a new commit and let the same service deploy it. Avoid force-pushing or changing auto-deploy settings. The original baseline is `0465e69` (initial live Render artifact was `509f82e`).
+
+## Institutional dependencies
+
+The S monogram is the pre-existing temporary mark, not a Spelman/NAASC seal. An authorized institutional mark and digital brand guidance remain to be supplied. The chapter reporting URL and national deadline, drone video link, and validated campaign totals are still institutional dependencies. No fake totals or replacement official graphics are published.

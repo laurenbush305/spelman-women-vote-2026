@@ -1,26 +1,204 @@
 'use strict';
-const STATES = [
- ['AL','Alabama'],['AK','Alaska'],['AZ','Arizona'],['AR','Arkansas'],['CA','California'],['CO','Colorado'],['CT','Connecticut'],['DE','Delaware'],['DC','District of Columbia'],['FL','Florida'],['GA','Georgia'],['HI','Hawaii'],['ID','Idaho'],['IL','Illinois'],['IN','Indiana'],['IA','Iowa'],['KS','Kansas'],['KY','Kentucky'],['LA','Louisiana'],['ME','Maine'],['MD','Maryland'],['MA','Massachusetts'],['MI','Michigan'],['MN','Minnesota'],['MS','Mississippi'],['MO','Missouri'],['MT','Montana'],['NE','Nebraska'],['NV','Nevada'],['NH','New Hampshire'],['NJ','New Jersey'],['NM','New Mexico'],['NY','New York'],['NC','North Carolina'],['ND','North Dakota'],['OH','Ohio'],['OK','Oklahoma'],['OR','Oregon'],['PA','Pennsylvania'],['RI','Rhode Island'],['SC','South Carolina'],['SD','South Dakota'],['TN','Tennessee'],['TX','Texas'],['UT','Utah'],['VT','Vermont'],['VA','Virginia'],['WA','Washington'],['WV','West Virginia'],['WI','Wisconsin'],['WY','Wyoming']
-];
-const RESOURCES = [
- {title:'Register or update voter registration',desc:'Federal starting point for official state voter registration instructions and services.',category:'registration',tag:'Registration',url:'https://vote.gov',keywords:'register address check name update'},
- {title:'Can I Vote?',desc:'Nonpartisan hub from state election officials for registration status, polling places, ID requirements and absentee voting.',category:'registration',tag:'Official state tools',url:'https://www.nass.org/can-I-vote',keywords:'ballot early vote rules voter id deadlines'},
- {title:'Find your state election office',desc:'Find the official state or local election authority for election dates, polling locations and voting requirements.',category:'voting',tag:'Election offices',url:'https://www.usa.gov/election-office',keywords:'state offices dates voting hours'},
- {title:'Explore your ballot with VOTE411',desc:'Use your voting address to view nonpartisan ballot information and voter education.',category:'registration',tag:'Ballot information',url:'https://www.vote411.org',keywords:'candidate ballot measures guide'},
- {title:'Election Protection hotline',desc:'Nonpartisan help for voter questions or problems. Call or text 866-OUR-VOTE (866-687-8683).',category:'support',tag:'Voting support',url:'https://866ourvote.org',keywords:'voter rights lawyer help problems'},
- {title:'Accessible voting resources',desc:'Voting access guidance from the U.S. Election Assistance Commission.',category:'support',tag:'Accessibility',url:'https://www.eac.gov/voting-accessibility',keywords:'disability accessible support'},
- {title:'Military and overseas voting',desc:'Federal Voting Assistance Program resources for eligible voters abroad or serving in the military.',category:'voting',tag:'Overseas voting',url:'https://www.fvap.gov',keywords:'absentee overseas military'},
- {title:'Become a poll worker',desc:'Explore opportunities to support the administration of local elections.',category:'support',tag:'Volunteering',url:'https://www.powerthepolls.org',keywords:'volunteer poll worker'},
- {title:'Spelman Women Vote 2026 toolkit',desc:'Current week-by-week guidance with captions, emails and links to campaign graphics.',category:'chapter',tag:'2026 toolkit',url:'https://docs.google.com/document/d/1uzZdXtZW6-VGRcDTm_c-iu8brSy98C6sugkfA1qkRqU/edit?usp=sharing',keywords:'chapter graphics outreach templates captions assets'},
- {title:'Official NAASC 2026 campaign',desc:'Updates, national campaign information and the individual impact-reporting route.',category:'chapter',tag:'Official campaign',url:'https://www.naasc.org/gotv',keywords:'naasc chapter impact tracker'},
- {title:'Georgia 2026 election guide',desc:'Georgia Secretary of State information for the November 3, 2026 general election.',category:'voting',tag:'Georgia only',state:'GA',url:'https://sos.ga.gov/november-3-2026-general-election',keywords:'georgia early voting dates deadline'},
- {title:'Georgia My Voter Page',desc:'Check a Georgia registration record, see a sample ballot and find polling locations.',category:'registration',tag:'Georgia only',state:'GA',url:'https://mvp.sos.ga.gov/s/',keywords:'mvp georgia poll hours registration ballot'}
-];
-const stateSelect=document.getElementById('state');const queryInput=document.getElementById('query');const grid=document.getElementById('resource-grid');const resultCount=document.getElementById('result-count');const stateContext=document.getElementById('state-context');const filterButtons=Array.from(document.querySelectorAll('[data-category]'));let selectedCategory='all';
-STATES.forEach(([code,name])=>{const option=document.createElement('option');option.value=code;option.textContent=name;stateSelect.append(option);});
-function resourceCard(resource){const article=document.createElement('article');article.className='resource-card';const tag=document.createElement('span');tag.className='pill';tag.textContent=resource.tag;const title=document.createElement('h3');title.textContent=resource.title;const description=document.createElement('p');description.textContent=resource.desc;const link=document.createElement('a');link.href=resource.url;link.textContent='Open resource ↗';link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Open '+resource.title+' in a new tab');article.append(tag,title,description,link);return article;}
-function render(){const state=stateSelect.value;const search=queryInput.value.toLowerCase().trim();const filtered=RESOURCES.filter(r=>(!r.state||r.state===state)&&(selectedCategory==='all'||r.category===selectedCategory)&&(!search||(r.title+' '+r.desc+' '+r.keywords+' '+r.tag).toLowerCase().includes(search)));grid.replaceChildren(...filtered.map(resourceCard));if(!filtered.length){const empty=document.createElement('div');empty.className='empty';empty.textContent='No matches. Try another search word or clear your filters.';grid.append(empty);}resultCount.textContent=filtered.length+' resource'+(filtered.length===1?'':'s')+' available';if(state){const selectedName=STATES.find(s=>s[0]===state)[1];const label=document.createTextNode('For '+selectedName+': Confirm election deadlines, procedures and locations with ');const link=document.createElement('a');link.href='https://www.usa.gov/election-office';link.textContent='the relevant election office ↗';link.target='_blank';link.rel='noopener noreferrer';const extra=document.createTextNode(state==='GA'?'. Georgia-specific resources are listed below.':'. National resources are listed below.');stateContext.replaceChildren(label,link,extra);stateContext.classList.add('visible');}else{stateContext.classList.remove('visible');stateContext.replaceChildren();}}
-stateSelect.addEventListener('change',render);queryInput.addEventListener('input',render);filterButtons.forEach(button=>button.addEventListener('click',()=>{selectedCategory=button.dataset.category;filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));render();}));document.getElementById('reset').addEventListener('click',()=>{stateSelect.value='';queryInput.value='';selectedCategory='all';filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.category==='all')));render();stateSelect.focus();});
-const menu=document.getElementById('menu');const nav=document.getElementById('nav');menu.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menu.textContent=isOpen?'✕':'☰';menu.setAttribute('aria-expanded',String(isOpen));menu.setAttribute('aria-label',isOpen?'Close navigation':'Open navigation');});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');}));
-const d=new Date();const today=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');document.querySelectorAll('.week').forEach(week=>{const active=today>=week.dataset.from&&today<=week.dataset.to;week.classList.toggle('active',active);let badge=week.querySelector('.week-live');if(badge&&!active)badge.remove();if(!badge&&active){badge=document.createElement('span');badge.className='week-live';badge.textContent='THIS WEEK';week.querySelector('div:last-child').append(badge);}});
-const toast=document.getElementById('toast');function announce(message){toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2700);}document.getElementById('copy-button').addEventListener('click',async()=>{const node=document.getElementById('copy-text');try{await navigator.clipboard.writeText(node.textContent);announce('Reminder copied to clipboard');}catch(e){const range=document.createRange();range.selectNodeContents(node);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);announce('Text selected. Copy it with Ctrl+C or Cmd+C.');}});render();
+(() => {
+  const states = window.SWV_STATES, toolkit = window.SWV_TOOLKIT, workflow = window.SWV_WORKFLOW;
+  const $ = id => document.getElementById(id);
+  const make = (tag, className, text) => {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+  const external = (label, href, className) => {
+    const a = make('a', className, label + ' ↗');
+    a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    a.setAttribute('aria-label', label + ' (opens in a new tab)');
+    return a;
+  };
+  if (!states || !toolkit || !workflow || !window.SWV_RESOURCES) {
+    $('resource-grid').textContent = 'The directory could not load. Use Vote.gov or the official toolkit links below, or reload this page.';
+    return;
+  }
+  // Integration point only: no storage, network request, identity or search text.
+  function interaction(action, item) {
+    window.dispatchEvent(new CustomEvent('swv:interaction', { detail: { action, item } }));
+  }
+  let toastTimer;
+  function announce(message) {
+    clearTimeout(toastTimer);
+    $('toast').textContent = message; $('toast').classList.add('show');
+    toastTimer = setTimeout(() => $('toast').classList.remove('show'), 5000);
+  }
+  const stateSelect = $('state'), queryInput = $('query');
+  let category = 'all';
+  const filterButtons = [...document.querySelectorAll('[data-category]')];
+  states.forEach(state => {
+    const option = make('option', '', state.name); option.value = state.code; stateSelect.append(option);
+  });
+  function stateResources(state) {
+    const links = state.links, office = links['State Election Office Website'];
+    const routes = [
+      ['registration', 'Register or update registration', 'Register to Vote', 'Find eligibility, registration methods and deadlines. Check whether registration for this election is still available.', 'register address name update deadline'],
+      ['registration', 'Check registration status', 'Check Your Registration', 'Confirm your own record on the official voter portal. Enter personal details only on the election authority’s site.', 'status registered check'],
+      ['voting', 'Early in-person voting', 'earlyVoting', 'Check whether early in-person voting is offered, and confirm dates, locations and hours with your election office.', 'advance early sites hours weekend'],
+      ['voting', 'Absentee and mail ballots', 'Absentee/ Mail and/or Early Voting', 'Confirm eligibility, application methods, request and return deadlines. These are separate deadlines.', 'absentee mail ballot request return drop box'],
+      ['voting', 'Voter identification requirements', 'voterID', 'Confirm the accepted identification and any alternatives before you go to vote.', 'voter id identification requirements bring'],
+      ['registration', 'Sample ballot', 'sampleBallot', 'Ask your election office for the sample ballot for your address and election. Ballots can vary by district.', 'sample ballot preview district'],
+      ['voting', 'Polling places and hours', 'In-Person Voting Location Lookup', 'Confirm your assigned Election Day location and hours. Early voting sites can be different.', 'poll precinct place location hours election day'],
+      ['support', 'Local election help and access', 'Local Election Office Directory', 'Contact your election officials about accessibility, ballot questions or voting assistance.', 'accessible disability assistance help office']
+    ];
+    return routes.map(([topic, title, key, desc, keywords], index) => {
+      const direct = links[key];
+      return { id: state.code + '-' + index, title: state.name + ': ' + title,
+        category: topic, tag: state.name, state: state.code, keywords,
+        desc: desc + (direct ? '' : ' This topic opens the election authority’s website; use its voter information menu or contact the office.'),
+        url: direct || office, source: 'Official election authority',
+        reviewed: state.reviewed, fallback: !direct, unconfirmed: state.unconfirmedLinks?.includes(direct ? key : 'State Election Office Website') };
+    });
+  }
+  function resourceCard(resource) {
+    const article = make('article', 'resource-card'); article.dataset.scope = resource.state ? 'state' : 'national';
+    const link = external(resource.fallback ? 'Find this topic with the election office' : 'Open ' + resource.title, resource.url);
+    link.textContent = resource.fallback ? 'Find on the election website ↗' : resource.state ? 'Open official voter tool ↗' : 'Open resource ↗';
+    link.addEventListener('click', () => interaction('resource_open', resource.id || resource.title));
+    article.append(make('span', 'pill', resource.tag), make('h3', '', resource.title), make('p', '', resource.desc), make('p', 'source-label', resource.source));
+    if (resource.reviewed) article.append(make('p', 'source-date', 'Source listing reviewed Oct 19, 2026' + (resource.unconfirmed ? ' · automated access limited' : '')));
+    article.append(link); return article;
+  }
+  function renderResources() {
+    const state = states.find(item => item.code === stateSelect.value);
+    const search = queryInput.value.toLocaleLowerCase().trim();
+    const match = r => (category === 'all' || r.category === category) && (!search || [r.title, r.desc, r.keywords, r.tag, r.source].join(' ').toLocaleLowerCase().includes(search));
+    const local = state ? stateResources(state).filter(match) : [], national = window.SWV_RESOURCES.filter(match), nodes = [];
+    if (state) {
+      $('state-context').classList.add('visible');
+      $('state-context').replaceChildren(make('h3', '', state.name + ' voter information'),
+        make('p', '', 'Official tools for the state where you are registered. We link to election authorities; we do not infer local rules or publish unverified deadlines.'),
+        external('Open ' + state.name + ' election authority', state.links['State Election Office Website']),
+        document.createTextNode(' · '), external('View the federal source listing', state.source));
+      if (local.length) nodes.push(make('h3', 'resource-group-label', state.name + ' · official election information'), ...local.map(resourceCard));
+    } else { $('state-context').classList.remove('visible'); $('state-context').replaceChildren(); }
+    if (national.length) nodes.push(make('h3', 'resource-group-label', 'National resources · all states'), ...national.map(resourceCard));
+    if (!local.length && !national.length) {
+      const empty = make('div', 'empty');
+      empty.append(make('h3', '', 'No matching resources'), make('p', '', 'Try “mail”, “ID” or “polling”, choose another topic, or clear all filters.'));
+      const reset = make('button', 'button button-outline', 'Clear all filters'); reset.type = 'button';
+      reset.addEventListener('click', resetResources); empty.append(reset); nodes.push(empty);
+    } else if (state && !local.length) nodes.unshift(make('p', 'resource-group-label', 'No ' + state.name + ' resources match these filters. Clear filters to see the state tools.'));
+    $('resource-grid').replaceChildren(...nodes);
+    $('result-count').textContent = state ? `${local.length} ${state.name} + ${national.length} national resources` : `${national.length} national resources`;
+  }
+  function resetResources() {
+    stateSelect.value = ''; queryInput.value = ''; category = 'all';
+    filterButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.category === 'all')));
+    renderResources(); stateSelect.focus();
+  }
+  stateSelect.addEventListener('change', renderResources); queryInput.addEventListener('input', renderResources);
+  filterButtons.forEach(button => button.addEventListener('click', () => {
+    category = button.dataset.category; filterButtons.forEach(b => b.setAttribute('aria-pressed', String(b === button))); renderResources();
+  }));
+  $('reset').addEventListener('click', resetResources);
+  const menu = $('menu'), nav = $('nav');
+  function setMenu(open) {
+    nav.classList.toggle('open', open); menu.textContent = open ? '✕' : '☰';
+    menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  }
+  menu.addEventListener('click', () => {
+    const open = menu.getAttribute('aria-expanded') !== 'true'; setMenu(open);
+    if (open) nav.querySelector('a').focus();
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); } });
+  document.addEventListener('click', event => { if (!event.target.closest('.site-header') && menu.getAttribute('aria-expanded') === 'true') setMenu(false); });
+  matchMedia('(min-width: 801px)').addEventListener('change', () => setMenu(false));
+  let today = workflow.dateKey(), chosenWeek = workflow.currentWeek(toolkit.weeks, today).number, manualWeek = false;
+  function highlightedText(text) {
+    const fragment = document.createDocumentFragment();
+    text.split(/(\[[^\]]+\])/g).forEach(part => fragment.append(part.startsWith('[') ? make('mark', '', part) : document.createTextNode(part)));
+    return fragment;
+  }
+  function copyBlock(label, text, weekNumber) {
+    const box = make('section', 'template-block'), heading = make('div', 'template-heading');
+    const button = make('button', 'button button-outline', 'Copy ' + label.toLowerCase()); button.type = 'button';
+    const content = make('div', 'template-text'); content.append(highlightedText(text));
+    heading.append(make('h4', '', label), button); box.append(heading, content);
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(text);
+        announce(label + ' copied. Replace every [BRACKETED] placeholder before sharing.');
+        interaction('toolkit_copy', 'week-' + weekNumber + '-' + label.toLowerCase().replaceAll(' ', '-'));
+      } catch {
+        let field = box.querySelector('textarea');
+        if (!field) {
+          const label = make('label', 'manual-copy-label', 'Copy manually — select this text and use your device’s Copy command.');
+          field = make('textarea', 'manual-copy'); field.readOnly = true; field.value = text; field.rows = 7; label.append(field); box.append(label);
+        }
+        field.focus(); field.select(); announce('Clipboard access unavailable. Text selected for manual copying.');
+      }
+    });
+    return box;
+  }
+  function selectWeek(number, focus = false) {
+    const retainFocus = document.activeElement?.closest('#week-list');
+    chosenWeek = number; manualWeek = true; renderToolkit();
+    if (retainFocus) document.querySelector('.week-choice[aria-pressed=true]').focus({ preventScroll: true }); interaction('toolkit_week', 'week-' + number);
+    if (focus) $('week-title').focus({ preventScroll: true });
+  }
+  function renderToolkit() {
+    const week = toolkit.weeks.find(item => item.number === chosenWeek), list = $('week-list'), select = $('week-select');
+    list.replaceChildren(); select.replaceChildren();
+    toolkit.weeks.forEach(item => {
+      const status = workflow.status(item, today), option = make('option', '', `Week ${item.number} · ${item.period} · ${status}`);
+      option.value = item.number; option.selected = item.number === chosenWeek; select.append(option);
+      const button = make('button', 'week-choice'); button.type = 'button';
+      button.setAttribute('aria-pressed', String(item.number === chosenWeek));
+      if (status === 'Current week') button.setAttribute('aria-current', 'date');
+      button.append(make('span', 'week-choice-meta', `Week ${item.number} · ${item.period}`), make('span', 'week-choice-title', item.title), make('span', 'week-status', status));
+      button.addEventListener('click', () => selectWeek(item.number)); list.append(button);
+    });
+    const detail = $('week-detail'); detail.replaceChildren();
+    const h3 = make('h3', '', week.title); h3.id = 'week-title'; h3.tabIndex = -1;
+    detail.append(make('p', 'kicker', `Week ${week.number} · ${week.period} · ${workflow.status(week, today)}`), h3);
+    if (workflow.status(week, today) === 'Completed') detail.append(make('p', 'archive-note', week.number === 12 && workflow.phase(today) === 'reporting' ? 'Archived campaign message — review dates before reuse. Reporting and documentation remain available below.' : 'Archived week — these messages refer to past dates. Use the current week for today’s work.'));
+    detail.append(make('h4', '', 'Chapter actions'), make('p', 'week-action', week.action.replace(/^(This week|Today):\s*/, '')));
+    const assets = make('div', 'asset-links');
+    week.assets.forEach(asset => { const a = external(asset.label, asset.url, 'asset-link'); a.addEventListener('click', () => interaction('toolkit_asset', 'week-' + week.number)); assets.append(a); });
+    detail.append(make('h4', '', 'Approved graphics'), assets);
+    if (week.number === 9) detail.append(make('p', 'fine-print', 'The source toolkit pairs this week with last-day graphics. Save those graphics for the verified last day of early voting (October 30 in Georgia).'));
+    if (week.number === 7) detail.append(make('p', 'fine-print', 'The toolkit says the drone video will be shared by national. A verified video link has not been supplied; request it from NAASC.'));
+    const expiredCaption = (week.number === 8 && today > '2026-10-17') || (week.number === 9 && today > '2026-10-24');
+    if (expiredCaption) detail.append(make('p', 'archive-note', 'The Saturday named in this approved caption has passed. This caption is retained for the archive; use verified current dates for any new outreach.'));
+    if (week.number === 6 && today === '2026-10-05') detail.append(make('p', 'archive-note', 'Georgia’s registration deadline is today. The approved message below says it has passed; save that message until after October 5.'));
+    week.captions.forEach(caption => detail.append(copyBlock(expiredCaption ? 'Archived ' + caption.label.toLowerCase() : caption.label, caption.text, week.number)));
+    const email = make('details', 'email-template'); email.append(make('summary', '', 'Chapter email · read and copy'), copyBlock('Email', week.email, week.number)); detail.append(email);
+    $('week-announcement').textContent = `Showing week ${week.number}: ${week.title}. ${workflow.status(week, today)}.`;
+  }
+  $('week-select').addEventListener('change', event => selectWeek(Number(event.target.value)));
+  $('current-week-button').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number, true));
+  $('current-week-link').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number));
+  $('hero-secondary').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number));
+  function updateCampaign() {
+    const nextToday = workflow.dateKey(), changed = today !== nextToday; today = nextToday;
+    const phase = workflow.phase(today), current = workflow.currentWeek(toolkit.weeks, today);
+    document.body.dataset.phase = phase;
+    $('now-label').textContent = phase === 'reporting' ? 'AFTER THE ELECTION · THANK & REPORT' : 'YOUR NEXT CHAPTER TASK · ' + current.period.toUpperCase();
+    $('now-title').textContent = phase === 'reporting' ? 'Thank your people. Document the work.' : current.title;
+    $('now-action').textContent = phase === 'reporting' ? 'Gather chapter activities, volunteer contributions and permission-cleared stories. Report individual activity, request the chapter reporting link and follow your election office for any further elections.' : current.action.replace(/^(This week|Today):\s*/, '');
+    $('current-week-link').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Open week ' + current.number + ' materials ↓';
+    $('current-week-button').textContent = phase === 'reporting' ? 'Show thank & report' : 'Show current week';
+    $('hero-primary').href = phase === 'reporting' ? '#report' : '#resources';
+    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find a voter resource ↓';
+    $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Get this week’s materials ↓';
+    $('poster-action').textContent = phase === 'reporting' ? 'Reflect. Thank. Report.' : 'Know. Share. Show up.';
+    $('poster-date').textContent = phase === 'reporting' ? '2026' : '11.03';
+    $('calendar-title').textContent = phase === 'reporting' ? 'Georgia · 2026 election archive' : 'Georgia, at a glance';
+    const gaToday = workflow.dateKey(new Date(), 'America/New_York');
+    document.querySelectorAll('[data-deadline]').forEach(node => { node.textContent = gaToday > node.dataset.deadline ? 'Passed' : 'Upcoming deadline'; });
+    $('early-status').textContent = gaToday > '2026-10-30' ? 'Ended' : gaToday < '2026-10-13' ? 'Upcoming' : 'Open · confirm local hours';
+    if (changed && !manualWeek) chosenWeek = current.number;
+    if (changed) renderToolkit();
+  }
+  document.querySelectorAll('[data-report]').forEach(link => link.addEventListener('click', () => interaction('report_open', link.dataset.report)));
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) updateCampaign(); });
+  window.addEventListener('focus', updateCampaign); setInterval(updateCampaign, 60000);
+  renderResources(); renderToolkit(); updateCampaign();
+})();
