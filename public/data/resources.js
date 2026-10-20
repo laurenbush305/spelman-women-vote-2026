@@ -46,6 +46,16 @@ window.SWV_RESOURCES = [
     "source": "Election Protection"
   },
   {
+    "id": "rev-up-national",
+    "title": "REV UP disability voting resources",
+    "desc": "Explore nonpartisan accessibility, voting-rights and election participation information for voters with disabilities nationwide. For your state's requirements, confirm with election officials.",
+    "category": "support",
+    "tag": "Accessibility",
+    "url": "https://www.aapd.com/election-engagement-hub/",
+    "keywords": "disability accessibility access voter rights rev up national voting assistance",
+    "source": "AAPD · REV UP Voting Campaign"
+  },
+  {
     "title": "Accessible voting resources",
     "desc": "Voting access guidance from the U.S. Election Assistance Commission.",
     "category": "support",
