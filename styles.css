@@ -174,3 +174,12 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   .quick{margin-top:-18px}
   .campaign-now .button{margin-top:3px}
 }
+
+/* Compact closed work areas; keep all explanatory content when opened. */
+.campaign-art-link{border-radius:0;box-shadow:none}
+.collapsible-section.is-collapsed .section-header,
+.collapsible-section.is-collapsed .calendar-heading{display:none}
+.collapsible-section.is-collapsed.section,
+.collapsible-section.is-collapsed.dates{padding:12px 0}
+.collapsible-section.is-collapsed.dates{background:var(--cream,#faf9f6)}
+.collapsible-section.is-collapsed .section-toggle{box-shadow:none}

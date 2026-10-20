@@ -168,7 +168,9 @@
   });
   function openHashSection(hash, scroll = false) {
     const id = String(hash || '').replace('#','');
-    if (collapsibles.has(id)) setSectionExpanded(id, true, scroll);
+    const target = document.getElementById(id);
+    const sectionId = collapsibles.has(id) ? id : target?.closest('.collapsible-section')?.id;
+    if (sectionId) setSectionExpanded(sectionId, true, scroll);
   }
   document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', () => openHashSection(link.getAttribute('href'))));
   window.addEventListener('hashchange', () => openHashSection(location.hash));
