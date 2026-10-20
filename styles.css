@@ -93,3 +93,28 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   .site-header .brand-name{font-size:14px}
   .site-header .brand-name small{font-size:8.5px;letter-spacing:.07em}
 }
+
+
+/* Brand restoration (Oct 20): banner is the supplied official NAASC/SWV artwork.
+   Content cards, data, and toolkit logic remain unchanged. */
+.hero{background:#124489}
+.hero:after{display:none}
+.site-header .brand-icon{display:none!important}
+.site-header .brand{gap:0;min-width:0}
+.site-header .brand-name{color:var(--navy)}
+.hero-graphic{display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-graphic>.poster{display:none!important}
+.swv-official-banner{display:block;width:100%;max-width:360px;height:auto;aspect-ratio:16/9;object-fit:contain;border:0;box-shadow:none}
+@media(max-width:800px){
+  .hero-grid{display:flex;flex-direction:column;gap:20px;padding-top:36px;padding-bottom:70px}
+  .hero-graphic{display:flex!important;order:-1;width:100%;min-width:0;align-items:center;justify-content:center}
+  .swv-official-banner{max-width:320px;width:min(100%,320px);height:auto}
+  .hero-content{width:100%;min-width:0}
+  .hero h1{font-size:clamp(3.1rem,11vw,4.5rem);margin-top:14px}
+}
+@media(max-width:560px){
+  .hero-grid{padding-top:28px;padding-bottom:62px;gap:12px}
+  .hero h1{font-size:clamp(2.85rem,12vw,4.1rem);margin-top:16px}
+  .hero .kicker{font-size:.72rem}
+  .swv-official-banner{max-width:320px;max-height:180px}
+}
