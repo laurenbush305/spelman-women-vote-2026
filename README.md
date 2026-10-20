@@ -4,6 +4,12 @@ Live: **https://spelman-women-vote-2026.onrender.com/**
 
 A plain HTML/CSS/JavaScript site for NAASC chapter leaders. No runtime packages, database, voter-record collection, third-party font requests or analytics service. Search and filters stay on the device.
 
+## Verified release
+
+Source commit `f088fc0a7698bb55b23672902a4fed52033cedb4` is live on the existing Render service (October 19, 2026). Production acceptance: 253 browser assertions and 14 unit tests passed; mobile Lighthouse 95 Performance / 100 Accessibility / 100 Best Practices / 100 SEO. See `AUDIT-AND-LAUNCH-REPORT.md` and `qa/` for evidence and limits.
+
+**Operational dependency:** Auto-deploy is configured on, but this push produced no automatic deploy event after waiting. The verified release was deployed with a cache-cleared API request on the same service. Confirm/repair the Git-provider webhook connection in an authenticated Render session before relying on the next push to deploy itself. The connected tools cannot repair that connection, and the available dashboard browser is signed out. Do not change hosting or silently treat a push as deployment success.
+
 ## Hosting and release
 
 - Repository: https://github.com/laurenbush305/spelman-women-vote-2026

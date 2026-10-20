@@ -1,0 +1,17 @@
+{
+  "id": "srv-dbb932gm7kps73ekc830",
+  "repo": "https://github.com/laurenbush305/spelman-women-vote-2026",
+  "branch": "main",
+  "autoDeploy": "yes",
+  "autoDeployTrigger": "commit",
+  "buildCommand": "mkdir -p public && cp index.html styles.css app.js favicon.svg public/",
+  "publishPath": "public",
+  "url": "https://spelman-women-vote-2026.onrender.com",
+  "deployedCommit": "f088fc0a7698bb55b23672902a4fed52033cedb4",
+  "deployId": "dep-dbbc4gmq1p3s73c2cib0",
+  "status": "live",
+  "finishedAt": "2026-10-20T01:22:24.249963Z",
+  "trigger": "api",
+  "cacheCleared": true,
+  "automaticTriggerObserved": false
+}

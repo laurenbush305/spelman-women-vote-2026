@@ -19,7 +19,7 @@ The brief supplies baseline overall 7.5/10 and evaluation readiness 5.5/10. Othe
 
 ## Implementation, verification and launch
 
-In progress. Deployment not yet claimed.
+Completed; exact deployment and public verification are recorded below.
 
 ## Implemented production pass
 
@@ -40,7 +40,7 @@ In progress. Deployment not yet claimed.
 - Viewports: **320, 390, 768 and 1440px**, no horizontal overflow. Actual rendered layouts/screenshots inspected. Axe: **zero WCAG 2/2.1/2.2 A/AA-tagged violations** at each width, plus New York/Florida filtered views and expanded Election Day email. Original Axe had six low-contrast labels.
 - No browser console/page errors, failing site requests or third-party runtime requests in the smoke run. Important reporting pages and asset links were fetched; forms were not submitted.
 - Initial public mobile Lighthouse (13.5.0): **88 Performance / 96 Accessibility / 100 Best Practices / 100 SEO**. FCP/LCP 2.91s, CLS 0.087, TBT 0ms.
-- Final local mobile Lighthouse: **96 Performance / 100 Accessibility / 100 Best Practices / 100 SEO**. FCP 1.39s, LCP 2.37s, CLS 0, TBT 30ms. An earlier local run measured Performance 97; ordinary run variation is expected. Final public measurements follow deployment.
+- Final local mobile Lighthouse: **96 Performance / 100 Accessibility / 100 Best Practices / 100 SEO**. FCP 1.39s, LCP 2.37s, CLS 0, TBT 30ms. An earlier local run measured Performance 97; ordinary run variation is expected. The verified public measurements are recorded below.
 - These are lab measurements. Field Core Web Vitals at the 75th percentile and INP are **not available**; TBT is not INP. Automated accessibility checks plus keyboard/layout review do not establish full WCAG conformance or replace physical-device/screen-reader testing.
 - Source link checks: 316 initial unique authority/asset URLs, 226 HTTP 200, 88 access/transport-limited, 2 HTTP 404. Replaced the two confirmed broken paths. All 20 supplied graphics + folder returned matching titles/200. Government anti-bot restrictions remain documented, not falsely marked verified.
 
@@ -66,10 +66,27 @@ Qualitative product-readiness review, not measured Lighthouse scores or an insti
 | Accessibility | 9.5 | Zero tagged Axe violations + keyboard review; no full assistive-tech study |
 | Content accuracy / provenance | 9.2 | Official sources, clear dates and honest unresolved dependencies |
 | Evaluation readiness | 9.0 | Definitions, data ownership and privacy plan; chapter endpoint/data still missing |
-| QA / performance / maintainability | 9.5 | Repeatable tests and measured scores; production verification pending below |
+| QA / performance / maintainability | 9.0 | Public deployment/tests verified; automatic trigger delivery remains unverified |
 
 Equal-weight implementation assessment: **9.3/10 overall**, up from the supplied 7.5. The remaining institutional dependencies prevent an unqualified claim of the 9.5 target.
 
 ## Deployment
 
-Pre-release build and tests passed. Render workspace confirmed by user: `tea-db79n1ad0e5s73fpuv2g`. Existing service is connected to this repo's `main`, `autoDeploy=yes`, trigger `commit`, publish directory `public`. No hosting configuration was changed. Shell push access encountered a stale temporary `gh` credential-helper path; use the connected GitHub integration to publish the same tested tree. Exact release commit, terminal Render status and public verification will be recorded after deployment, not assumed from these local results.
+Render workspace confirmed by user: `tea-db79n1ad0e5s73fpuv2g`. Existing service is connected to this repo's `main`, `autoDeploy=yes`, trigger `commit`, publish directory `public`. No hosting configuration was changed. Shell push access encountered a stale temporary `gh` credential-helper path; use the connected GitHub integration to publish the same tested tree. The connected integration published exactly the tested Git tree; the local checkout was then synchronized and was clean.
+
+
+### Verified production release — October 19, 2026, 9:23 p.m. EDT
+
+- Public URL: **https://spelman-women-vote-2026.onrender.com/**
+- Deployed source commit: **`f088fc0a7698bb55b23672902a4fed52033cedb4`**.
+- Tested and published Git tree: `19384e5e5cc988e0332ff73b91716db1c35bb3b1` (exact match).
+- Render deployment: **`dep-dbbc4gmq1p3s73c2cib0`**, terminal status **`live`**, finished October 19 at 9:22:24 p.m. EDT (`2026-10-20T01:22:24.249963Z`). Build logs confirm this exact commit, the original build command, asset upload and live status.
+- Production smoke suite: **253/253 assertions passed**, all four required viewports, zero Axe WCAG-tagged violations, zero console/page errors, zero failed site requests, zero third-party runtime requests. Evidence: `qa/smoke-live.json`.
+- Every one of the **17 published files** returned HTTP 200. Sixteen match the tested build byte-for-byte. Cloudflare Polish losslessly re-encoded the social PNG (header confirms optimization); its 1200×630 decoded pixels are **identical**. Evidence: `qa/deployed-asset-hashes.json`.
+- Final public mobile Lighthouse: **95 Performance / 100 Accessibility / 100 Best Practices / 100 SEO** (baseline **88 / 96 / 100 / 100**). FCP **1.36s**, LCP **1.73s**, CLS **0**, TBT **221ms**, Speed Index **2.96s**. Evidence: `qa/lighthouse-live.json`. These are actual lab results, not field INP or a field Core Web Vitals certification.
+- Auto-deploy remains configured **yes / commit / main** and the original service, URL, build command and publish directory remain intact. **No automatic deploy or service event appeared after the push and waiting more than two minutes.** A cache-cleared deployment was therefore explicitly requested on the existing service through Render's connected API. That request deployed the correct commit successfully. The cause of absent automatic triggering is not confirmed. Git-provider/webhook delivery requires an authenticated Render account check; the dashboard browser session was signed out and the connector does not expose connection repair. Do not assume the next push will deploy automatically until this is resolved. No scheduled workaround, credentials or new hosting service were introduced. Evidence: `qa/render-deployment.json`.
+- This report and public QA evidence are committed in a documentation-only follow-up using `[skip render]`; it leaves the tested site code identical to the deployed release above.
+
+### Final assessment
+
+Product-readiness assessment: **7.5 → 9.3/10**; evaluation readiness: **5.5 → 9.0/10**. The site meets the measured Lighthouse targets and tested task requirements. The unconfirmed chapter form/deadline, event ownership confirmation, institutional branding/video/data dependencies, and unverified automatic trigger prevent an unqualified 9.5/10 operational sign-off. Physical-device and dedicated screen-reader user testing remain outside the available automated emulation evidence.

@@ -1,0 +1,127 @@
+[
+  {
+    "path": "index.html",
+    "httpStatus": 200,
+    "localSha256": "4cb33caceee4b0d8ba9481dd4c21f50d7958a558ab5d638ccd229b66a191d104",
+    "deployedSha256": "4cb33caceee4b0d8ba9481dd4c21f50d7958a558ab5d638ccd229b66a191d104",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "styles.css",
+    "httpStatus": 200,
+    "localSha256": "7ca8d6a1fbe555308bc9d89024a6367148ddbfa4e384945e41a6ba362b32ff08",
+    "deployedSha256": "7ca8d6a1fbe555308bc9d89024a6367148ddbfa4e384945e41a6ba362b32ff08",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "sitemap.xml",
+    "httpStatus": 200,
+    "localSha256": "a31fc70c0c9e7148520c9f3c77fd3b39981163ada59d4995e2aaa7e6d4278704",
+    "deployedSha256": "a31fc70c0c9e7148520c9f3c77fd3b39981163ada59d4995e2aaa7e6d4278704",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "robots.txt",
+    "httpStatus": 200,
+    "localSha256": "c62a673e466a3cea282423fe26ec7668aafb00493a8e3c1a4b75827be63a39bb",
+    "deployedSha256": "c62a673e466a3cea282423fe26ec7668aafb00493a8e3c1a4b75827be63a39bb",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "app.js",
+    "httpStatus": 200,
+    "localSha256": "b2a2cfaf22e0d53583e11657929b527b45f28a7af89beffc1b2dad09cc8ca44c",
+    "deployedSha256": "b2a2cfaf22e0d53583e11657929b527b45f28a7af89beffc1b2dad09cc8ca44c",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "favicon.svg",
+    "httpStatus": 200,
+    "localSha256": "2f7991b3d745cfacf4af2338809e3be17bf42997c6cc7d970b4a95a7ff077ebc",
+    "deployedSha256": "2f7991b3d745cfacf4af2338809e3be17bf42997c6cc7d970b4a95a7ff077ebc",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "data/toolkit.js",
+    "httpStatus": 200,
+    "localSha256": "250805a1dcb7f32631899b1ca9b11e897e742c651c7e0d31a7d5a8a132191e20",
+    "deployedSha256": "250805a1dcb7f32631899b1ca9b11e897e742c651c7e0d31a7d5a8a132191e20",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "data/states.js",
+    "httpStatus": 200,
+    "localSha256": "b08ade6b97b41d5613be84e0fe4bfc6b3e8e3013ee7fdcf8cc33152e758666e4",
+    "deployedSha256": "b08ade6b97b41d5613be84e0fe4bfc6b3e8e3013ee7fdcf8cc33152e758666e4",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "data/workflow.js",
+    "httpStatus": 200,
+    "localSha256": "da7cb9616637627ca5b6082e42dde478afd2df0230dd480b04e03cecaba92007",
+    "deployedSha256": "da7cb9616637627ca5b6082e42dde478afd2df0230dd480b04e03cecaba92007",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "data/resources.js",
+    "httpStatus": 200,
+    "localSha256": "3ff07ee2f2e56ac6aa2e310be0cb4bd6eea6424ffa347934efe603b3a7fb8b3e",
+    "deployedSha256": "3ff07ee2f2e56ac6aa2e310be0cb4bd6eea6424ffa347934efe603b3a7fb8b3e",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "assets/social-card.png",
+    "httpStatus": 200,
+    "localSha256": "8977a793313a6078c6bfae90182a5488cf110c998c3f28d2ea0baa0b4f07d402",
+    "deployedSha256": "c6f22e7b29e0e1fe6fda55a21b009678abfc3f2cd7fbb156de2b9965122d7ec8",
+    "matchesTestedBuild": false,
+    "cdnOptimization": "Cloudflare Polish (response cf-polished: ok, orig_size=50676)",
+    "dimensions": [
+      1200,
+      630
+    ],
+    "pixelIdentical": true
+  },
+  {
+    "path": "assets/fonts/dm-0.woff2",
+    "httpStatus": 200,
+    "localSha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "deployedSha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "assets/fonts/DM-Sans-OFL.txt",
+    "httpStatus": 200,
+    "localSha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2",
+    "deployedSha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "assets/fonts/DM-Serif-Display-OFL.txt",
+    "httpStatus": 200,
+    "localSha256": "aa49c876a28d8c0b0a3027d6c25b9c607eee8c0fb96165011d42a6ace1408fe1",
+    "deployedSha256": "aa49c876a28d8c0b0a3027d6c25b9c607eee8c0fb96165011d42a6ace1408fe1",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "assets/fonts/dm-2.woff2",
+    "httpStatus": 200,
+    "localSha256": "fdf61e20fd2c0108e0ea28da4daca0035205b4b7fc031a3974b865b704de160a",
+    "deployedSha256": "fdf61e20fd2c0108e0ea28da4daca0035205b4b7fc031a3974b865b704de160a",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "assets/fonts/dm-1.woff2",
+    "httpStatus": 200,
+    "localSha256": "ed8b291611e32fa2d2900488dd48fc95faf0957b2ef7ddf1527e8d21dd9cf2df",
+    "deployedSha256": "ed8b291611e32fa2d2900488dd48fc95faf0957b2ef7ddf1527e8d21dd9cf2df",
+    "matchesTestedBuild": true
+  },
+  {
+    "path": "assets/fonts/fonts.css",
+    "httpStatus": 200,
+    "localSha256": "08269e9c47928ac93ef0284881d2ac66a51878aba23c940a0503e78090ddfc32",
+    "deployedSha256": "08269e9c47928ac93ef0284881d2ac66a51878aba23c940a0503e78090ddfc32",
+    "matchesTestedBuild": true
+  }
+]

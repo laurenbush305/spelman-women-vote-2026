@@ -1,0 +1,55 @@
+{
+  "note": "Selected metrics from the deployed public mobile Lighthouse run. Lab data, not field Core Web Vitals.",
+  "url": "https://spelman-women-vote-2026.onrender.com/",
+  "fetchTime": "2026-10-20T01:23:09.962Z",
+  "lighthouseVersion": "13.5.0",
+  "categories": {
+    "performance": {
+      "score": 0.95
+    },
+    "accessibility": {
+      "score": 1
+    },
+    "best-practices": {
+      "score": 1
+    },
+    "seo": {
+      "score": 1
+    },
+    "agentic-browsing": {
+      "score": 1
+    }
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "score": 0.98,
+      "numericValue": 1359.057,
+      "numericUnit": "millisecond",
+      "displayValue": "1.4\u00a0s"
+    },
+    "largest-contentful-paint": {
+      "score": 0.99,
+      "numericValue": 1734.057,
+      "numericUnit": "millisecond",
+      "displayValue": "1.7\u00a0s"
+    },
+    "cumulative-layout-shift": {
+      "score": 1,
+      "numericValue": 0,
+      "numericUnit": "unitless",
+      "displayValue": "0"
+    },
+    "total-blocking-time": {
+      "score": 0.87,
+      "numericValue": 221,
+      "numericUnit": "millisecond",
+      "displayValue": "220\u00a0ms"
+    },
+    "speed-index": {
+      "score": 0.94,
+      "numericValue": 2963.782644706117,
+      "numericUnit": "millisecond",
+      "displayValue": "3.0\u00a0s"
+    }
+  }
+}
