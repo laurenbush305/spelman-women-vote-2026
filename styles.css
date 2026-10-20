@@ -118,3 +118,59 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   .hero .kicker{font-size:.72rem}
   .swv-official-banner{max-width:320px;max-height:180px}
 }
+
+
+/* Hub pass 2: preserve brand, reduce scroll, and prioritize task-based navigation. */
+.campaign-art-link{display:block;width:320px;max-width:100%;line-height:0;border-radius:10px;overflow:hidden;box-shadow:0 16px 42px rgba(8,20,54,.24);outline-offset:5px}
+.swv-official-banner{display:block;width:320px;max-width:100%;height:auto;object-fit:contain;image-rendering:auto}
+.hero-grid{min-height:430px;padding-top:54px;padding-bottom:72px}
+.quick-card{min-height:170px}
+.collapsible-section{scroll-margin-top:92px}
+.collapsible-section>.wrap{position:relative}
+.section-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px 19px;color:var(--navy);box-shadow:0 7px 22px rgba(20,36,81,.05)}
+.section-toggle>span:first-child{display:grid;gap:3px}
+.section-toggle strong{font-size:1rem}
+.section-toggle small{font-size:.82rem;font-weight:500;color:var(--muted);line-height:1.35}
+.section-toggle-state{flex:0 0 auto;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);background:var(--pale);border-radius:999px;padding:7px 11px}
+.section-collapsible-body[hidden]{display:none!important}
+.collapsible-section.is-collapsed.section{padding:34px 0}
+.collapsible-section.is-collapsed .section-header{margin-bottom:14px;max-width:none}
+.collapsible-section.is-collapsed .section-header h2{font-size:clamp(1.8rem,3.6vw,2.45rem);margin:8px 0 0}
+.collapsible-section.is-collapsed .section-header p{display:none}
+.collapsible-section.is-collapsed.dates{padding:28px 0}
+.collapsible-section.is-collapsed .calendar-heading h2{font-size:1.85rem;margin:6px 0 0}
+.collapsible-section.is-collapsed .calendar-heading p{display:none}
+.collapsible-section:not(.is-collapsed) .section-toggle{margin-bottom:26px}
+#georgia-dates.collapsible-section .section-toggle{background:rgba(255,255,255,.98)}
+#georgia-dates.collapsible-section .section-toggle small{color:#5a667a}
+#georgia-dates .section-collapsible-body{padding-top:2px}
+@media(max-width:800px){
+  .hero-grid{padding-top:28px;padding-bottom:48px;gap:12px}
+  .campaign-art-link{width:320px;max-width:100%;box-shadow:none}
+  .quick{gap:9px;margin-top:-22px}
+  .quick-card{min-height:0;padding:17px 18px}
+  .quick-card h2{font-size:1.35rem;margin:7px 36px 0 0}
+  .quick-card p{display:none}
+  .quick-card .number{font-size:.65rem}
+  .quick-arrow{right:15px;top:50%;transform:translateY(-50%)}
+  .quick-card:hover .quick-arrow{transform:translateY(-50%)}
+  .campaign-now{margin-top:24px;padding:19px 20px;gap:12px}
+  .campaign-now h2{font-size:1.55rem;margin:5px 0 7px}
+  .campaign-now p{font-size:.9rem}
+  .collapsible-section.is-collapsed.section{padding:26px 0}
+  .collapsible-section.is-collapsed.dates{padding:24px 0}
+  .collapsible-section.is-collapsed .section-header{margin-bottom:11px}
+  .collapsible-section.is-collapsed .section-header h2{font-size:1.8rem}
+  .collapsible-section.is-collapsed .calendar-heading h2{font-size:1.7rem}
+  .section-toggle{padding:15px 16px}
+  .section-toggle small{font-size:.78rem}
+}
+@media(max-width:560px){
+  .hero-grid{padding-top:22px;padding-bottom:44px}
+  .swv-official-banner{width:min(100%,320px)}
+  .hero h1{font-size:clamp(2.55rem,11.5vw,3.65rem);margin:13px 0 17px}
+  .hero p{margin-bottom:19px}
+  .hero-fine{margin-top:16px}
+  .quick{margin-top:-18px}
+  .campaign-now .button{margin-top:3px}
+}
