@@ -207,6 +207,9 @@
     $('poster-date').textContent = phase === 'reporting' ? '2026' : '11.03';
     $('calendar-title').textContent = phase === 'reporting' ? 'Georgia · 2026 election archive' : 'Georgia, at a glance';
     const gaToday = workflow.dateKey(new Date(), 'America/New_York');
+    // Campus-only event is shown in its published 2026 window, then automatically retired.
+    const campusAction = $('campus-oct27');
+    if (campusAction) campusAction.hidden = gaToday < '2026-10-18' || gaToday > '2026-10-27';
     document.querySelectorAll('[data-deadline]').forEach(node => { node.textContent = gaToday > node.dataset.deadline ? 'Passed' : 'Upcoming deadline'; });
     $('early-status').textContent = gaToday > '2026-10-30' ? 'Ended' : gaToday < '2026-10-13' ? 'Upcoming' : 'Open · confirm local hours';
     if (changed && !manualWeek) chosenWeek = current.number;
