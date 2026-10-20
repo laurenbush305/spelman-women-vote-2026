@@ -1,7 +1,34 @@
 {
   "reviewedAt": "2026-10-19",
-  "signup": {"url": "https://www.powerthepolls.org/naasc", "httpStatus": 200, "browserFormRendered": true, "organizationNamedInConsent": "National Alumnae Association of Spelman College, Inc. (NAASC)", "submitted": false},
-  "graphics": {"count": 2, "format": "original JPEG", "publicSource": "Power the Polls / Civic Alliance 2025 evergreen toolkit, pages 14–15", "httpStatus": [200, 200], "visuallyInspected": true},
-  "vote411": {"publicGuide": "https://www.vote411.org", "customRouteEnabled": false, "requiredGates": ["completed onboarding", "organizational approval", "branding approval", "verified official destination"]},
+  "signup": {
+    "url": "https://www.powerthepolls.org/naasc",
+    "httpStatus": 200,
+    "browserFormRendered": true,
+    "organizationNamedInConsent": "National Alumnae Association of Spelman College, Inc. (NAASC)",
+    "submitted": false
+  },
+  "graphics": {
+    "count": 2,
+    "format": "original JPEG",
+    "publicSource": "Power the Polls / Civic Alliance 2025 evergreen toolkit, pages 14\u201315",
+    "httpStatus": [
+      200,
+      200
+    ],
+    "visuallyInspected": true,
+    "originalDownloadsVerifiedAt": "2026-10-20",
+    "sourceDownloadsMatchOriginalBytes": true,
+    "hostingCdnRecompressesPreviews": true
+  },
+  "vote411": {
+    "publicGuide": "https://www.vote411.org",
+    "customRouteEnabled": false,
+    "requiredGates": [
+      "completed onboarding",
+      "organizational approval",
+      "branding approval",
+      "verified official destination"
+    ]
+  },
   "privateInventoryIncludedInBuild": false
 }

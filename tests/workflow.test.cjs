@@ -64,7 +64,10 @@ test('public recruitment data contains dedicated signup and original graphics on
   assert.equal(workers.length, 3);
   assert.equal(workers.find(r => r.id === 'naasc-poll-worker').url, 'https://www.powerthepolls.org/naasc');
   assert.equal(workers.filter(r => r.image).length, 2);
-  for (const r of workers.filter(r => r.image)) assert.ok(fs.existsSync(path.join(__dirname, '../public', r.image.src)));
+  for (const r of workers.filter(r => r.image)) {
+    assert.ok(fs.existsSync(path.join(__dirname, '../public', r.image.src)));
+    assert.match(r.image.downloadUrl, /^https:\/\/drive.google.com\/uc\?export=download&id=/);
+  }
   for (const file of fs.readdirSync(path.join(__dirname, '../public/data'))) {
     assert.doesNotMatch(fs.readFileSync(path.join(__dirname, '../public/data', file), 'utf8'), /us\.list-manage\.com|gmailMessageId|stateNeeds|internalStaffing|No help needed or full:/);
   }

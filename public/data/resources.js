@@ -106,7 +106,8 @@ window.SWV_RESOURCES = [
       "src": "./assets/poll-workers/help-your-neighbors.jpg",
       "alt": "Power the Polls. Help your neighbors vote. Elections are around the corner — sign up to power the polls!",
       "width": 8000,
-      "height": 4500
+      "height": 4500,
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=13wgzVMfePpOg4Vp02aNfA-jma4iiVjtf"
     }
   },
   {
@@ -123,7 +124,8 @@ window.SWV_RESOURCES = [
       "src": "./assets/poll-workers/dont-just-vote-serve.jpg",
       "alt": "Don’t just vote, serve. Help people in your community cast ballots by serving as a poll worker. Power the Polls.",
       "width": 4500,
-      "height": 4500
+      "height": 4500,
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1HKagOdcMj8LL1Xq_m75wskqWmxix4u-V"
     }
   }
 ];

@@ -98,3 +98,7 @@ Replaced the generic Power the Polls route with the verified NAASC partner signu
 Partner-only staffing content, correspondence and source identifiers are excluded from this repository and build; their dated records remain in the private resource inventory. Public artwork provenance and HTTP/browser verification are recorded in `CONTENT-SOURCES.md` and `qa/partner-reconciliation.json`.
 
 Pre-release acceptance: 16 unit tests; 262 real Chrome assertions; no page/request errors or third-party runtime requests; no Axe violations at 320/390/768/1440 px. Recruitment cards visually reviewed at mobile/desktop widths. Local mobile Lighthouse: Performance 97, Accessibility 100, Best Practices 100, SEO 100; LCP 2.41 s, CLS 0. These local results do not establish deployed performance. Production release evidence follows after deployment.
+
+### Original graphic downloads · October 20 follow-up
+
+Live acceptance of commit `b0605ae` passed 262 browser checks. Mobile Lighthouse measured 100/100/100/100, LCP 1.31 s and CLS 0 (`qa/partner-reconciliation-lighthouse.json`). An additional byte-comparison check identified CDN JPEG recompression. Download links now use the verified public Drive attachment endpoints; both browser downloads match the original source bytes and filenames. Local follow-up acceptance: 16 unit tests, 264 browser assertions, zero Axe violations at all four widths. Previews remain lazy-loaded locally; original artwork is retained in Git. Final deployed acceptance is recorded in the release evidence after this follow-up deploy.

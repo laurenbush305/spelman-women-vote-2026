@@ -66,8 +66,8 @@
       img.src = resource.image.src; img.alt = resource.image.alt;
       img.width = resource.image.width; img.height = resource.image.height;
       img.loading = 'lazy'; img.decoding = 'async'; article.append(img);
-      const download = make('a', 'graphic-download', 'Download original recruitment graphic (JPG)');
-      download.href = resource.image.src; download.download = resource.image.src.split('/').pop();
+      // Original downloads bypass the hosting CDN's automatic JPEG recompression.
+      const download = external('Download original recruitment graphic (JPG)', resource.image.downloadUrl, 'graphic-download');
       article.append(download);
     }
     if (resource.reviewed) article.append(make('p', 'source-date', 'Source listing reviewed Oct 19, 2026' + (resource.unconfirmed ? ' · automated access limited' : '')));

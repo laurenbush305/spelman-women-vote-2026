@@ -33,6 +33,8 @@ function ok(value, message) { assert.ok(value, message); checks++; }
   await page.click('[data-category=pollworkers]');
   ok(await page.locator('#resource-grid .resource-card').count() === 3, 'separate recruitment filter');
   ok(await page.locator('.recruitment-graphic').count() === 2, 'two original public recruitment graphics');
+  for (const link of await page.locator('.graphic-download').all())
+    ok((await link.getAttribute('href')).startsWith('https://drive.google.com/uc?export=download&id='), 'original download bypasses CDN recompression');
   for (const img of await page.locator('.recruitment-graphic').all()) {
     await img.scrollIntoViewIfNeeded();
     await img.evaluate(el => el.decode());

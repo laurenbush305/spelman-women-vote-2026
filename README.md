@@ -95,7 +95,7 @@ The S monogram is the pre-existing temporary mark, not a Spelman/NAASC seal. An 
 
 ## Partner resources and future VOTE411 activation
 
-Poll-worker opportunities have a dedicated topic and heading, separate from voter polling-place tools. The two original Power the Polls graphics are lazy-loaded local JPGs with download links; share them with `https://www.powerthepolls.org/naasc`. Preserve original artwork and provenance in `CONTENT-SOURCES.md`.
+Poll-worker opportunities have a dedicated topic and heading, separate from voter polling-place tools. The two original Power the Polls graphics are lazy-loaded local JPG previews with download links to their original public Drive files; share them with `https://www.powerthepolls.org/naasc`. Preserve original artwork and provenance in `CONTENT-SOURCES.md`.
 
 `public/data/partners.js` is the single future VOTE411 integration point. The current public VOTE411 guide remains active. After authorized staff complete onboarding and approve the organization/branding assets, obtain and verify the issued HTTPS VOTE411 URL. Set `url`, the three approval/completion flags, `verifiedAt` (YYYY-MM-DD), and `enabled: true` together in a reviewed release. Do not invent a slug, infer approval, or substitute a pending page. `workflow.vote411Url` requires every gate and an exact `vote411.org`/`www.vote411.org` HTTPS hostname; otherwise it retains the public guide. Update the allowlist only with independently verified official hosting evidence if a different official hostname is issued.
 
