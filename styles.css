@@ -37,3 +37,59 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .site-header .brand-name{font-size:13px}
  .site-header .brand-name small{font-size:8px}
 }
+
+
+/* Mobile wordmark repair: keep the original identity but remove the oversized S on phones. */
+@media(max-width:600px){
+  .site-header .head-inner{
+    min-height:66px;
+    max-height:none;
+    gap:8px;
+    align-items:center;
+  }
+  .site-header .brand{
+    display:flex;
+    flex:0 1 auto;
+    min-width:0;
+    max-width:calc(100% - 60px);
+    gap:0;
+    align-items:center;
+  }
+  .site-header .brand-icon{display:none}
+  .site-header .brand-name{
+    display:block;
+    flex:0 1 auto;
+    min-width:0;
+    font-size:15px;
+    line-height:1.02;
+    letter-spacing:.045em;
+    font-weight:800;
+    white-space:normal;
+    overflow-wrap:normal;
+  }
+  .site-header .brand-name small{
+    display:block;
+    margin-top:5px;
+    font-size:9px;
+    line-height:1.1;
+    letter-spacing:.09em;
+    white-space:nowrap;
+  }
+  .site-header .menu{
+    display:grid;
+    place-items:center;
+    flex:0 0 44px;
+    width:44px;
+    min-width:44px;
+    height:44px;
+    min-height:44px;
+    margin-left:auto;
+    font-size:1.35rem;
+    line-height:1;
+  }
+  .site-header .nav.open{top:100%}
+}
+@media(max-width:350px){
+  .site-header .brand-name{font-size:14px}
+  .site-header .brand-name small{font-size:8.5px;letter-spacing:.07em}
+}
