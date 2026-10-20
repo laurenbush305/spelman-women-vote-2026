@@ -28,6 +28,21 @@ function ok(value, message) { assert.ok(value, message); checks++; }
   ok(await page.evaluate(() => { const ids=[...document.querySelectorAll('[id]')].map(e=>e.id);return new Set(ids).size===ids.length; }), 'unique element IDs');
   ok(await page.locator('#state option').count() === 52, 'all 51 state choices plus national');
   ok(await page.locator('#week-title').textContent() === 'Keep Early Voting Going', 'October 19 current week');
+  ok(await page.locator('#resource-grid a[href="https://www.vote411.org"]').count() === 1, 'public VOTE411 guide remains active');
+  ok(await page.locator('#resource-grid a[href="https://www.powerthepolls.org/naasc"]').count() === 1, 'dedicated NAASC recruitment route');
+  await page.click('[data-category=pollworkers]');
+  ok(await page.locator('#resource-grid .resource-card').count() === 3, 'separate recruitment filter');
+  ok(await page.locator('.recruitment-graphic').count() === 2, 'two original public recruitment graphics');
+  for (const img of await page.locator('.recruitment-graphic').all()) {
+    await img.scrollIntoViewIfNeeded();
+    await img.evaluate(el => el.decode());
+    ok(await img.evaluate(el => el.naturalWidth > 0 && el.alt.length > 30), 'graphic loads with descriptive alternative text');
+  }
+  ok((await page.locator('#resource-grid').textContent()).includes('To find where to cast your own ballot'), 'worker and voter tasks distinguished');
+  await page.selectOption('#state','GA'); await page.click('[data-category=voting]');
+  ok(await page.locator('#resource-grid .recruitment-graphic').count() === 0, 'voter options exclude recruitment');
+  ok(await page.getByRole('heading',{name:'Georgia: Polling places and hours',exact:true}).isVisible(), 'official polling-place tool retained');
+  await page.click('#reset');
   const states = await page.evaluate(() => SWV_STATES.map(s => ({ code: s.code, name: s.name })));
   for (const state of states) {
     await page.selectOption('#state', state.code);

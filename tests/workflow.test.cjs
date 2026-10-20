@@ -45,3 +45,27 @@ test('Georgia date uses Eastern time independent of visitor timezone', () => {
   assert.equal(workflow.dateKey(date, 'America/New_York'), '2026-11-03');
   assert.equal(workflow.dateKey(date, 'Asia/Tokyo'), '2026-11-04');
 });
+test('VOTE411 defaults to public guide until every launch gate is satisfied', () => {
+  const fallback = 'https://www.vote411.org';
+  const approved = { enabled: true, onboardingComplete: true, organizationApproved: true,
+    brandingApproved: true, verifiedAt: '2026-10-19', url: 'https://www.vote411.org/#approved-test-fixture' };
+  assert.equal(workflow.vote411Url(undefined), fallback);
+  for (const key of Object.keys(approved)) {
+    const partial = { ...approved }; delete partial[key];
+    assert.equal(workflow.vote411Url(partial), fallback, key + ' required');
+  }
+  for (const url of ['javascript:alert(1)', 'https://vote411.org.evil.example/', 'http://www.vote411.org/', 'https://user@www.vote411.org/', 'not a URL'])
+    assert.equal(workflow.vote411Url({ ...approved, url }), fallback);
+  assert.equal(workflow.vote411Url(approved), approved.url);
+});
+test('public recruitment data contains dedicated signup and original graphics only', () => {
+  const resources = context.window.SWV_RESOURCES;
+  const workers = resources.filter(r => r.category === 'pollworkers');
+  assert.equal(workers.length, 3);
+  assert.equal(workers.find(r => r.id === 'naasc-poll-worker').url, 'https://www.powerthepolls.org/naasc');
+  assert.equal(workers.filter(r => r.image).length, 2);
+  for (const r of workers.filter(r => r.image)) assert.ok(fs.existsSync(path.join(__dirname, '../public', r.image.src)));
+  for (const file of fs.readdirSync(path.join(__dirname, '../public/data'))) {
+    assert.doesNotMatch(fs.readFileSync(path.join(__dirname, '../public/data', file), 'utf8'), /us\.list-manage\.com|gmailMessageId|stateNeeds|internalStaffing|No help needed or full:/);
+  }
+});

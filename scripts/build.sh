@@ -8,3 +8,6 @@ test -f public/data/states.js
 test -f public/data/toolkit.js
 test -f public/data/workflow.js
 test -f public/assets/fonts/fonts.css
+test -f public/data/partners.js
+test -f public/assets/poll-workers/help-your-neighbors.jpg
+test -f public/assets/poll-workers/dont-just-vote-serve.jpg

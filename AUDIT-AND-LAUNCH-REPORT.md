@@ -90,3 +90,11 @@ Render workspace confirmed by user: `tea-db79n1ad0e5s73fpuv2g`. Existing service
 ### Final assessment
 
 Product-readiness assessment: **7.5 → 9.3/10**; evaluation readiness: **5.5 → 9.0/10**. The site meets the measured Lighthouse targets and tested task requirements. The unconfirmed chapter form/deadline, event ownership confirmation, institutional branding/video/data dependencies, and unverified automatic trigger prevent an unqualified 9.5/10 operational sign-off. Physical-device and dedicated screen-reader user testing remain outside the available automated emulation evidence.
+
+## Partner recruitment reconciliation · October 19, 2026
+
+Replaced the generic Power the Polls route with the verified NAASC partner signup. A dedicated poll-worker topic and section now distinguish serving in elections from finding a voter polling place. Added two original public recruitment JPGs with accessible previews/downloads, preserving artwork and the NAASC sharing route. Existing public VOTE411 guide remains active; a disabled, tested integration requires completed onboarding, organizational and branding approval, and a verified official URL before activation.
+
+Partner-only staffing content, correspondence and source identifiers are excluded from this repository and build; their dated records remain in the private resource inventory. Public artwork provenance and HTTP/browser verification are recorded in `CONTENT-SOURCES.md` and `qa/partner-reconciliation.json`.
+
+Pre-release acceptance: 16 unit tests; 262 real Chrome assertions; no page/request errors or third-party runtime requests; no Axe violations at 320/390/768/1440 px. Recruitment cards visually reviewed at mobile/desktop widths. Local mobile Lighthouse: Performance 97, Accessibility 100, Best Practices 100, SEO 100; LCP 2.41 s, CLS 0. These local results do not establish deployed performance. Production release evidence follows after deployment.

@@ -6,7 +6,7 @@ window.SWV_RESOURCES = [
     "tag": "Registration",
     "url": "https://vote.gov",
     "keywords": "register address check name update",
-    "source": "Vote.gov \u00b7 U.S. government"
+    "source": "Vote.gov · U.S. government"
   },
   {
     "title": "Can I Vote?",
@@ -15,7 +15,7 @@ window.SWV_RESOURCES = [
     "tag": "Official state tools",
     "url": "https://www.nass.org/can-I-vote",
     "keywords": "ballot early vote rules voter id deadlines",
-    "source": "NASS \u00b7 state election officials"
+    "source": "NASS · state election officials"
   },
   {
     "title": "Find your state election office",
@@ -24,7 +24,7 @@ window.SWV_RESOURCES = [
     "tag": "Election offices",
     "url": "https://www.usa.gov/election-office",
     "keywords": "state offices dates voting hours",
-    "source": "USA.gov \u00b7 U.S. government"
+    "source": "USA.gov · U.S. government"
   },
   {
     "title": "Explore your ballot with VOTE411",
@@ -33,7 +33,8 @@ window.SWV_RESOURCES = [
     "tag": "Ballot information",
     "url": "https://www.vote411.org",
     "keywords": "candidate ballot measures guide",
-    "source": "League of Women Voters"
+    "source": "League of Women Voters",
+    "id": "vote411-guide"
   },
   {
     "title": "Election Protection hotline",
@@ -63,13 +64,15 @@ window.SWV_RESOURCES = [
     "source": "Federal Voting Assistance Program"
   },
   {
-    "title": "Become a poll worker",
-    "desc": "Explore opportunities to support the administration of local elections.",
-    "category": "support",
-    "tag": "Volunteering",
-    "url": "https://www.powerthepolls.org",
-    "keywords": "volunteer poll worker",
-    "source": "Power the Polls"
+    "title": "Serve as a poll worker with NAASC",
+    "desc": "Sign up through NAASC’s dedicated Power the Polls partner page to learn about serving in your community. Power the Polls routes you to local application information; your election office confirms available roles and hiring.",
+    "category": "pollworkers",
+    "tag": "Poll-worker recruitment",
+    "url": "https://www.powerthepolls.org/naasc",
+    "keywords": "poll worker recruitment serve election employment volunteer",
+    "source": "Power the Polls",
+    "id": "naasc-poll-worker",
+    "cta": "Explore poll-worker opportunities"
   },
   {
     "title": "Spelman Women Vote 2026 toolkit",
@@ -78,7 +81,7 @@ window.SWV_RESOURCES = [
     "tag": "2026 toolkit",
     "url": "https://docs.google.com/document/d/1uzZdXtZW6-VGRcDTm_c-iu8brSy98C6sugkfA1qkRqU/edit?usp=sharing",
     "keywords": "chapter graphics outreach templates captions assets",
-    "source": "NAASC \u00b7 approved 2026 toolkit"
+    "source": "NAASC · approved 2026 toolkit"
   },
   {
     "title": "Official NAASC 2026 campaign",
@@ -87,6 +90,40 @@ window.SWV_RESOURCES = [
     "tag": "Official campaign",
     "url": "https://www.naasc.org/gotv",
     "keywords": "naasc chapter impact tracker",
-    "source": "NAASC \u00b7 official campaign"
+    "source": "NAASC · official campaign"
+  },
+  {
+    "id": "graphic-help-your-neighbors",
+    "title": "Recruitment graphic: Help your neighbors vote",
+    "desc": "Public Power the Polls artwork for chapter recruitment outreach. When sharing, include NAASC’s dedicated signup: https://www.powerthepolls.org/naasc",
+    "category": "pollworkers",
+    "tag": "Public recruitment graphic",
+    "url": "https://drive.google.com/file/d/13wgzVMfePpOg4Vp02aNfA-jma4iiVjtf/view",
+    "keywords": "poll worker recruitment social graphics outreach assets",
+    "source": "Power the Polls · public partner toolkit",
+    "cta": "View original partner graphic",
+    "image": {
+      "src": "./assets/poll-workers/help-your-neighbors.jpg",
+      "alt": "Power the Polls. Help your neighbors vote. Elections are around the corner — sign up to power the polls!",
+      "width": 8000,
+      "height": 4500
+    }
+  },
+  {
+    "id": "graphic-dont-just-vote-serve",
+    "title": "Recruitment graphic: Don’t just vote, serve",
+    "desc": "Public Power the Polls artwork for chapter recruitment outreach. When sharing, include NAASC’s dedicated signup: https://www.powerthepolls.org/naasc",
+    "category": "pollworkers",
+    "tag": "Public recruitment graphic",
+    "url": "https://drive.google.com/file/d/1HKagOdcMj8LL1Xq_m75wskqWmxix4u-V/view",
+    "keywords": "poll worker recruitment social graphics outreach assets",
+    "source": "Power the Polls · public partner toolkit",
+    "cta": "View original partner graphic",
+    "image": {
+      "src": "./assets/poll-workers/dont-just-vote-serve.jpg",
+      "alt": "Don’t just vote, serve. Help people in your community cast ballots by serving as a poll worker. Power the Polls.",
+      "width": 4500,
+      "height": 4500
+    }
   }
 ];

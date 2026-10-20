@@ -58,9 +58,18 @@
   function resourceCard(resource) {
     const article = make('article', 'resource-card'); article.dataset.scope = resource.state ? 'state' : 'national';
     const link = external(resource.fallback ? 'Find this topic with the election office' : 'Open ' + resource.title, resource.url);
-    link.textContent = resource.fallback ? 'Find on the election website ↗' : resource.state ? 'Open official voter tool ↗' : 'Open resource ↗';
+    link.textContent = resource.cta ? resource.cta + ' ↗' : resource.fallback ? 'Find on the election website ↗' : resource.state ? 'Open official voter tool ↗' : 'Open resource ↗';
     link.addEventListener('click', () => interaction('resource_open', resource.id || resource.title));
     article.append(make('span', 'pill', resource.tag), make('h3', '', resource.title), make('p', '', resource.desc), make('p', 'source-label', resource.source));
+    if (resource.image) {
+      const img = make('img', 'recruitment-graphic');
+      img.src = resource.image.src; img.alt = resource.image.alt;
+      img.width = resource.image.width; img.height = resource.image.height;
+      img.loading = 'lazy'; img.decoding = 'async'; article.append(img);
+      const download = make('a', 'graphic-download', 'Download original recruitment graphic (JPG)');
+      download.href = resource.image.src; download.download = resource.image.src.split('/').pop();
+      article.append(download);
+    }
     if (resource.reviewed) article.append(make('p', 'source-date', 'Source listing reviewed Oct 19, 2026' + (resource.unconfirmed ? ' · automated access limited' : '')));
     article.append(link); return article;
   }
@@ -68,7 +77,9 @@
     const state = states.find(item => item.code === stateSelect.value);
     const search = queryInput.value.toLocaleLowerCase().trim();
     const match = r => (category === 'all' || r.category === category) && (!search || [r.title, r.desc, r.keywords, r.tag, r.source].join(' ').toLocaleLowerCase().includes(search));
-    const local = state ? stateResources(state).filter(match) : [], national = window.SWV_RESOURCES.filter(match), nodes = [];
+    const local = state ? stateResources(state).filter(match) : [];
+    const national = window.SWV_RESOURCES.map(r => r.id === 'vote411-guide'
+      ? { ...r, url: workflow.vote411Url(window.SWV_PARTNERS?.vote411, r.url) } : r).filter(match), nodes = [];
     if (state) {
       $('state-context').classList.add('visible');
       $('state-context').replaceChildren(make('h3', '', state.name + ' voter information'),
@@ -77,7 +88,11 @@
         document.createTextNode(' · '), external('View the federal source listing', state.source));
       if (local.length) nodes.push(make('h3', 'resource-group-label', state.name + ' · official election information'), ...local.map(resourceCard));
     } else { $('state-context').classList.remove('visible'); $('state-context').replaceChildren(); }
-    if (national.length) nodes.push(make('h3', 'resource-group-label', 'National resources · all states'), ...national.map(resourceCard));
+    const general = national.filter(r => r.category !== 'pollworkers');
+    const workers = national.filter(r => r.category === 'pollworkers');
+    if (general.length) nodes.push(make('h3', 'resource-group-label', 'National voter information & chapter resources'), ...general.map(resourceCard));
+    if (workers.length) nodes.push(make('h3', 'resource-group-label', 'Poll-worker opportunities · serve in elections'),
+      make('p', 'resource-group-label', 'Help administer elections as a poll worker. Hiring, eligibility, training and pay vary by election office. To find where to cast your own ballot, select your state and choose Voting options → Polling places and hours.'), ...workers.map(resourceCard));
     if (!local.length && !national.length) {
       const empty = make('div', 'empty');
       empty.append(make('h3', '', 'No matching resources'), make('p', '', 'Try “mail”, “ID” or “polling”, choose another topic, or clear all filters.'));

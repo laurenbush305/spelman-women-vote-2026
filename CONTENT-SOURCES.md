@@ -60,3 +60,11 @@ Verified for the November general election: registration October 5; advance voti
 ## Branding and data
 
 Temporary S monogram retained with explicit README disclosure. No official seals, endorsements, fabricated graphics, impact totals, or performance dashboards were created. The new social preview is a typographic **resource-hub preview**, not an official campaign asset. No campaign participation dataset was supplied. Website interactions cannot substantiate votes, registrations or campaign outcomes.
+
+## Public partner recruitment reconciliation · October 19, 2026
+
+- Dedicated signup: https://www.powerthepolls.org/naasc — HTTP 200 and a rendered signup form whose consent names the National Alumnae Association of Spelman College, Inc. (NAASC). No form submitted. Replaces the generic recruitment destination.
+- Public graphic provenance: Power the Polls / Civic Alliance, *Employee Engagement Through Poll Working* (2025), pp. 14–15: https://45615907.fs1.hubspotusercontent-na1.net/hubfs/45615907/Employee%20Engagement%20Through%20Poll%20Working%20%282025%29.pdf . The toolkit describes its materials as evergreen. Only the undated “Help your neighbors vote” and “Don’t just vote, serve” recruitment artwork is included. No 2025 event dates or statistics are carried into 2026 copy.
+- Verified original public graphic links: https://drive.google.com/file/d/13wgzVMfePpOg4Vp02aNfA-jma4iiVjtf/view and https://drive.google.com/file/d/1HKagOdcMj8LL1Xq_m75wskqWmxix4u-V/view — both returned HTTP 200 image/jpeg and were visually inspected. The site hosts the original bytes, with descriptive alt text and downloads. Include NAASC’s dedicated signup when sharing these images.
+- Public graphics and NAASC signup were approved for outreach in the internal Partnerships review. Private correspondence, county staffing inventories, source identifiers and tracked recipient URLs are maintained separately and are excluded from this public repository and build. Staffing status is not used to infer voter polling locations.
+- Public voter guide remains https://www.vote411.org . No custom NAASC URL has been supplied or verified. The custom route is disabled pending completed onboarding, organizational and branding approval, and destination verification. No approval is implied by the prepared integration.
