@@ -6,9 +6,9 @@ A plain HTML/CSS/JavaScript site for NAASC chapter leaders. No runtime packages,
 
 ## Verified release
 
-Source commit `f088fc0a7698bb55b23672902a4fed52033cedb4` is live on the existing Render service (October 19, 2026). Production acceptance: 253 browser assertions and 14 unit tests passed; mobile Lighthouse 95 Performance / 100 Accessibility / 100 Best Practices / 100 SEO. See `AUDIT-AND-LAUNCH-REPORT.md` and `qa/` for evidence and limits.
+Partner resource release `c495b84b35feafd6a61d7a3527a20a887fdf77a6` is live on the existing Render service (October 20, 2026). Acceptance: 16 unit tests and 264 production browser assertions passed, with zero Axe violations at four viewport widths. Both original graphic downloads match their source bytes. See `AUDIT-AND-LAUNCH-REPORT.md` and `qa/partner-reconciliation-live.json` for release evidence.
 
-**Operational dependency:** Auto-deploy is configured on, but this push produced no automatic deploy event after waiting. The verified release was deployed with a cache-cleared API request on the same service. Confirm/repair the Git-provider webhook connection in an authenticated Render session before relying on the next push to deploy itself. The connected tools cannot repair that connection, and the available dashboard browser is signed out. Do not change hosting or silently treat a push as deployment success.
+**Operational dependency:** Auto-deploy is configured on, but recent release pushes produced no automatic deploy event after waiting. The verified release was deployed with a cache-cleared API request on the same service. Confirm/repair the Git-provider webhook connection in an authenticated Render session before relying on the next push to deploy itself. The connected tools cannot repair that connection, and the available dashboard browser is signed out. Do not change hosting or silently treat a push as deployment success.
 
 ## Hosting and release
 

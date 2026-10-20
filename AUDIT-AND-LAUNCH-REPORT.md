@@ -102,3 +102,9 @@ Pre-release acceptance: 16 unit tests; 262 real Chrome assertions; no page/reque
 ### Original graphic downloads · October 20 follow-up
 
 Live acceptance of commit `b0605ae` passed 262 browser checks. Mobile Lighthouse measured 100/100/100/100, LCP 1.31 s and CLS 0 (`qa/partner-reconciliation-lighthouse.json`). An additional byte-comparison check identified CDN JPEG recompression. Download links now use the verified public Drive attachment endpoints; both browser downloads match the original source bytes and filenames. Local follow-up acceptance: 16 unit tests, 264 browser assertions, zero Axe violations at all four widths. Previews remain lazy-loaded locally; original artwork is retained in Git. Final deployed acceptance is recorded in the release evidence after this follow-up deploy.
+
+### Final deployed acceptance · October 20, 2026
+
+Source commit `c495b84b35feafd6a61d7a3527a20a887fdf77a6`, tree `046c7c83ff9e82ff6b4c5b799d253508c0568066`, is live on the existing Render service. Cache-cleared deploy `dep-dbbnd8u1egvs738jqb9g` finished October 20 at 14:12:03 UTC. Automatic deploy did not start after the push; the documented Git-provider webhook dependency remains.
+
+The public URL passed 264 browser assertions, with no page errors, failed requests or third-party runtime requests, and zero Axe violations at 320/390/768/1440 px. Both original download buttons were exercised from the public site; downloaded filenames and SHA-256 hashes match original artwork. Unit acceptance remains 16/16. `qa/partner-reconciliation-live.json` records this exact release; the separate Lighthouse result is explicitly attributed to preceding commit `b0605ae` before the download-route-only follow-up. This documentation-only follow-up uses `[skip render]`; deployed code remains the source commit above.

@@ -1,0 +1,45 @@
+{
+  "url": "https://spelman-women-vote-2026.onrender.com/",
+  "checks": 264,
+  "errors": [],
+  "failures": [],
+  "thirdPartyRequests": [],
+  "axe": [
+    {
+      "width": 320,
+      "violations": 0
+    },
+    {
+      "width": 390,
+      "violations": 0
+    },
+    {
+      "width": 768,
+      "violations": 0
+    },
+    {
+      "width": 1440,
+      "violations": 0
+    }
+  ],
+  "testedAt": "2026-10-20T14:13:01.715Z",
+  "sourceCommit": "c495b84b35feafd6a61d7a3527a20a887fdf77a6",
+  "renderDeployId": "dep-dbbnd8u1egvs738jqb9g",
+  "renderStatus": "live",
+  "renderFinishedAt": "2026-10-20T14:12:03.868546Z",
+  "unitTestsPassed": 16,
+  "originalGraphicDownloads": [
+    {
+      "file": "PTP-HelpYourNeighborsVote-X.jpg",
+      "matchesOriginal": true,
+      "bytes": 1027145,
+      "sha256": "9476db483ebabdc04bf252b73b9a7011f29e851d1eb8e7c66a64e4c724551681"
+    },
+    {
+      "file": "PTP-DontJustVoteServe-IG.jpg",
+      "matchesOriginal": true,
+      "bytes": 703709,
+      "sha256": "440e76664a86d626d1a6224c056867613a03b71dcbcaf182c19e90d1aed7bb16"
+    }
+  ]
+}
