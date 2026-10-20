@@ -201,8 +201,8 @@
     $('current-week-link').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Open week ' + current.number + ' materials ↓';
     $('current-week-button').textContent = phase === 'reporting' ? 'Show thank & report' : 'Show current week';
     $('hero-primary').href = phase === 'reporting' ? '#report' : '#resources';
-    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find what you need ↗';
-    $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Browse outreach materials ↓';
+    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find a voter resource ↓';
+    $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Get this week’s materials ↓';
     $('poster-action').textContent = phase === 'reporting' ? 'Reflect. Thank. Report.' : 'Know. Share. Show up.';
     $('poster-date').textContent = phase === 'reporting' ? '2026' : '11.03';
     $('calendar-title').textContent = phase === 'reporting' ? 'Georgia · 2026 election archive' : 'Georgia, at a glance';
