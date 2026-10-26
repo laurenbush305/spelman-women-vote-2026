@@ -23,7 +23,7 @@
   <link rel="preload" href="./assets/fonts/dm-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./assets/fonts/fonts.css">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css?v=20261026-friendly-resources">
+  <link rel="stylesheet" href="./styles.css?v=20261026-three-door-ia">
   <script src="./data/states.js" defer></script>
   <script src="./data/resources.js" defer></script>
   <script src="./data/toolkit.js" defer></script>
@@ -36,16 +36,16 @@
   <div class="notice"><div class="wrap notice-inner"><span><span class="green-dot"></span>2026 · NONPARTISAN CHAPTER RESOURCE HUB</span><a href="https://www.naasc.org/gotv" target="_blank" rel="noopener noreferrer">Official NAASC campaign ↗</a></div></div>
   <header class="site-header"><div class="wrap head-inner">
     <a href="#top" class="brand" aria-label="Spelman Women Vote, back to top"><span class="brand-name">SPELMAN<br>WOMEN VOTE<small>NAASC · CHAPTER HUB</small></span></a>
-    <nav class="nav" id="nav" aria-label="Main navigation"><a href="#voter-tools">Voter tools</a><a href="#resources">Full directory</a><a href="#toolkit">Toolkit</a><a href="#report">Report</a></nav>
+    <nav class="nav" id="nav" aria-label="Main navigation"><a href="#voter-tools">Voting help</a><a href="#organizer-tools">Help others vote</a><a href="#report">Report our work</a></nav>
     <a class="button button-blue nav-cta" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer">Open VOTE411 ↗</a>
     <button type="button" id="menu" class="menu" aria-controls="nav" aria-label="Open navigation" aria-expanded="false">☰</button>
   </div></header>
   <main id="main">
     <section class="hero" id="top"><div class="wrap hero-grid">
-      <div class="hero-content"><div class="kicker">SPELMAN WOMEN VOTE · 2026</div><h1>Put your chapter<br><em>in motion.</em></h1><p>Voter information you can trust. Chapter materials that are ready to use. A simple way to make your work count. All in one place.</p><div class="hero-buttons"><a id="hero-primary" class="button button-white" href="#resources">Find a voter resource ↓</a><a id="hero-secondary" class="button button-outline-light" href="#toolkit">Get this week’s materials ↓</a></div><div class="hero-fine">Built for chapters nationwide. Nonpartisan by design.</div></div>
+      <div class="hero-content"><div class="kicker">SPELMAN WOMEN VOTE · 2026</div><h1>Know what you need.<br><em>Go straight there.</em></h1><p>Voting help, chapter tools and impact reporting, organized around what you’re trying to do right now.</p><div class="hero-buttons"><a id="hero-primary" class="button button-white" href="#voter-tools">I need voting help ↓</a><a id="hero-secondary" class="button button-outline-light" href="#organizer-tools">I’m helping others vote ↓</a></div><div class="hero-fine">Built for chapters nationwide. Nonpartisan by design.</div></div>
       <div class="hero-graphic"><a class="campaign-art-link" href="https://www.naasc.org/gotv" target="_blank" rel="noopener noreferrer" aria-label="Open the official NAASC Spelman Women Vote campaign"><img class="swv-official-banner" src="./assets/brand/spelman-women-vote-2026.webp" width="320" height="180" alt="Spelman Women Vote 2026 campaign artwork: Educate, Engage, Empower. Our voice. Our vote. Our legacy. A brighter tomorrow." fetchpriority="high" decoding="async"></a></div>
     </div></section>
-    <section class="quick wrap" aria-label="Choose your next action"><a class="quick-card" href="#voter-tools"><span class="number">01 / GET INFORMED</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>Find the right voter tool.</h2><p>Start with the question you need answered right now.</p></a><a class="quick-card" href="#toolkit"><span class="number">02 / GET EQUIPPED</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>Get outreach materials.</h2><p>Current 2026 guidance, captions and chapter-ready content.</p></a><a class="quick-card" href="#report"><span class="number">03 / GET COUNTED</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>Document your impact.</h2><p>Correct routes for individual, chapter and event submissions.</p></a></section>
+    <section class="quick wrap path-doors" aria-label="Choose what you are here to do"><a class="quick-card" href="#voter-tools"><span class="number">01 / VOTING HELP</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I need help voting.</h2><p>Ballot, registration, polling place, accessibility and voter support.</p></a><a class="quick-card" href="#organizer-tools"><span class="number">02 / HELP OTHERS VOTE</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I’m helping other people vote.</h2><p>Poll-worker recruitment, campus engagement and chapter outreach tools.</p></a><a class="quick-card" href="#report"><span class="number">03 / REPORT OUR WORK</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I need to report our work.</h2><p>Individual impact, chapter reporting and event submissions.</p></a></section>
 
     <section class="voter-tools wrap" id="voter-tools" aria-labelledby="voter-tools-title">
       <div class="voter-tools-heading">
@@ -63,14 +63,7 @@
         <a class="button button-blue tool-primary" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer">Open NAASC VOTE411 ↗</a>
       </article>
 
-      <div class="voter-tools-grid">
-        <article class="voter-tool-card">
-          <span class="tool-eyebrow">SERVE</span>
-          <h3>Want to work the polls?</h3>
-          <p>Power the Polls helps you start the poll-worker signup process and connects you with your local election office for the official application and training.</p>
-          <a href="https://www.powerthepolls.org/naasc" target="_blank" rel="noopener noreferrer">Open NAASC Power the Polls ↗</a>
-        </article>
-
+      <div class="voter-tools-grid voter-help-grid">
         <article class="voter-tool-card">
           <span class="tool-eyebrow">GET HELP</span>
           <h3>Something went wrong while voting?</h3>
@@ -85,24 +78,47 @@
           <div class="tool-card-links"><a href="https://www.aapd.com/election-engagement-hub/" target="_blank" rel="noopener noreferrer">Open REV UP voting resources ↗</a><a href="https://www.aapd.com/revup-join/" target="_blank" rel="noopener noreferrer">Find REV UP Georgia ↗</a></div>
         </article>
 
-        <article class="voter-tool-card">
-          <span class="tool-eyebrow">ON CAMPUS</span>
-          <h3>Looking for student voter support?</h3>
-          <p>Campus Vote Project Democracy Fellows provide peer-to-peer voter education and engagement on college campuses, including Spelman.</p>
-          <a href="https://campusvoteproject.org/democracy-fellows/" target="_blank" rel="noopener noreferrer">Campus Vote Project Democracy Fellows ↗</a>
-        </article>
-
         <article class="voter-tool-card voter-tool-directory">
-          <span class="tool-eyebrow">OFFICIAL STATE INFO</span>
-          <h3>Need your state’s exact rules?</h3>
-          <p>Use the full directory below to choose the state where the voter is registered and jump to official election-authority tools for registration, early voting, absentee ballots, ID, polling places and more.</p>
-          <a href="#resources">Choose a state in the full directory ↓</a>
+          <span class="tool-eyebrow">MORE SPECIFIC HELP</span>
+          <h3>Need your state’s exact voting rules?</h3>
+          <p>Open the full voter directory, choose the state where the voter is registered, and jump to official election-authority tools for registration, early voting, absentee ballots, voter ID, polling places and more.</p>
+          <a href="#resources">Open the state-by-state voter directory ↓</a>
         </article>
       </div>
     </section>
-    <section class="campaign-now wrap" aria-labelledby="now-title">
-      <div><p class="kicker" id="now-label">YOUR NEXT CHAPTER TASK</p><h2 id="now-title">Open your weekly chapter materials.</h2><p id="now-action">Choose a campaign week for approved captions, emails and graphics.</p></div>
-      <a class="button button-blue" id="current-week-link" href="#toolkit">Open weekly materials ↓</a>
+
+    <section class="organizer-tools wrap" id="organizer-tools" aria-labelledby="organizer-tools-title">
+      <div class="voter-tools-heading">
+        <div><p class="kicker">HELP OTHERS VOTE</p><h2 id="organizer-tools-title">Turn GOTV energy into <em>something useful.</em></h2></div>
+        <p>Use these tools when you’re organizing, recruiting, educating or sharing resources with other voters.</p>
+      </div>
+      <div class="voter-tools-grid organizer-grid">
+        <article class="voter-tool-card organizer-feature">
+          <span class="tool-eyebrow">POLL-WORKER RECRUITMENT</span>
+          <h3>Help staff the polls with Power the Polls.</h3>
+          <p>Use NAASC’s dedicated Power the Polls pathway to help people start the poll-worker signup process. Power the Polls connects prospective poll workers to their local election office for the official application, placement and training process.</p>
+          <a href="https://www.powerthepolls.org/naasc" target="_blank" rel="noopener noreferrer">Open NAASC Power the Polls ↗</a>
+        </article>
+
+        <article class="voter-tool-card organizer-feature">
+          <span class="tool-eyebrow">STUDENT ENGAGEMENT</span>
+          <h3>Connect students with Campus Vote Project.</h3>
+          <p>Campus Vote Project Democracy Fellows support peer-to-peer voter education and engagement on college campuses, including Spelman. Use this relationship when student-facing outreach needs an on-campus bridge.</p>
+          <a href="https://campusvoteproject.org/democracy-fellows/" target="_blank" rel="noopener noreferrer">Campus Vote Project Democracy Fellows ↗</a>
+        </article>
+
+        <article class="voter-tool-card organizer-feature toolkit-door">
+          <span class="tool-eyebrow">CHAPTER OUTREACH</span>
+          <h3>Need captions, emails or campaign graphics?</h3>
+          <p>The 2026 chapter toolkit keeps the current campaign guidance, approved copy and graphics together so chapters can move without rebuilding outreach materials from scratch.</p>
+          <a href="#toolkit">Open the chapter toolkit ↓</a>
+        </article>
+      </div>
+
+      <section class="campaign-now" aria-labelledby="now-title">
+        <div><p class="kicker" id="now-label">YOUR NEXT CHAPTER TASK</p><h2 id="now-title">Open your weekly chapter materials.</h2><p id="now-action">Choose a campaign week for approved captions, emails and graphics.</p></div>
+        <a class="button button-blue" id="current-week-link" href="#toolkit">Open weekly materials ↓</a>
+      </section>
     </section>
     <section class="campus-action wrap" id="campus-oct27" aria-labelledby="campus-oct27-title" hidden>
       <div class="campus-action-copy"><p class="kicker">SPELMAN CAMPUS ONLY · OCTOBER 27, 2026</p>
@@ -112,10 +128,10 @@
       <a class="button button-blue" href="https://form.jotform.com/262714905840055" target="_blank" rel="noopener noreferrer">Open student registration ↗</a>
     </section>
     <noscript><div class="wrap report-note">Interactive search and weekly materials need JavaScript. You can still use <a href="https://www.eac.gov/voters/register-and-vote-in-your-state">the federal state voter directory</a>, the full toolkit and the reporting links below.</div></noscript>
-    <section class="section" id="resources"><div class="wrap"><div class="section-header"><div class="kicker">FULL RESOURCE DIRECTORY</div><h2>Need something more specific?<br><em>Search by state or topic.</em></h2><p>Choose where the voter is registered, then search for registration, ballots, early voting, voter ID, accessibility, poll-worker opportunities and other trusted resources.</p></div>
-      <div class="resource-shell"><div class="search-grid"><label class="field">Where is the voter registered?<select id="state"><option value="">All states / national resources</option></select></label><label class="field">What do you need?<input id="query" type="search" placeholder="Search ballot, ID, absentee, access…" autocomplete="off"></label></div><div class="state-context" id="state-context"></div><div class="filter-head"><span id="result-count" aria-live="polite"></span><button type="button" id="reset" class="reset">Clear all filters</button></div><div class="filters" id="filters" role="group" aria-label="Filter resources by topic"><button type="button" data-category="all" aria-pressed="true">All resources</button><button type="button" data-category="registration" aria-pressed="false">Registration &amp; ballots</button><button type="button" data-category="voting" aria-pressed="false">Voting options</button><button type="button" data-category="support" aria-pressed="false">Rights &amp; support</button><button type="button" data-category="pollworkers" aria-pressed="false">Poll-worker opportunities</button><button type="button" data-category="chapter" aria-pressed="false">Chapter tools</button></div><div class="resource-grid" id="resource-grid"></div><p class="fine-print">Links marked ↗ open in a new tab. State source listings reviewed October 19, 2026; election rules and locations can change. Confirm details with your election office. This site does not collect or verify anyone's personal voter record.</p></div>
+    <section class="section" id="resources"><div class="wrap"><div class="section-header"><div class="kicker">MORE VOTER INFORMATION</div><h2>Need something more specific?<br><em>Search by state or topic.</em></h2><p>Choose where the voter is registered, then search official and trusted voter resources for registration, ballots, early voting, voter ID, accessibility and polling information.</p></div>
+      <div class="resource-shell"><div class="search-grid"><label class="field">Where is the voter registered?<select id="state"><option value="">All states / national resources</option></select></label><label class="field">What do you need?<input id="query" type="search" placeholder="Search ballot, ID, absentee, access…" autocomplete="off"></label></div><div class="state-context" id="state-context"></div><div class="filter-head"><span id="result-count" aria-live="polite"></span><button type="button" id="reset" class="reset">Clear all filters</button></div><div class="filters" id="filters" role="group" aria-label="Filter resources by topic"><button type="button" data-category="all" aria-pressed="true">All resources</button><button type="button" data-category="registration" aria-pressed="false">Registration &amp; ballots</button><button type="button" data-category="voting" aria-pressed="false">Voting options</button><button type="button" data-category="support" aria-pressed="false">Rights &amp; support</button></div><div class="resource-grid" id="resource-grid"></div><p class="fine-print">Links marked ↗ open in a new tab. State source listings reviewed October 19, 2026; election rules and locations can change. Confirm details with your election office. This site does not collect or verify anyone's personal voter record.</p></div>
     </div></section>
-    <section class="dates" id="georgia-dates" aria-labelledby="calendar-title"><div class="wrap">
+    <section class="dates ga-context-section" id="georgia-dates" aria-labelledby="calendar-title"><div class="wrap">
       <div class="calendar-heading"><div class="kicker">GEORGIA ONLY · NOVEMBER 2026 GENERAL ELECTION</div><h2 id="calendar-title">Georgia, at a glance</h2><p>These dates apply only to Georgia. Other states have their own rules and dates.</p></div>
       <div class="calendar-grid">
         <div class="date"><strong>Oct 5</strong><span>Voter registration deadline</span><small data-deadline="2026-10-05">Check official calendar</small></div>
