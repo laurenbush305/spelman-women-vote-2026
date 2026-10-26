@@ -162,5 +162,93 @@ window.SWV_RESOURCES = [
       "height": 4500,
       "downloadUrl": "https://drive.google.com/uc?export=download&id=1HKagOdcMj8LL1Xq_m75wskqWmxix4u-V"
     }
+  },
+  {
+    "id": "vote-org-check",
+    "title": "Vote.org registration check",
+    "desc": "Check voter registration through Vote.org.",
+    "category": "registration",
+    "tag": "Registration",
+    "url": "https://verify.vote.org/",
+    "keywords": "vote.org verify registration check",
+    "source": "Vote.org",
+    "cta": "Check registration"
+  },
+  {
+    "id": "georgia-mvp",
+    "title": "Georgia My Voter Page",
+    "desc": "Official Georgia voter portal for registration and polling information.",
+    "category": "registration",
+    "tag": "Georgia",
+    "url": "https://mvp.sos.ga.gov/s/",
+    "keywords": "Georgia MVP my voter page registration polling place",
+    "source": "Georgia Secretary of State",
+    "cta": "Open Georgia My Voter Page"
+  },
+  {
+    "id": "election-protection-toolkit",
+    "title": "Election Protection social media toolkit",
+    "desc": "Download voter-help flyers and graphics from Election Protection.",
+    "category": "support",
+    "tag": "Shareable resources",
+    "url": "https://toolkit.866ourvote.org/",
+    "keywords": "election protection toolkit graphics flyers 866 our vote",
+    "source": "Election Protection",
+    "cta": "Open toolkit"
+  },
+  {
+    "id": "ga-election-protection-volunteer",
+    "title": "Georgia Election Protection volunteer opportunities",
+    "desc": "Georgia Election Protection volunteer opportunities and signup routes.",
+    "category": "support",
+    "tag": "Georgia volunteers",
+    "url": "https://linktr.ee/gaepvolunteer",
+    "keywords": "Georgia Election Protection volunteer opportunities",
+    "source": "Election Protection",
+    "cta": "See volunteer opportunities"
+  },
+  {
+    "id": "rev-up-georgia-resources",
+    "title": "REV UP Georgia resource center",
+    "desc": "Georgia disability-voting guides, voter planning tools and accessibility resources.",
+    "category": "support",
+    "tag": "Georgia accessibility",
+    "url": "https://revupga.thegao.org/resources/",
+    "keywords": "rev up georgia resource center disability voter guide vote ready",
+    "source": "REV UP Georgia",
+    "cta": "Open Georgia resources"
+  },
+  {
+    "id": "rev-up-dvrw-toolkit",
+    "title": "REV UP Disability Voting Rights Week toolkit",
+    "desc": "National disability-voting, accessible-events and voter-planning resources.",
+    "category": "support",
+    "tag": "Accessibility toolkit",
+    "url": "https://www.aapd.com/dvrw-2026-toolkit",
+    "keywords": "disability voting rights week toolkit accessible events polling place audit",
+    "source": "AAPD · REV UP",
+    "cta": "Open toolkit"
+  },
+  {
+    "id": "rev-up-georgia-youtube",
+    "title": "REV UP Georgia voting videos",
+    "desc": "Accessible voting information videos from REV UP Georgia.",
+    "category": "support",
+    "tag": "Videos",
+    "url": "https://www.youtube.com/@revupgeorgia1522",
+    "keywords": "rev up georgia youtube voting videos accessibility",
+    "source": "REV UP Georgia",
+    "cta": "Watch videos"
+  },
+  {
+    "id": "rev-up-mobilize",
+    "title": "REV UP events and calls",
+    "desc": "Find current national and state REV UP events and calls.",
+    "category": "support",
+    "tag": "Get involved",
+    "url": "https://www.mobilize.us/rev-up-aapd/",
+    "keywords": "rev up mobilize events calls volunteer",
+    "source": "AAPD · REV UP",
+    "cta": "Find events"
   }
 ];
