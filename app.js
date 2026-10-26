@@ -251,8 +251,8 @@
     $('now-action').textContent = phase === 'reporting' ? 'Gather chapter activities, volunteer contributions and permission-cleared stories. Report individual activity, request the chapter reporting link and follow your election office for any further elections.' : current.action.replace(/^(This week|Today):\s*/, '');
     $('current-week-link').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Open week ' + current.number + ' materials ↓';
     $('current-week-button').textContent = phase === 'reporting' ? 'Show thank & report' : 'Show current week';
-    $('hero-primary').href = phase === 'reporting' ? '#report' : '#resources';
-    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find a voter resource ↓';
+    $('hero-primary').href = phase === 'reporting' ? '#report' : '#voter-tools';
+    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find the right voter tool ↓';
     $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Get this week’s materials ↓';
     // Campaign artwork is the approved static NAASC graphic; do not rewrite it dynamically.
     $('calendar-title').textContent = phase === 'reporting' ? 'Georgia · 2026 election archive' : 'Georgia, at a glance';
