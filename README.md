@@ -10,6 +10,10 @@ Partner resource release `c495b84b35feafd6a61d7a3527a20a887fdf77a6` is live on t
 
 **Operational dependency:** Auto-deploy is configured on, but recent release pushes produced no automatic deploy event after waiting. The verified release was deployed with a cache-cleared API request on the same service. Confirm/repair the Git-provider webhook connection in an authenticated Render session before relying on the next push to deploy itself. The connected tools cannot repair that connection, and the available dashboard browser is signed out. Do not change hosting or silently treat a push as deployment success.
 
+## VOTE411 partnership update · October 26, 2026
+
+The League of Women Voters launched the customized NAASC VOTE411 page at **https://www.vote411.org/naasc**. The hub integration is enabled only after the signed agreement, NAASC branding handoff, and League-provided live destination were verified. Public resource cards now route visitors to the customized NAASC page through the existing launch-gate logic.
+
 ## Hosting and release
 
 - Repository: https://github.com/laurenbush305/spelman-women-vote-2026
