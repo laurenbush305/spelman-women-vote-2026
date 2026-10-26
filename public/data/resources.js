@@ -31,9 +31,9 @@ window.SWV_RESOURCES = [
     "desc": "Use your voting address to view nonpartisan ballot information and voter education.",
     "category": "registration",
     "tag": "Ballot information",
-    "url": "https://www.vote411.org",
-    "keywords": "candidate ballot measures guide",
-    "source": "League of Women Voters",
+    "url": "https://www.vote411.org/naasc",
+    "keywords": "candidate ballot measures guide naasc spelman women vote",
+    "source": "League of Women Voters · NAASC custom VOTE411 page",
     "id": "vote411-guide"
   },
   {
