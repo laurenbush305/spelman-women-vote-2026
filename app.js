@@ -79,7 +79,9 @@
     const match = r => (category === 'all' || r.category === category) && (!search || [r.title, r.desc, r.keywords, r.tag, r.source].join(' ').toLocaleLowerCase().includes(search));
     const local = state ? stateResources(state).filter(match) : [];
     const national = window.SWV_RESOURCES.map(r => r.id === 'vote411-guide'
-      ? { ...r, url: workflow.vote411Url(window.SWV_PARTNERS?.vote411, r.url) } : r).filter(match), nodes = [];
+      ? { ...r, url: workflow.vote411Url(window.SWV_PARTNERS?.vote411, r.url) } : r)
+      .filter(r => !['pollworkers','chapter'].includes(r.category) && r.id !== 'campus-vote-project-spelman')
+      .filter(match), nodes = [];
     if (state) {
       $('state-context').classList.add('visible');
       $('state-context').replaceChildren(make('h3', '', state.name + ' voter information'),
@@ -88,11 +90,7 @@
         document.createTextNode(' · '), external('View the federal source listing', state.source));
       if (local.length) nodes.push(make('h3', 'resource-group-label', state.name + ' · official election information'), ...local.map(resourceCard));
     } else { $('state-context').classList.remove('visible'); $('state-context').replaceChildren(); }
-    const general = national.filter(r => r.category !== 'pollworkers');
-    const workers = national.filter(r => r.category === 'pollworkers');
-    if (general.length) nodes.push(make('h3', 'resource-group-label', 'National voter information & chapter resources'), ...general.map(resourceCard));
-    if (workers.length) nodes.push(make('h3', 'resource-group-label', 'Poll-worker opportunities · serve in elections'),
-      make('p', 'resource-group-label', 'Help administer elections as a poll worker. Hiring, eligibility, training and pay vary by election office. To find where to cast your own ballot, select your state and choose Voting options → Polling places and hours.'), ...workers.map(resourceCard));
+    if (national.length) nodes.push(make('h3', 'resource-group-label', 'National voter help'), ...national.map(resourceCard));
     if (!local.length && !national.length) {
       const empty = make('div', 'empty');
       empty.append(make('h3', '', 'No matching resources'), make('p', '', 'Try “mail”, “ID” or “polling”, choose another topic, or clear all filters.'));
@@ -101,6 +99,8 @@
     } else if (state && !local.length) nodes.unshift(make('p', 'resource-group-label', 'No ' + state.name + ' resources match these filters. Clear filters to see the state tools.'));
     $('resource-grid').replaceChildren(...nodes);
     $('result-count').textContent = state ? `${local.length} ${state.name} + ${national.length} national resources` : `${national.length} national resources`;
+    const gaSection = $('georgia-dates');
+    if (gaSection) gaSection.hidden = state?.code !== 'GA';
   }
   function resetResources() {
     stateSelect.value = ''; queryInput.value = ''; category = 'all';
@@ -128,7 +128,7 @@
 
   // Keep the hub short: one major work area open at a time.
   const collapsibleSpecs = [
-    ['resources', '.section-header', 'Voter resources', 'Search state-by-state and national voter tools'],
+    ['resources', '.section-header', 'More voter information', 'Search state-by-state and national voter-help tools'],
     ['georgia-dates', '.calendar-heading', 'Georgia dates', 'Key 2026 Georgia election dates and official sources'],
     ['toolkit', '.section-header', 'Chapter toolkit', 'Current-week actions, approved copy and graphics'],
     ['report', '.section-header', 'Report impact', 'Use the correct individual, chapter or event route']
@@ -241,7 +241,9 @@
   $('week-select').addEventListener('change', event => selectWeek(Number(event.target.value)));
   $('current-week-button').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number, true));
   $('current-week-link').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number));
-  $('hero-secondary').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number));
+  $('hero-secondary').addEventListener('click', () => {
+    if ($('hero-secondary').getAttribute('href') === '#toolkit') selectWeek(workflow.currentWeek(toolkit.weeks, today).number);
+  });
   function updateCampaign() {
     const nextToday = workflow.dateKey(), changed = today !== nextToday; today = nextToday;
     const phase = workflow.phase(today), current = workflow.currentWeek(toolkit.weeks, today);
@@ -252,8 +254,9 @@
     $('current-week-link').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Open week ' + current.number + ' materials ↓';
     $('current-week-button').textContent = phase === 'reporting' ? 'Show thank & report' : 'Show current week';
     $('hero-primary').href = phase === 'reporting' ? '#report' : '#voter-tools';
-    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Find the right voter tool ↓';
-    $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Get this week’s materials ↓';
+    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'I need voting help ↓';
+    $('hero-secondary').href = phase === 'reporting' ? '#toolkit' : '#organizer-tools';
+    $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'I’m helping others vote ↓';
     // Campaign artwork is the approved static NAASC graphic; do not rewrite it dynamically.
     $('calendar-title').textContent = phase === 'reporting' ? 'Georgia · 2026 election archive' : 'Georgia, at a glance';
     const gaToday = workflow.dateKey(new Date(), 'America/New_York');
