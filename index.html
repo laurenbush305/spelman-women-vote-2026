@@ -23,7 +23,7 @@
   <link rel="preload" href="./assets/fonts/dm-2.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./assets/fonts/fonts.css">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css?v=20261026-three-door-ia">
+  <link rel="stylesheet" href="./styles.css?v=20261026-resource-shelf">
   <script src="./data/states.js" defer></script>
   <script src="./data/resources.js" defer></script>
   <script src="./data/toolkit.js" defer></script>
@@ -36,89 +36,85 @@
   <div class="notice"><div class="wrap notice-inner"><span><span class="green-dot"></span>2026 · NONPARTISAN CHAPTER RESOURCE HUB</span><a href="https://www.naasc.org/gotv" target="_blank" rel="noopener noreferrer">Official NAASC campaign ↗</a></div></div>
   <header class="site-header"><div class="wrap head-inner">
     <a href="#top" class="brand" aria-label="Spelman Women Vote, back to top"><span class="brand-name">SPELMAN<br>WOMEN VOTE<small>NAASC · CHAPTER HUB</small></span></a>
-    <nav class="nav" id="nav" aria-label="Main navigation"><a href="#voter-tools">Voting help</a><a href="#organizer-tools">Help others vote</a><a href="#report">Report our work</a></nav>
+    <nav class="nav" id="nav" aria-label="Main navigation"><a href="#all-resources">All resources</a><a href="#resources">State lookup</a><a href="#toolkit">Chapter toolkit</a><a href="#report">Report</a></nav>
     <a class="button button-blue nav-cta" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer">Open VOTE411 ↗</a>
     <button type="button" id="menu" class="menu" aria-controls="nav" aria-label="Open navigation" aria-expanded="false">☰</button>
   </div></header>
   <main id="main">
     <section class="hero" id="top"><div class="wrap hero-grid">
-      <div class="hero-content"><div class="kicker">SPELMAN WOMEN VOTE · 2026</div><h1>Know what you need.<br><em>Go straight there.</em></h1><p>Voting help, chapter tools and impact reporting, organized around what you’re trying to do right now.</p><div class="hero-buttons"><a id="hero-primary" class="button button-white" href="#voter-tools">I need voting help ↓</a><a id="hero-secondary" class="button button-outline-light" href="#organizer-tools">I’m helping others vote ↓</a></div><div class="hero-fine">Built for chapters nationwide. Nonpartisan by design.</div></div>
+      <div class="hero-content"><div class="kicker">SPELMAN WOMEN VOTE · 2026</div><h1>Voting help.<br><em>Right here.</em></h1><p>Trusted tools for voters, students, volunteers and chapters.</p><div class="hero-buttons"><a id="hero-primary" class="button button-white" href="#all-resources">See all resources ↓</a><a id="hero-secondary" class="button button-outline-light" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer">Open VOTE411 ↗</a></div><div class="hero-fine">Built for chapters nationwide. Nonpartisan by design.</div></div>
       <div class="hero-graphic"><a class="campaign-art-link" href="https://www.naasc.org/gotv" target="_blank" rel="noopener noreferrer" aria-label="Open the official NAASC Spelman Women Vote campaign"><img class="swv-official-banner" src="./assets/brand/spelman-women-vote-2026.webp" width="320" height="180" alt="Spelman Women Vote 2026 campaign artwork: Educate, Engage, Empower. Our voice. Our vote. Our legacy. A brighter tomorrow." fetchpriority="high" decoding="async"></a></div>
     </div></section>
-    <section class="quick wrap path-doors" aria-label="Choose what you are here to do"><a class="quick-card" href="#voter-tools"><span class="number">01 / VOTING HELP</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I need help voting.</h2><p>Ballot, registration, polling place, accessibility and voter support.</p></a><a class="quick-card" href="#organizer-tools"><span class="number">02 / HELP OTHERS VOTE</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I’m helping other people vote.</h2><p>Poll-worker recruitment, campus engagement and chapter outreach tools.</p></a><a class="quick-card" href="#report"><span class="number">03 / REPORT OUR WORK</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I need to report our work.</h2><p>Individual impact, chapter reporting and event submissions.</p></a></section>
+    <section class="quick wrap path-doors" aria-label="Choose what you are here to do"><a class="quick-card" href="#vote-resources"><span class="number">01 / VOTE</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I need voting information.</h2><p>Ballot · registration · polling place</p></a><a class="quick-card" href="#organize-resources"><span class="number">02 / HELP</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I’m helping other voters.</h2><p>Share · recruit · volunteer</p></a><a class="quick-card" href="#report"><span class="number">03 / REPORT</span><span class="quick-arrow" aria-hidden="true">↗</span><h2>I need to report activity.</h2><p>Individual · chapter · event</p></a></section>
 
-    <section class="voter-tools wrap" id="voter-tools" aria-labelledby="voter-tools-title">
-      <div class="voter-tools-heading">
-        <div><p class="kicker">START HERE</p><h2 id="voter-tools-title">What do you need <em>right now?</em></h2></div>
-        <p>Choose the question. We’ll send you straight to the trusted resource that can help.</p>
+    <section class="resource-shelf wrap" id="all-resources" aria-labelledby="all-resources-title">
+      <div class="resource-shelf-head">
+        <div><p class="kicker">ALL RESOURCES</p><h2 id="all-resources-title">Everything useful. <em>No digging.</em></h2></div>
+        <p>Pick a tool and go.</p>
       </div>
 
-      <article class="vote411-feature">
-        <div>
-          <span class="tool-eyebrow">BEST FIRST STOP</span>
-          <h3>What’s on my ballot? Start with NAASC VOTE411.</h3>
-          <p>Use your address to get personalized, nonpartisan election information. Explore what’s on your ballot, check voter registration, find your polling place, and review election dates, ID requirements, early voting and absentee-voting information.</p>
-          <div class="tool-tags" aria-label="VOTE411 can help with"><span>Ballot</span><span>Registration</span><span>Polling place</span><span>Voting rules</span></div>
-        </div>
-        <a class="button button-blue tool-primary" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer">Open NAASC VOTE411 ↗</a>
+      <article class="resource-spotlight">
+        <div><span class="tool-eyebrow">START HERE</span><h3>NAASC VOTE411</h3><p>Your ballot, registration, polling place and voting rules in one place.</p></div>
+        <a class="button button-blue" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer">Open VOTE411 ↗</a>
       </article>
 
-      <div class="voter-tools-grid voter-help-grid">
-        <article class="voter-tool-card">
-          <span class="tool-eyebrow">GET HELP</span>
-          <h3>Something went wrong while voting?</h3>
-          <p>Election Protection provides trained, nonpartisan voter assistance. Call or text 866-OUR-VOTE, or use its voting-help resources online.</p>
-          <a href="https://866ourvote.org/" target="_blank" rel="noopener noreferrer">Open Election Protection ↗</a>
-        </article>
-
-        <article class="voter-tool-card">
-          <span class="tool-eyebrow">ACCESS</span>
-          <h3>Need accessible voting information?</h3>
-          <p>REV UP connects voters with disability-focused voting-rights, accessibility and civic-engagement resources, including an active Georgia coalition.</p>
-          <div class="tool-card-links"><a href="https://www.aapd.com/election-engagement-hub/" target="_blank" rel="noopener noreferrer">Open REV UP voting resources ↗</a><a href="https://www.aapd.com/revup-join/" target="_blank" rel="noopener noreferrer">Find REV UP Georgia ↗</a></div>
-        </article>
-
-        <article class="voter-tool-card voter-tool-directory">
-          <span class="tool-eyebrow">MORE SPECIFIC HELP</span>
-          <h3>Need your state’s exact voting rules?</h3>
-          <p>Open the full voter directory, choose the state where the voter is registered, and jump to official election-authority tools for registration, early voting, absentee ballots, voter ID, polling places and more.</p>
-          <a href="#resources">Open the state-by-state voter directory ↓</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="organizer-tools wrap" id="organizer-tools" aria-labelledby="organizer-tools-title">
-      <div class="voter-tools-heading">
-        <div><p class="kicker">HELP OTHERS VOTE</p><h2 id="organizer-tools-title">Turn GOTV energy into <em>something useful.</em></h2></div>
-        <p>Use these tools when you’re organizing, recruiting, educating or sharing resources with other voters.</p>
-      </div>
-      <div class="voter-tools-grid organizer-grid">
-        <article class="voter-tool-card organizer-feature">
-          <span class="tool-eyebrow">POLL-WORKER RECRUITMENT</span>
-          <h3>Help staff the polls with Power the Polls.</h3>
-          <p>Use NAASC’s dedicated Power the Polls pathway to help people start the poll-worker signup process. Power the Polls connects prospective poll workers to their local election office for the official application, placement and training process.</p>
-          <a href="https://www.powerthepolls.org/naasc" target="_blank" rel="noopener noreferrer">Open NAASC Power the Polls ↗</a>
-        </article>
-
-        <article class="voter-tool-card organizer-feature">
-          <span class="tool-eyebrow">STUDENT ENGAGEMENT</span>
-          <h3>Connect students with Campus Vote Project.</h3>
-          <p>Campus Vote Project Democracy Fellows support peer-to-peer voter education and engagement on college campuses, including Spelman. Use this relationship when student-facing outreach needs an on-campus bridge.</p>
-          <a href="https://campusvoteproject.org/democracy-fellows/" target="_blank" rel="noopener noreferrer">Campus Vote Project Democracy Fellows ↗</a>
-        </article>
-
-        <article class="voter-tool-card organizer-feature toolkit-door">
-          <span class="tool-eyebrow">CHAPTER OUTREACH</span>
-          <h3>Need captions, emails or campaign graphics?</h3>
-          <p>The 2026 chapter toolkit keeps the current campaign guidance, approved copy and graphics together so chapters can move without rebuilding outreach materials from scratch.</p>
-          <a href="#toolkit">Open the chapter toolkit ↓</a>
-        </article>
+      <div class="resource-group" id="vote-resources">
+        <div class="resource-group-heading"><h3>Voting information</h3><span>Know what, where and how.</span></div>
+        <div class="compact-resource-grid">
+          <a class="compact-resource" href="https://www.vote411.org/naasc" target="_blank" rel="noopener noreferrer"><strong>NAASC VOTE411</strong><span>Ballot + candidate info + polling place</span></a>
+          <a class="compact-resource" href="https://verify.vote.org/" target="_blank" rel="noopener noreferrer"><strong>Vote.org</strong><span>Check voter registration</span></a>
+          <a class="compact-resource" href="https://vote.gov/" target="_blank" rel="noopener noreferrer"><strong>Vote.gov</strong><span>Official registration starting point</span></a>
+          <a class="compact-resource" href="https://www.nass.org/can-I-vote" target="_blank" rel="noopener noreferrer"><strong>Can I Vote?</strong><span>State election-official tools</span></a>
+          <a class="compact-resource ga-resource" href="https://mvp.sos.ga.gov/s/" target="_blank" rel="noopener noreferrer"><strong>Georgia My Voter Page</strong><span>Georgia registration + polling info</span></a>
+          <a class="compact-resource" href="https://www.usa.gov/election-office" target="_blank" rel="noopener noreferrer"><strong>State Election Offices</strong><span>Find your official election authority</span></a>
+        </div>
       </div>
 
-      <section class="campaign-now" aria-labelledby="now-title">
-        <div><p class="kicker" id="now-label">YOUR NEXT CHAPTER TASK</p><h2 id="now-title">Open your weekly chapter materials.</h2><p id="now-action">Choose a campaign week for approved captions, emails and graphics.</p></div>
-        <a class="button button-blue" id="current-week-link" href="#toolkit">Open weekly materials ↓</a>
-      </section>
+      <div class="resource-group" id="help-resources">
+        <div class="resource-group-heading"><h3>Voting help + accessibility</h3><span>Problems, rights and accessible voting.</span></div>
+        <div class="compact-resource-grid">
+          <a class="compact-resource" href="https://866ourvote.org/" target="_blank" rel="noopener noreferrer"><strong>Election Protection</strong><span>866-OUR-VOTE voter help</span></a>
+          <a class="compact-resource" href="https://toolkit.866ourvote.org/" target="_blank" rel="noopener noreferrer"><strong>Election Protection Toolkit</strong><span>Downloadable voter-help graphics</span></a>
+          <a class="compact-resource" href="https://revupga.thegao.org/resources/" target="_blank" rel="noopener noreferrer"><strong>REV UP Georgia Resources</strong><span>Accessible Georgia voting guides</span></a>
+          <a class="compact-resource" href="https://www.aapd.com/dvrw-2026-toolkit" target="_blank" rel="noopener noreferrer"><strong>Disability Voting Toolkit</strong><span>National REV UP resources</span></a>
+          <a class="compact-resource" href="https://www.youtube.com/@revupgeorgia1522" target="_blank" rel="noopener noreferrer"><strong>REV UP Georgia Videos</strong><span>Accessible voting information</span></a>
+          <a class="compact-resource" href="https://www.eac.gov/voting-accessibility" target="_blank" rel="noopener noreferrer"><strong>EAC Accessible Voting</strong><span>Federal accessibility guidance</span></a>
+        </div>
+      </div>
+
+      <div class="resource-group" id="organize-resources">
+        <div class="resource-group-heading"><h3>Help other voters</h3><span>Recruit, volunteer and share.</span></div>
+        <div class="compact-resource-grid">
+          <a class="compact-resource" href="https://www.powerthepolls.org/naasc" target="_blank" rel="noopener noreferrer"><strong>NAASC Power the Polls</strong><span>Become a poll worker</span></a>
+          <a class="compact-resource" href="https://linktr.ee/gaepvolunteer" target="_blank" rel="noopener noreferrer"><strong>Georgia Election Protection</strong><span>Volunteer opportunities</span></a>
+          <a class="compact-resource" href="https://campusvoteproject.org/democracy-fellows/" target="_blank" rel="noopener noreferrer"><strong>Campus Vote Project</strong><span>Democracy Fellows + student engagement</span></a>
+          <a class="compact-resource" href="https://www.mobilize.us/rev-up-aapd/" target="_blank" rel="noopener noreferrer"><strong>REV UP Events + Calls</strong><span>Find current opportunities</span></a>
+          <a class="compact-resource" href="https://drive.google.com/file/d/13wgzVMfePpOg4Vp02aNfA-jma4iiVjtf/view" target="_blank" rel="noopener noreferrer"><strong>Power the Polls Graphic</strong><span>“Help your neighbors vote”</span></a>
+          <a class="compact-resource" href="https://drive.google.com/file/d/1HKagOdcMj8LL1Xq_m75wskqWmxix4u-V/view" target="_blank" rel="noopener noreferrer"><strong>Power the Polls Graphic</strong><span>“Don’t just vote, serve”</span></a>
+        </div>
+      </div>
+
+      <div class="resource-group" id="share-resources">
+        <div class="resource-group-heading"><h3>Share with voters</h3><span>Ready-made REV UP Georgia campaigns.</span></div>
+        <div class="compact-resource-grid">
+          <a class="compact-resource" href="https://drive.google.com/drive/folders/1pgacwrl8hTifNBsC5rwOTV7vKAvXqlpH" target="_blank" rel="noopener noreferrer"><strong>Understanding Your Ballot</strong><span>Ballot education graphics</span></a>
+          <a class="compact-resource" href="https://drive.google.com/drive/folders/1dkYqrjtBofNb2g4GaWswpA5RzHM04Rk4" target="_blank" rel="noopener noreferrer"><strong>Access Is No Joke</strong><span>Accessible-voting rights graphics</span></a>
+          <a class="compact-resource" href="https://drive.google.com/drive/folders/1jgLTv25wkhMiwKMXiTL4Q-XWPUg2scoc" target="_blank" rel="noopener noreferrer"><strong>Roll 2 the Polls</strong><span>Transportation-access graphics</span></a>
+          <a class="compact-resource" href="https://drive.google.com/drive/folders/19ELD9lHbYCATaqfOeH1iHtXJWbH3MMhY" target="_blank" rel="noopener noreferrer"><strong>Election Day Countdown</strong><span>Deadlines + voting-plan graphics</span></a>
+        </div>
+      </div>
+
+      <div class="resource-group" id="chapter-resources">
+        <div class="resource-group-heading"><h3>Chapter tools</h3><span>For NAASC chapters and organizers.</span></div>
+        <div class="compact-resource-grid">
+          <a class="compact-resource" href="#toolkit"><strong>2026 Chapter Toolkit</strong><span>Approved captions + emails + graphics</span></a>
+          <a class="compact-resource" href="https://drive.google.com/drive/folders/1tgsMBSS35WhBrxZ95u8IwD92EoxlEbcN" target="_blank" rel="noopener noreferrer"><strong>Campaign Graphics</strong><span>Approved toolkit graphics</span></a>
+          <a class="compact-resource" href="https://www.naasc.org/gotv" target="_blank" rel="noopener noreferrer"><strong>Official NAASC Campaign</strong><span>National Spelman Women Vote page</span></a>
+          <a class="compact-resource" href="#report"><strong>Impact Reporting</strong><span>Individual + chapter + event routes</span></a>
+        </div>
+      </div>
+
+      <div class="resource-shelf-more"><a class="button button-outline" href="#resources">Need exact state rules? Open the state lookup ↓</a></div>
     </section>
     <section class="campus-action wrap" id="campus-oct27" aria-labelledby="campus-oct27-title" hidden>
       <div class="campus-action-copy"><p class="kicker">SPELMAN CAMPUS ONLY · OCTOBER 27, 2026</p>
