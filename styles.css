@@ -211,3 +211,24 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .voter-tool-directory p{max-width:820px}
 @media(max-width:800px){.voter-tools{padding:48px 0 26px}.voter-tools-heading{grid-template-columns:1fr;gap:10px;align-items:start}.vote411-feature{grid-template-columns:1fr;gap:20px;padding:25px}.tool-primary{width:100%}.voter-tools-grid{grid-template-columns:1fr}.voter-tool-directory{grid-column:auto}.voter-tool-card{min-height:0}}
 @media(max-width:560px){.voter-tools{padding-top:38px}.voter-tools-heading h2{font-size:2.45rem}.vote411-feature{padding:22px 18px}.vote411-feature h3{font-size:1.9rem}.voter-tool-card{padding:21px 18px}}
+
+
+/* Three-door information architecture · Oct 26 */
+.path-doors .quick-card{border-top:4px solid transparent}
+.path-doors .quick-card:nth-child(1){border-top-color:var(--blue)}
+.path-doors .quick-card:nth-child(2){border-top-color:#5977a7}
+.path-doors .quick-card:nth-child(3){border-top-color:#8c6d34}
+.path-doors .quick-card h2{max-width:270px}
+.organizer-tools{padding:64px 0 34px;scroll-margin-top:96px}
+.organizer-tools .voter-tools-heading{margin-bottom:24px}
+.organizer-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.organizer-feature{min-height:285px}
+.organizer-feature h3{font-size:1.5rem}
+.organizer-tools .campaign-now{width:100%;margin:18px 0 0}
+.ga-context-section[hidden]{display:none!important}
+#resources{scroll-margin-top:96px}
+#report{scroll-margin-top:96px}
+#toolkit{scroll-margin-top:96px}
+@media(max-width:950px){.organizer-grid{grid-template-columns:1fr 1fr}.organizer-grid .toolkit-door{grid-column:1/-1}}
+@media(max-width:800px){.organizer-tools{padding:48px 0 26px}.organizer-grid{grid-template-columns:1fr}.organizer-grid .toolkit-door{grid-column:auto}.organizer-feature{min-height:0}.path-doors .quick-card h2{max-width:none}}
+@media(max-width:560px){.organizer-tools{padding-top:38px}.path-doors .quick-card p{display:block;font-size:.88rem;line-height:1.45;margin-top:7px}.path-doors .quick-card{padding-bottom:20px}}
