@@ -27,33 +27,58 @@ window.SWV_RESOURCES = [
     "source": "USA.gov · U.S. government"
   },
   {
-    "title": "Explore your ballot with VOTE411",
-    "desc": "Use your voting address to view nonpartisan ballot information and voter education.",
+    "title": "NAASC VOTE411: ballot, registration and polling information",
+    "desc": "Start here for personalized, nonpartisan election information. Use your address to explore what is on your ballot, check voter registration, find your polling place, and review election dates, ID requirements, early voting and absentee-voting information.",
     "category": "registration",
     "tag": "Ballot information",
     "url": "https://www.vote411.org/naasc",
     "keywords": "candidate ballot measures guide naasc spelman women vote",
     "source": "League of Women Voters · NAASC custom VOTE411 page",
-    "id": "vote411-guide"
+    "id": "vote411-guide",
+    "cta": "Open NAASC VOTE411"
   },
   {
-    "title": "Election Protection hotline",
-    "desc": "Nonpartisan help for voter questions or problems. Call or text 866-OUR-VOTE (866-687-8683).",
+    "title": "Election Protection: get help with a voting problem",
+    "desc": "Trained, nonpartisan voter assistance for questions or problems before or while voting. Call or text 866-OUR-VOTE (866-687-8683), or use the online resources.",
     "category": "support",
     "tag": "Voting support",
     "url": "https://866ourvote.org",
     "keywords": "voter rights lawyer help problems",
-    "source": "Election Protection"
+    "source": "Election Protection",
+    "cta": "Get voter help"
   },
   {
     "id": "rev-up-national",
-    "title": "REV UP disability voting resources",
-    "desc": "Explore nonpartisan accessibility, voting-rights and election participation information for voters with disabilities nationwide. For your state's requirements, confirm with election officials.",
+    "title": "REV UP: accessible voting and disability voting rights",
+    "desc": "Accessibility, voting-rights and civic-engagement resources for voters with disabilities. REV UP has an active Georgia coalition; confirm state-specific voting requirements with election officials.",
     "category": "support",
     "tag": "Accessibility",
     "url": "https://www.aapd.com/election-engagement-hub/",
     "keywords": "disability accessibility access voter rights rev up national voting assistance",
-    "source": "AAPD · REV UP Voting Campaign"
+    "source": "AAPD · REV UP Voting Campaign",
+    "cta": "Open REV UP voting resources"
+  },
+  {
+    "id": "rev-up-georgia",
+    "title": "REV UP Georgia coalition",
+    "desc": "Connect with Georgia's disability-led REV UP coalition and its voter-engagement work.",
+    "category": "support",
+    "tag": "Georgia accessibility",
+    "url": "https://www.aapd.com/revup-join/",
+    "keywords": "rev up georgia disability accessibility coalition voting rights civic engagement",
+    "source": "AAPD · REV UP Georgia",
+    "cta": "Find REV UP Georgia"
+  },
+  {
+    "id": "campus-vote-project-spelman",
+    "title": "Campus Vote Project: student voter support",
+    "desc": "Campus Vote Project Democracy Fellows provide peer-to-peer voter education and engagement on college campuses, including Spelman.",
+    "category": "support",
+    "tag": "Spelman campus",
+    "url": "https://campusvoteproject.org/democracy-fellows/",
+    "keywords": "campus vote project democracy fellows spelman students voter education campus engagement",
+    "source": "Campus Vote Project",
+    "cta": "Meet the Democracy Fellows"
   },
   {
     "title": "Accessible voting resources",
