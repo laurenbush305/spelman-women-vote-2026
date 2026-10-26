@@ -28,7 +28,7 @@ function ok(value, message) { assert.ok(value, message); checks++; }
   ok(await page.evaluate(() => { const ids=[...document.querySelectorAll('[id]')].map(e=>e.id);return new Set(ids).size===ids.length; }), 'unique element IDs');
   ok(await page.locator('#state option').count() === 52, 'all 51 state choices plus national');
   ok(await page.locator('#week-title').textContent() === 'Keep Early Voting Going', 'October 19 current week');
-  ok(await page.locator('#resource-grid a[href="https://www.vote411.org"]').count() === 1, 'public VOTE411 guide remains active');
+  ok(await page.locator('#resource-grid a[href="https://www.vote411.org/naasc"]').count() === 1, 'custom NAASC VOTE411 partner page is active');
   ok(await page.locator('#resource-grid a[href="https://www.powerthepolls.org/naasc"]').count() === 1, 'dedicated NAASC recruitment route');
   await page.click('[data-category=pollworkers]');
   ok(await page.locator('#resource-grid .resource-card').count() === 3, 'separate recruitment filter');
