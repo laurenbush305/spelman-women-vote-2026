@@ -128,10 +128,10 @@
 
   // Keep the hub short: one major work area open at a time.
   const collapsibleSpecs = [
-    ['resources', '.section-header', 'More voter information', 'Search state-by-state and national voter-help tools'],
-    ['georgia-dates', '.calendar-heading', 'Georgia dates', 'Key 2026 Georgia election dates and official sources'],
-    ['toolkit', '.section-header', 'Chapter toolkit', 'Current-week actions, approved copy and graphics'],
-    ['report', '.section-header', 'Report impact', 'Use the correct individual, chapter or event route']
+    ['resources', '.section-header', 'State lookup', 'Official voter information by state'],
+    ['georgia-dates', '.calendar-heading', 'Georgia dates', 'Key Georgia election dates'],
+    ['toolkit', '.section-header', 'Chapter toolkit', 'Captions, emails and graphics'],
+    ['report', '.section-header', 'Report', 'Individual, chapter or event activity']
   ];
   const collapsibles = new Map();
   function setSectionExpanded(id, expanded, scroll = false) {
@@ -240,7 +240,8 @@
   }
   $('week-select').addEventListener('change', event => selectWeek(Number(event.target.value)));
   $('current-week-button').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number, true));
-  $('current-week-link').addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number));
+  const currentWeekLink = $('current-week-link');
+  if (currentWeekLink) currentWeekLink.addEventListener('click', () => selectWeek(workflow.currentWeek(toolkit.weeks, today).number));
   $('hero-secondary').addEventListener('click', () => {
     if ($('hero-secondary').getAttribute('href') === '#toolkit') selectWeek(workflow.currentWeek(toolkit.weeks, today).number);
   });
@@ -248,13 +249,9 @@
     const nextToday = workflow.dateKey(), changed = today !== nextToday; today = nextToday;
     const phase = workflow.phase(today), current = workflow.currentWeek(toolkit.weeks, today);
     document.body.dataset.phase = phase;
-    $('now-label').textContent = phase === 'reporting' ? 'AFTER THE ELECTION · THANK & REPORT' : 'YOUR NEXT CHAPTER TASK · ' + current.period.toUpperCase();
-    $('now-title').textContent = phase === 'reporting' ? 'Thank your people. Document the work.' : current.title;
-    $('now-action').textContent = phase === 'reporting' ? 'Gather chapter activities, volunteer contributions and permission-cleared stories. Report individual activity, request the chapter reporting link and follow your election office for any further elections.' : current.action.replace(/^(This week|Today):\s*/, '');
-    $('current-week-link').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Open week ' + current.number + ' materials ↓';
     $('current-week-button').textContent = phase === 'reporting' ? 'Show thank & report' : 'Show current week';
     $('hero-primary').href = phase === 'reporting' ? '#report' : '#all-resources';
-    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'See all resources ↓';
+    $('hero-primary').textContent = phase === 'reporting' ? 'Report campaign activity ↓' : 'Browse resources ↓';
     $('hero-secondary').href = phase === 'reporting' ? '#toolkit' : 'https://www.vote411.org/naasc';
     $('hero-secondary').textContent = phase === 'reporting' ? 'Get thank-you materials ↓' : 'Open VOTE411 ↗';
     if (phase === 'reporting') {
